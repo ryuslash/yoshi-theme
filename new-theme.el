@@ -43,6 +43,7 @@
  '(mode-line ((t (:background "#222224" :foreground "#eeeeec" :box nil))))
  '(mode-line-inactive ((t (:background "#171719" :foreground "#999999" :box nil))))
  '(region ((t (:background "#2729b6"))))
+ '(highlight ((t (:background "#171719"))))
  )
 
 (provide-theme 'new)

@@ -30,9 +30,13 @@
 (custom-theme-set-faces
  'new
  '(default ((t (:background "#111113" :foreground "#eeeeec"))))
+ '(flymake-errline ((t (:background "#8b1a1a"))))
+ '(flymake-infoline ((t (:background "#00008b"))))
+ '(flymake-warnline ((t (:background "#be3e00"))))
  '(font-lock-comment-delimiter-face ((t (:foreground "#a9a9a9" :slant italic :weight bold))))
  '(font-lock-comment-face ((t (:foreground "#a9a9a9" :slant italic))))
  '(font-lock-keyword-face ((t (:foreground "#cfce29"))))
+ '(font-lock-string-face ((t (:foreground "#ffbd5c"))))
  '(font-lock-type-face ((t (:foreground "#78a2c1"))))
  '(highlight ((t (:background "#171719"))))
  '(ido-subdir ((t (:foreground "#ff5d55"))))
@@ -44,10 +48,6 @@
  '(mode-line ((t (:background "#222224" :foreground "#eeeeec" :box nil))))
  '(mode-line-inactive ((t (:background "#171719" :foreground "#999999" :box nil))))
  '(region ((t (:background "#2729b6"))))
- '(flymake-errline ((t (:background "#8b1a1a"))))
- '(flymake-infoline ((t (:background "#00008b"))))
- '(flymake-warnline ((t (:background "#be3e00"))))
- '(font-lock-string-face ((t (:foreground "#ff9800"))))
  )
 
 (provide-theme 'new)

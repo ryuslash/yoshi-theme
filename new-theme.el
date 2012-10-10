@@ -40,6 +40,7 @@
  '(font-lock-keyword-face ((t (:foreground "#cfce29"))))
  '(font-lock-string-face ((t (:foreground "#ffbd5c"))))
  '(font-lock-type-face ((t (:foreground "#78a2c1" :bold t))))
+ '(font-lock-variable-name-face ((t (:foreground "#c39cc3"))))
  '(highlight ((t (:background "#171719"))))
  '(ido-subdir ((t (:foreground "#ff5d55"))))
  '(jabber-chat-prompt-foreign ((t (:foreground "#ff5d55"))))

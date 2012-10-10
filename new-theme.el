@@ -35,6 +35,7 @@
  '(flymake-warnline ((t (:background "#9a3200"))))
  '(font-lock-comment-delimiter-face ((t (:foreground "#a9a9a9" :slant italic :weight bold))))
  '(font-lock-comment-face ((t (:foreground "#a9a9a9" :slant italic))))
+ '(font-lock-constant-face ((t (:foreground "#93d8d8"))))
  '(font-lock-doc-face ((t (:foreground "#9ad870"))))
  '(font-lock-function-name-face ((t (:foreground "#78a2c1"))))
  '(font-lock-keyword-face ((t (:foreground "#cfce29"))))

@@ -30,9 +30,9 @@
 (custom-theme-set-faces
  'new
  '(default ((t (:background "#111113" :foreground "#eeeeec"))))
- '(flymake-errline ((t (:background "#8b1a1a"))))
- '(flymake-infoline ((t (:background "#00008b"))))
- '(flymake-warnline ((t (:background "#9a3200"))))
+ '(flymake-errline ((t (:background nil :underline (:color "#ff0000" :style line)))))
+ '(flymake-infoline ((t (:background nil :underline (:color "#00ff00" :style line)))))
+ '(flymake-warnline ((t (:background nil :underline (:color "#0000ff" :style line)))))
  '(font-lock-comment-delimiter-face ((t (:foreground "#a9a9a9" :slant italic :weight bold))))
  '(font-lock-comment-face ((t (:foreground "#a9a9a9" :slant italic))))
  '(font-lock-constant-face ((t (:foreground "#93d8d8"))))

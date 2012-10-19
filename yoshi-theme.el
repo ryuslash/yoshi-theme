@@ -1,4 +1,4 @@
-;;; new-theme.el --- My new theme
+;;; yoshi-theme.el --- Theme named after my cat
 
 ;; Copyright (C) 2012  Tom Willemsen
 
@@ -20,15 +20,16 @@
 
 ;;; Commentary:
 
-;; Just a new theme.
+;; Just a theme named after my cat.  He doesn't actually look like
+;; this.
 
 ;;; Code:
 
-(deftheme new
+(deftheme yoshi
   "Created 2012-09-24")
 
 (custom-theme-set-faces
- 'new
+ 'yoshi
  '(default ((t (:background "#111113" :foreground "#eeeeec"))))
  '(flymake-errline ((t (:background nil :underline (:color "#d16979" :style wave)))))
  '(flymake-infoline ((t (:background nil :underline (:color "#4da5d1" :style wave)))))
@@ -78,5 +79,5 @@
  '(term-color-yellow ((t (:background "#835c0e" :foreground "#ffbb56"))))
  )
 
-(provide-theme 'new)
-;;; new-theme.el ends here
+(provide-theme 'yoshi)
+;;; yoshi-theme.el ends here

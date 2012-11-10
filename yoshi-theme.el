@@ -2,8 +2,9 @@
 
 ;; Copyright (C) 2012  Tom Willemsen
 
-;; Author: Tom Willemsen <slash@drd>
+;; Author: Tom Willemsen <tom@ryuslash.org>
 ;; Keywords: faces
+;; Version: 1.0.0
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by

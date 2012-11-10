@@ -13,3 +13,5 @@ name.
 Place `yoshi-theme.el` in your `custom-theme-load-path` and just call:
 
     (load-theme 'yoshi)
+
+[[contact]]

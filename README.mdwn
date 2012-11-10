@@ -1,0 +1,5 @@
+# Yoshi theme
+
+An [Emacs](http://gnu.org/software/emacs/) theme named after my cat.
+He doesn't actually look anything like this theme!  But I needed a
+name.

@@ -3,3 +3,8 @@
   My cat is named Yoshi and I was just working on a random new theme,
   which was =new-theme= for a while.  I couldn't think of a name so I
   named it after him.
+
+** Installation
+
+   To install place it somewhere in your ~custom-theme-load-path~ and
+   then ~load-theme~.

@@ -4,7 +4,7 @@
 
 ;; Author: Tom Willemsen <tom@ryuslash.org>
 ;; Keywords: faces
-;; Version: 2.0.0
+;; Version: 2.1.0
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -86,6 +86,8 @@
   'yoshi
 
   `(default ((t (:background "#111113" :foreground ,white-1))))
+  `(flycheck-error-face ((t (:foreground nil :underline (:color ,red-2 :style wave)))))
+  `(flycheck-warning-face ((t (:foreground nil :underline (:color ,orange-2 :style wave)))))
   `(flymake-errline ((t (:background nil :underline (:color ,red-2 :style wave)))))
   `(flymake-infoline ((t (:background nil :underline (:color ,blue-2 :style wave)))))
   `(flymake-warnline ((t (:background nil :underline (:color ,orange-2 :style wave)))))

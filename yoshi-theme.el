@@ -63,7 +63,7 @@
  '(jabber-rare-time-face ((t (:foreground "#63a0a0" :weight bold))))
  '(jabber-roster-user-online ((t (:foreground "#769ff2"))))
  '(link ((t (:foreground "#ffbb56" :underline t))))
- '(link-visited ((t (:foreground "#ff9800" :underline t))))
+ '(link-visited ((t (:foreground "#ee82ee" :underline t))))
  '(magit-item-highlight ((t (:weight bold :background nil))))
  '(markdown-header-face-1 ((t (:foreground "#78a2c1"))))
  '(markdown-header-face-2 ((t (:foreground "#93d8d8"))))

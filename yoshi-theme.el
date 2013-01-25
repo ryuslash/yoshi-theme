@@ -105,6 +105,8 @@
  '(rst-level-5 ((t (:background nil))))
  '(rst-level-6 ((t (:background nil))))
  '(sh-heredoc ((t (:foreground "#ffbb56"))))
+ '(show-paren-match ((t (:background "#555557" :weight bold))))
+ '(show-paren-mismatch ((t (:background nil :foreground "#e09591"))))
  '(slime-repl-input-face ((t (:foreground "#828281"))))
  '(slime-repl-inputed-output-face ((t (:foreground "#a5a5a4"))))
  '(slime-repl-output-face ((t (:foreground "#eeeeec"))))

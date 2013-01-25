@@ -33,6 +33,9 @@
  'yoshi
 
  '(default ((t (:background "#111113" :foreground "#eeeeec"))))
+ '(diff-hl-change ((t (:background "#cfce29" :foreground "#cfce29"))))
+ '(diff-hl-delete ((t (:background "#e09591" :foreground "#e09591"))))
+ '(diff-hl-insert ((t (:background "#9ad870" :foreground "#9ad870"))))
  '(flycheck-error-face ((t (:foreground nil :underline (:color "#e09591" :style wave)))))
  '(flycheck-warning-face ((t (:foreground nil :underline (:color "#ffbb56" :style wave)))))
  '(flymake-errline ((t (:background nil :underline (:color "#e09591" :style wave)))))

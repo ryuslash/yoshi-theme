@@ -29,15 +29,18 @@
 (deftheme yoshi
   "Created 2012-09-24")
 
-(let ((lblack   "#a5a5a4") (dblack   "#111113")
-      (lblue    "#78a2c1") (dblue    "#2729b6")
-      (lcyan    "#93d8d8") (dcyan    "#208181")
-      (lgreen   "#9ad870") (dgreen   "#405c2e")
-      (lmagenta "#c39cc3") (dmagenta "#5e325d")
-      (lred     "#e09591") (dred     "#973732")
-      (lwhite   "#eeeeec") (dwhite   "#222224")
-      (lyellow  "#cfce29") (dyellow  "#6a6a15")
-      (lorange  "#ffbb56") (dorange  "#b26900"))
+(let ((lblack     "#a5a5a4") (dblack     "#111113")
+      (lwhite     "#eeeeec") (dwhite     "#222224")
+      (lred       "#ffa6a6") (dred       "#805353")
+      (lorange    "#ffdba6") (dorange    "#806e53")
+      (lyellow    "#edffa6") (dyellow    "#778053")
+      (lgreen     "#b8ffa6") (dgreen     "#5c8053")
+      (lturquoise "#a6ffc9") (dturquoise "#538065")
+      (lcyan      "#a6ffff") (dcyan      "#538080")
+      (lblue      "#a6c9ff") (dblue      "#536580")
+      (lpurple    "#b8a6ff") (dpurple    "#5c5380")
+      (lmagenta   "#eda6ff") (dmagenta   "#775380")
+      (lpink      "#ffa6db") (dpink      "#80536e"))
   (custom-theme-set-faces
    'yoshi
 
@@ -56,8 +59,8 @@
    `(font-lock-comment-face ((t (:foreground ,lblack :slant italic))))
    `(font-lock-constant-face ((t (:foreground ,lcyan))))
    `(font-lock-doc-face ((t (:foreground ,lgreen :inherit unspecified))))
-   `(font-lock-function-name-face ((t (:foreground ,lmagenta))))
-   `(font-lock-keyword-face ((t (:foreground ,lyellow :weight bold))))
+   `(font-lock-function-name-face ((t (:foreground ,lpurple))))
+   `(font-lock-keyword-face ((t (:foreground ,lyellow))))
    `(font-lock-string-face ((t (:foreground ,lorange))))
    `(font-lock-type-face ((t (:foreground ,lblue))))
    `(font-lock-variable-name-face ((t (:foreground ,lred))))

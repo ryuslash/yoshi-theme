@@ -4,7 +4,7 @@
 
 ;; Author: Tom Willemsen <tom@ryuslash.org>
 ;; Keywords: faces
-;; Version: 5.0.0
+;; Version: 5.1.0
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -51,6 +51,7 @@
    `(diff-hl-change ((t (:foreground ,lyellow :inherit diff-changed))))
    `(diff-hl-delete ((t (:foreground ,lred :inherit diff-removed))))
    `(diff-hl-insert ((t (:foreground ,lgreen :inherit diff-added))))
+   `(error ((t (:foreground ,lred :weight unspecified))))
    `(flycheck-error-face ((t (:inherit unspecified :underline (:color ,lred :style wave)))))
    `(flycheck-warning-face ((t (:inherit unspecified :underline (:color ,lorange :style wave)))))
    `(flymake-errline ((t (:background unspecified :underline (:color ,lred :style wave)))))

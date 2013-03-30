@@ -159,7 +159,7 @@
    `(link-visited ((t (:foreground ,lmagenta :underline t))))
    `(magit-branch ((t (:foreground ,lpink :weight bold :inherit unspecified))))
    `(magit-item-highlight ((t (:slant italic  :inherit unspecified))))
-   `(magit-section-title ((t (:foreground ,lturquoise :inherit unspecified :underline (:color ,lcyan)))))
+   `(magit-section-title ((t (:foreground ,lturquoise :inherit unspecified))))
    `(markdown-header-face-1 ((t (:inherit org-level-1))))
    `(markdown-header-face-2 ((t (:inherit org-level-2))))
    `(markdown-header-face-3 ((t (:inherit org-level-3))))

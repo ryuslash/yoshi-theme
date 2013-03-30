@@ -220,6 +220,7 @@
    `(rst-level-5 ((t (:background unspecified))))
    `(rst-level-6 ((t (:background unspecified))))
    `(sh-heredoc ((t (:foreground ,lorange))))
+   `(shadow ((t (:foreground ,lwhite))))
    `(show-paren-match ((t (:background ,dwhite :weight bold))))
    `(show-paren-mismatch ((t (:background unspecified :foreground ,lred))))
    `(slime-repl-input-face ((t (:foreground ,lwhite))))

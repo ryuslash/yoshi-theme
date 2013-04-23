@@ -46,7 +46,7 @@
 
    `(compilation-info ((t (:foreground ,lblue :inherit unspecified))))
    `(cursor ((t (:background ,lwhite))))
-   `(default ((t (:background ,dblack :foreground ,lwhite))))
+   `(default ((t (:background ,dwhite :foreground ,lblack))))
    `(diff-added ((t (:background ,dgreen :inherit unspecified))))
    `(diff-changed ((t (:background ,dyellow))))
    `(diff-file-header ((t (:foreground ,lblue :background unspecified :weight bold))))

@@ -1,10 +1,10 @@
 ;;; yoshi-theme.el --- Theme named after my cat
 
-;; Copyright (C) 2012  Tom Willemsen
+;; Copyright (C) 2012,2013  Tom Willemsen
 
 ;; Author: Tom Willemsen <tom@ryuslash.org>
 ;; Keywords: faces
-;; Version: 5.4.0
+;; Version: 5.4.0.4
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -44,6 +44,7 @@
   (custom-theme-set-faces
    'yoshi
 
+   `(compilation-info ((t (:foreground ,lblue :inherit unspecified))))
    `(cursor ((t (:background ,lwhite))))
    `(default ((t (:background ,dblack :foreground ,lwhite))))
    `(diff-added ((t (:background ,dgreen :inherit unspecified))))
@@ -154,13 +155,16 @@
    `(jabber-chat-prompt-system ((t (:foreground ,lgreen :slant italic))))
    `(jabber-rare-time-face ((t (:foreground ,lwhite :underline t))))
    `(jabber-roster-user-away ((t (:foreground ,lgreen :slant italic))))
+   `(jabber-roster-user-chatty ((t (:foreground ,lpink))))
    `(jabber-roster-user-error ((t (:foreground ,lred :slant italic))))
    `(jabber-roster-user-offline ((t (:foreground ,lblack :slant italic))))
    `(jabber-roster-user-online ((t (:foreground ,lblue))))
+   `(js2-external-variable ((t (:foreground ,lmagenta))))
    `(link ((t (:foreground ,lorange :underline t))))
    `(link-visited ((t (:foreground ,lmagenta :underline t))))
    `(magit-branch ((t (:foreground ,lpink :weight bold :inherit unspecified))))
    `(magit-item-highlight ((t (:slant italic  :inherit unspecified))))
+   `(magit-log-sha1 ((t (:foreground ,lmagenta))))
    `(magit-section-title ((t (:foreground ,lturquoise :inherit unspecified))))
    `(markdown-header-face-1 ((t (:inherit org-level-1))))
    `(markdown-header-face-2 ((t (:inherit org-level-2))))
@@ -169,9 +173,9 @@
    `(markdown-header-face-5 ((t (:inherit org-level-5))))
    `(markdown-header-face-6 ((t (:inherit org-level-6))))
    `(minibuffer-prompt ((t (:foreground ,lblue))))
-   `(mode-line ((t (:background ,dwhite :foreground ,lwhite :box (:color ,dwhite :line-width 1 :style nil)))))
+   `(mode-line ((t (:background ,dblue :foreground ,lblack :box (:color ,dwhite :line-width 1 :style nil)))))
    `(mode-line-buffer-id ((t (:foreground ,lpurple :weight bold))))
-   `(mode-line-inactive ((t (:weight normal :background ,dblack :foreground ,dwhite :box (:color ,dwhite :line-width 1 :style nil) :inherit unspecified))))
+   `(mode-line-inactive ((t (:weight normal :background ,dwhite :foreground ,lwhite :box (:color ,dwhite :line-width 1 :style nil) :inherit unspecified))))
    `(org-agenda-calendar-sexp ((t (:foreground ,lyellow))))
    `(org-agenda-current-time ((t (:foreground ,lorange :weight bold))))
    `(org-agenda-date ((t (:foreground ,dcyan))))
@@ -180,6 +184,7 @@
    `(org-agenda-structure ((t (:foreground ,lblue))))
    `(org-checkbox-statistics-done ((t (:foreground ,dcyan))))
    `(org-checkbox-statistics-todo ((t (:foreground ,lcyan))))
+   `(org-date ((t (:foreground ,lpink :underline unspecified))))
    `(org-document-title ((t (:foreground ,lorange :height 1.5))))
    `(org-headline-done ((t (:foreground ,lblack :strike-through t))))
    `(org-level-1 ((t (:foreground ,lred))))
@@ -214,6 +219,7 @@
    `(rainbow-delimiters-depth-8-face ((t (:foreground ,lpurple))))
    `(rainbow-delimiters-depth-9-face ((t (:foreground ,lmagenta))))
    `(rainbow-delimiters-unmatched-face ((t (:background ,dred :foreground unspecified))))
+   `(rebase-mode-description-face ((t (:foreground ,lblack))))
    `(region ((t (:background ,dblue))))
    `(rst-level-1 ((t (:background unspecified))))
    `(rst-level-2 ((t (:background unspecified))))
@@ -222,13 +228,14 @@
    `(rst-level-5 ((t (:background unspecified))))
    `(rst-level-6 ((t (:background unspecified))))
    `(sh-heredoc ((t (:foreground ,lorange))))
-   `(shadow ((t (:foreground ,lblack))))
+   `(shadow ((t (:foreground ,dwhite))))
    `(show-paren-match ((t (:background ,dwhite :weight bold))))
    `(show-paren-mismatch ((t (:background unspecified :foreground ,lred))))
    `(slime-repl-input-face ((t (:foreground ,lblack))))
    `(slime-repl-inputed-output-face ((t (:foreground ,lblack))))
    `(slime-repl-output-face ((t (:foreground ,lwhite))))
    `(slime-repl-prompt-face ((t (:foreground ,lblue))))
+   `(success ((t (:foreground ,lgreen :weight bold))))
    `(term-color-black ((t (:background ,dblack :foreground ,lblack))))
    `(term-color-blue ((t (:background ,dblue :foreground ,lblue))))
    `(term-color-cyan ((t (:background ,dcyan :foreground ,lcyan))))

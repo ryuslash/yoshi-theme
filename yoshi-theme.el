@@ -4,7 +4,7 @@
 
 ;; Author: Tom Willemsen <tom@ryuslash.org>
 ;; Keywords: faces
-;; Version: 5.6.0
+;; Version: 5.6.0.2
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -31,16 +31,16 @@
 
 (let ((lblack     "#ededed") (mblack "#666666") (dblack     "#111111")
       (lwhite     "#bfbfbf") (mwhite "#999999") (dwhite     "#404040")
-      (lred       "#bf7d7d") (dred       "#402929")
-      (lorange    "#bfa47d") (dorange    "#403729")
-      (lyellow    "#b2bf7d") (dyellow    "#3b4029")
-      (lgreen     "#8abf6d") (dgreen     "#2d4029")
-      (lturquoise "#7dbf97") (dturquoise "#294032")
-      (lcyan      "#7dbfbf") (dcyan      "#294040")
-      (lblue      "#6d97bf") (dblue      "#293240")
-      (lpurple    "#8a7dbf") (dpurple    "#2d2940")
-      (lmagenta   "#b27dbf") (dmagenta   "#3b2940")
-      (lpink      "#bf6da4") (dpink      "#402937"))
+      (lred       "#bf6060") (dred       "#402020")
+      (lorange    "#bf9860") (dorange    "#403320")
+      (lyellow    "#acbf60") (dyellow    "#3a4020")
+      (lgreen     "#73bf60") (dgreen     "#264020")
+      (lturquoise "#60bf85") (dturquoise "#20402d")
+      (lcyan      "#60bfbf") (dcyan      "#204040")
+      (lblue      "#6086bf") (dblue      "#202d40")
+      (lpurple    "#7360bf") (dpurple    "#262040")
+      (lmagenta   "#ac60bf") (dmagenta   "#3a2040")
+      (lpink      "#bf6099") (dpink      "#402033"))
   (custom-theme-set-faces
    'yoshi
 
@@ -104,6 +104,8 @@
    `(gnus-cite-7 ((t (:foreground ,lblue))))
    `(gnus-cite-8 ((t (:foreground ,lpurple))))
    `(gnus-cite-9 ((t (:foreground ,lmagenta))))
+   `(gnus-group-mail-3 ((t (:foreground ,lturquoise))))
+   `(gnus-group-mail-3-empty ((t (:foreground ,lturquoise))))
    `(gnus-header-content ((t (:foreground ,mwhite :slant italic))))
    `(gnus-header-from ((t (:weight bold))))
    `(gnus-header-name ((t (:foreground ,lblue :weight bold))))
@@ -131,6 +133,8 @@
    `(identica-uri-face ((t (:foreground ,lorange :underline t))))
    `(identica-username-face ((t (:foreground ,lblue :weight bold :underline unspecified))))
    `(ido-subdir ((t (:foreground ,lred))))
+   `(isearch ((t (:background ,dyellow :foreground unspecified))))
+   `(isearch-fail ((t (:background ,dred))))
    `(italic ((t (:slant italic))))
    `(jabber-activity-face ((t (:foreground ,lred :weight unspecified))))
    `(jabber-activity-personal-face ((t (:foreground ,lblue :weight unspecified))))
@@ -146,8 +150,6 @@
    `(jabber-roster-user-offline ((t (:foreground ,mwhite :slant italic))))
    `(jabber-roster-user-online ((t (:foreground ,lblue))))
    `(jabber-roster-user-xa ((t (:foreground ,lmagenta))))
-   `(isearch ((t (:background ,dyellow :foreground unspecified))))
-   `(isearch-fail ((t (:background ,dred))))
    `(js2-external-variable ((t (:foreground ,lmagenta))))
    `(link ((t (:foreground ,lorange :underline t))))
    `(link-visited ((t (:foreground ,lmagenta :underline t))))
@@ -250,14 +252,14 @@
   (custom-theme-set-variables
    'yoshi
    '(rainbow-delimiters-max-face-count 10)
-   `(fci-rule-color ,dred))
+   `(fci-rule-color ,dred)))
 
 ;;;###autoload
-  (and load-file-name
-       (boundp 'custom-theme-load-path)
-       (add-to-list 'custom-theme-load-path
-                    (file-name-as-directory
-                     (file-name-directory load-file-name)))))
+(and load-file-name
+     (boundp 'custom-theme-load-path)
+     (add-to-list 'custom-theme-load-path
+                  (file-name-as-directory
+                   (file-name-directory load-file-name))))
 
 (provide-theme 'yoshi)
 ;;; yoshi-theme.el ends here

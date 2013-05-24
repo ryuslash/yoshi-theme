@@ -291,7 +291,7 @@
    `(rst-level-6 ((t (:background unspecified))))
    `(sh-heredoc ((t (:foreground ,orange5))))
    `(shadow ((t (:foreground ,gray4))))
-   `(show-paren-match ((t (:background ,gray2 :weight bold))))
+   `(show-paren-match ((t (:inverse-video t))))
    `(show-paren-mismatch ((t (:background unspecified :foreground ,red5))))
    `(slime-repl-input-face ((t (:foreground ,gray6))))
    `(slime-repl-inputed-output-face ((t (:foreground ,gray6))))

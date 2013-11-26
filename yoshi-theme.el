@@ -168,7 +168,7 @@
    `(magit-log-head-label-remote ((t (:foreground ,fgdefault :background ,bggreen :box (:color ,bggreen :line-width 2 :style nil)))))
    `(magit-log-head-label-tags ((t (:foreground ,fgdefault :background ,bgorange :box (:color ,bgorange :line-width 2 :style nil)))))
    `(magit-log-sha1 ((t (:foreground ,fgdefault :background ,bgblue :box (:color ,bgblue :line-width 2 :style nil)))))
-   `(magit-section-title ((t (:foreground ,fgturquoise :inherit unspecified))))
+   `(magit-section-title ((t (:foreground ,fgturquoise :inherit unspecified :height 1.8))))
    `(makefile-space ((t (:background ,bgpink))))
    `(markdown-header-face-1 ((t (:inherit org-level-1))))
    `(markdown-header-face-2 ((t (:inherit org-level-2))))

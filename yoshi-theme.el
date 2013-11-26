@@ -88,7 +88,7 @@
    `(font-lock-comment-delimiter-face ((t (:foreground ,fgdim :weight bold :inherit unspecified))))
    `(font-lock-comment-face ((t (:foreground ,fgdim :slant italic))))
    `(font-lock-constant-face ((t (:foreground ,fgred))))
-   `(font-lock-doc-face ((t (:foreground "#969696" :inherit unspecified))))
+   `(font-lock-doc-face ((t (:foreground ,fggreen :inherit unspecified))))
    `(font-lock-function-name-face ((t (:foreground ,fgblue))))
    `(font-lock-keyword-face ((t (:foreground ,fgorange))))
    `(font-lock-negation-char-face ((t (:foreground ,fgred))))

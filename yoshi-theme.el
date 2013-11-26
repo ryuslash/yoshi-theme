@@ -133,7 +133,7 @@
    `(gnus-summary-low-unread ((t (:inherit gnus-summary-normal-unread :slant italic))))
    `(gnus-summary-normal-ancient ((t (:foreground ,fgcyan))))
    `(gnus-summary-normal-read ((t (:foreground ,fgdim))))
-   `(gnus-summary-normal-ticked ((t (:foreground ,fgred))))
+   `(gnus-summary-normal-ticked ((t (:foreground ,fgdefault :weight bold))))
    `(gnus-summary-normal-unread ((t (:foreground ,fgdefault))))
    `(gnus-summary-selected ((t (:background ,bgblue :weight bold))))
    `(highlight ((t (:background ,bgbright))))

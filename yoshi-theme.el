@@ -97,7 +97,7 @@
    `(font-lock-string-face ((t (:foreground ,fgturquoise))))
    `(font-lock-type-face ((t (:foreground ,fgpurple))))
    `(font-lock-variable-name-face ((t (:foreground ,fgyellow))))
-   `(font-lock-warning-face ((t (:underline (:color ,fgorange) :inherit unspecified))))
+   `(font-lock-warning-face ((t (:foreground ,fgorange :inherit unspecified :weight bold))))
    `(fringe ((t (:background unspecified :inherit default))))
    `(gnus-button ((t (:weight bold))))
    `(gnus-cite-1 ((t (:foreground ,fgred))))

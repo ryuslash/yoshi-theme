@@ -76,7 +76,7 @@
    `(erc-notice-face ((t (:foreground ,fgblue :weight normal))))
    `(erc-prompt-face ((t (:foreground ,fgbright :weight bold))))
    `(erc-timestamp-face ((t (:foreground ,fgdim :weight normal))))
-   `(error ((t (:foreground ,fgred :weight unspecified))))
+   `(error ((t (:foreground ,fgred :weight bold))))
    `(flycheck-error ((t (:inherit unspecified :underline (:color ,fgred :style wave)))))
    `(flycheck-warning ((t (:inherit unspecified :underline (:color ,fgorange :style wave)))))
    `(flymake-errline ((t (:background unspecified :underline (:color ,fgred :style wave)))))

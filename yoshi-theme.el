@@ -194,6 +194,7 @@
    `(org-agenda-date ((t (:foreground ,bgcyan))))
    `(org-agenda-date-today ((t (:foreground ,fgcyan :slant italic))))
    `(org-agenda-date-weekend ((t (:foreground ,fgcyan))))
+   `(org-agenda-done ((t (:foreground ,(color-darken-name fgdim 19)))))
    `(org-agenda-structure ((t (:foreground ,fgblue))))
    `(org-block-background ((t (:background "#222222"))))
    `(org-block-begin-line ((t (:foreground ,fgdefault :background ,(color-darken-name fgdim 39) :slant unspecified :underline ,(color-darken-name fgdim 18)))))

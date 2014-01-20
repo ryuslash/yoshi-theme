@@ -276,6 +276,10 @@
    `(texinfo-heading ((t (:foreground ,fgpink :inherit unspecified :height 1.3))))
    `(warning ((t (:foreground ,fgorange :weight unspecified))))
    `(which-func ((t (:foreground ,fgblue))))
+   `(widget-button ((t (:inherit button))))
+   `(widget-button-pressed ((t (:inherit widget-button :weight bold))))
+   `(widget-documentation ((t (:inherit font-lock-doc-face))))
+   `(widget-field ((t (:background ,bgblue :box (:color ,bgblue :line-width 2)))))
 
    )
 

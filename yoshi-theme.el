@@ -1,10 +1,10 @@
 ;;; yoshi-theme.el --- Theme named after my cat
 
-;; Copyright (C) 2012,2013  Tom Willemsen
+;; Copyright (C) 2012,2013,2014  Tom Willemsen
 
-;; Author: Tom Willemsen <tom@ryuslash.org>
+;; Author: Tom Willemse <tom@ryuslash.org>
 ;; Keywords: faces
-;; Version: 5.8.0
+;; Version: 5.9.0
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by

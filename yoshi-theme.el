@@ -4,7 +4,7 @@
 
 ;; Author: Tom Willemse <tom@ryuslash.org>
 ;; Keywords: faces
-;; Version: 5.9.0
+;; Version: 5.10.0
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -85,6 +85,8 @@
    `(erc-prompt-face ((t (:foreground ,fgbright :weight bold))))
    `(erc-timestamp-face ((t (:foreground ,fgdim :weight normal))))
    `(error ((t (:foreground ,fgred :weight bold))))
+   `(eshell-fringe-status-failure ((t (:foreground ,fgred))))
+   `(eshell-fringe-status-success ((t (:foreground ,fggreen))))
    `(eshell-ls-archive ((t (:foreground ,fgpink :weight unspecified))))
    `(eshell-ls-backup ((t (:foreground ,fgorange))))
    `(eshell-ls-clutter ((t (:foreground ,fgdim :weight unspecified))))

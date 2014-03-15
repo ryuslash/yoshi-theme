@@ -158,7 +158,7 @@
    `(gnus-summary-normal-ticked ((t (:foreground ,fgdefault :weight bold))))
    `(gnus-summary-normal-unread ((t (:foreground ,fgdefault))))
    `(gnus-summary-selected ((t (:background ,bgblue :weight bold))))
-   `(highlight ((t (:background ,bgbright))))
+   `(highlight ((t (:background ,bgcyan))))
    `(highlight-80+ ((t (:underline (:color ,fgred :style wave) :background unspecified))))
    `(identica-stripe-face ((t (:background ,bgbright))))
    `(identica-uri-face ((t (:foreground ,fgorange :underline t))))

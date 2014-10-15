@@ -184,6 +184,7 @@
    `(js2-external-variable ((t (:foreground ,fgmagenta))))
    `(link ((t (:foreground ,fgorange :underline t))))
    `(link-visited ((t (:foreground ,fgmagenta :underline t))))
+   `(magit-blame-header ((t (:foreground ,fggreen :background ,bgdim :weight bold :inherit unspecified))))
    `(magit-branch ((t (:foreground ,fgpink :weight bold :inherit unspecified))))
    `(magit-item-highlight ((t (:slant italic  :inherit unspecified))))
    `(magit-log-head-label-local ((t (:foreground ,fgdefault :background ,bgmagenta :box (:color ,bgmagenta :line-width 2 :style nil)))))

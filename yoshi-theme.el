@@ -266,7 +266,7 @@
    `(rst-level-4 ((t (:background unspecified))))
    `(rst-level-5 ((t (:background unspecified))))
    `(rst-level-6 ((t (:background unspecified))))
-   `(sh-escaped-newline ((t (:foreground ,fgpurple :inherit unspecified))))
+   `(sh-escaped-newline ((t (:foreground ,fgpurple :inherit unspecified :weight bold))))
    `(sh-heredoc ((t (:foreground ,fggreen))))
    `(sh-quoted-exec ((t (:foreground ,fgpink))))
    `(shadow ((t (:foreground ,fgdim))))

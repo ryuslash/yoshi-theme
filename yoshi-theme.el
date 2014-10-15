@@ -66,7 +66,7 @@
    `(diff-hl-change ((t (:foreground ,fgyellow :background unspecified :inherit diff-changed))))
    `(diff-hl-delete ((t (:foreground ,fgred :inherit diff-removed))))
    `(diff-hl-insert ((t (:foreground ,fggreen :inherit diff-added))))
-   `(diff-hunk-header ((t (:inherit unspecified :weight bold))))
+   `(diff-hunk-header ((t (:inherit unspecified :weight bold :foreground ,fgyellow :underline t))))
    `(diff-indicator-added ((t (:foreground ,fggreen :weight bold :inherit unspecified))))
    `(diff-indicator-changed ((t (:foreground ,fgyellow :weight bold :inherit unspecified ))))
    `(diff-indicator-removed ((t (:foreground ,fgred :weight bold :inherit unspecified))))

@@ -293,6 +293,7 @@
    `(term-color-white ((t (:background ,bgbright :foreground ,fgdefault))))
    `(term-color-yellow ((t (:background ,bgyellow :foreground ,fgyellow))))
    `(texinfo-heading ((t (:foreground ,fgpink :inherit unspecified :height 1.3))))
+   `(trailing-whitespace ((t (:background ,fgred))))
    `(warning ((t (:foreground ,fgorange :weight unspecified))))
    `(which-func ((t (:foreground ,fgblue))))
    `(whitespace-empty ((t (:background ,bgcyan :foreground ,fgdefault))))

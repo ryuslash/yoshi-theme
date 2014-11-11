@@ -305,7 +305,7 @@
    `(whitespace-space ((t (:background unspecified :foreground ,fgpink))))
    `(whitespace-space-after-tab ((t (:background ,bgorange :foreground unspecified))))
    `(whitespace-space-before-tab ((t (:background ,bgorange :foreground unspecified))))
-   `(whitespace-tab ((t (:background unspecified :foreground ,fgdim-2))))
+   `(whitespace-tab ((t (:background unspecified :foreground ,fgdim-1))))
    `(whitespace-trailing ((t (:background ,bgorange :foreground unspecified))))
    `(widget-button ((t (:inherit button))))
    `(widget-button-pressed ((t (:inherit widget-button :weight bold))))

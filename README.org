@@ -8,3 +8,7 @@
 
    To install place it somewhere in your ~custom-theme-load-path~ and
    then ~load-theme~.
+
+** Screenshot
+
+   [[file:screenshot.png]]

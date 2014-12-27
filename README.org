@@ -4,11 +4,17 @@
   which was =new-theme= for a while.  I couldn't think of a name so I
   named it after him.
 
+** Screenshot
+
+   [[file:screenshot.png]]
+
+** License
+
+   This project is licensed under the GNU General Public License
+   version 3 or (at your option) any later version. You can read the
+   terms of this license [[file:COPYING][here]].
+
 ** Installation
 
    To install place it somewhere in your ~custom-theme-load-path~ and
    then ~load-theme~.
-
-** Screenshot
-
-   [[file:screenshot.png]]

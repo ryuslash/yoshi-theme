@@ -160,6 +160,7 @@
    `(gnus-summary-selected ((t (:background ,bgblue :weight bold))))
    `(highlight ((t (:background ,bgcyan))))
    `(highlight-80+ ((t (:underline (:color ,fgred :style wave) :background unspecified))))
+   `(hl-indent-face ((t (:inherit unspecified :background ,bgbright))))
    `(identica-stripe-face ((t (:background ,bgbright))))
    `(identica-uri-face ((t (:foreground ,fgorange :underline t))))
    `(identica-username-face ((t (:foreground ,fgblue :weight bold :underline unspecified))))

@@ -1,10 +1,10 @@
 ;;; yoshi-theme.el --- Theme named after my cat
 
-;; Copyright (C) 2012,2013,2014  Tom Willemsen
+;; Copyright (C) 2012, 2013, 2014, 2015  Tom Willemsen
 
 ;; Author: Tom Willemse <tom@ryuslash.org>
 ;; Keywords: faces
-;; Version: 5.11.0
+;; Version: 5.12.0
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -85,6 +85,8 @@
    `(erc-prompt-face ((t (:foreground ,fgbright :weight bold))))
    `(erc-timestamp-face ((t (:foreground ,fgdim :weight normal))))
    `(error ((t (:foreground ,fgred :weight bold))))
+   `(ert-test-result-expected ((t (:background unspecified :foreground ,fggreen))))
+   `(ert-test-result-unexpected ((t (:background unspecified :foreground ,fgred))))
    `(eshell-fringe-status-failure ((t (:foreground ,fgred))))
    `(eshell-fringe-status-success ((t (:foreground ,fggreen))))
    `(eshell-ls-archive ((t (:foreground ,fgpink :weight unspecified))))

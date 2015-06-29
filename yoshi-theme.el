@@ -186,6 +186,7 @@
    `(jabber-roster-user-online ((t (:foreground ,fgblue))))
    `(jabber-roster-user-xa ((t (:foreground ,fgmagenta))))
    `(js2-external-variable ((t (:foreground ,fgmagenta))))
+   `(js2-function-param ((t (:foreground ,fggreen))))
    `(link ((t (:foreground ,fgorange :underline t))))
    `(link-visited ((t (:foreground ,fgmagenta :underline t))))
    `(magit-blame-header ((t (:foreground ,fggreen :background ,bgdim :weight bold :inherit unspecified))))

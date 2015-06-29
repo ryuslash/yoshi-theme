@@ -195,6 +195,8 @@
    `(magit-log-head-label-local ((t (:foreground ,fgdefault :background ,bgmagenta :box (:color ,bgmagenta :line-width 2 :style nil)))))
    `(magit-log-head-label-remote ((t (:foreground ,fgdefault :background ,bggreen :box (:color ,bggreen :line-width 2 :style nil)))))
    `(magit-log-head-label-tags ((t (:foreground ,fgdefault :background ,bgorange :box (:color ,bgorange :line-width 2 :style nil)))))
+   `(magit-log-head-label-head ((t (:foreground ,fgdefault :background ,bgblue :box (:color ,bgblue :line-width 2 :style nil)))))
+   `(magit-log-head-label-default ((t (:foreground ,fgdefault :background ,bgcyan :box (:color ,bgcyan :line-width 2 :style nil)))))
    `(magit-log-sha1 ((t (:foreground ,fgdefault :background ,bgblue :box (:color ,bgblue :line-width 2 :style nil)))))
    `(magit-section-title ((t (:foreground ,fgturquoise :inherit unspecified :height 1.8))))
    `(makefile-space ((t (:background ,bgpink))))

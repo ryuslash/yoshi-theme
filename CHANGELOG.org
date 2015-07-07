@@ -1,0 +1,69 @@
+#+TITLE: Change Log
+#+STARTUP: content
+#+OPTIONS: H:1 num:nil author:nil creator:nil timestamp:nil toc:nil
+#+HTML_HEAD: <link type="text/css" rel="stylesheet" href="style.css"/>
+#+TODO: ADDED CHANGED DEPRECATED REMOVED FIXED SECURITY
+
+All notable changes to this project will be documented in this file.
+This project adheres to [[http://semver.org][Semantic Versioning]].
+
+* [[https://github.com/ryuslash/yoshi-theme/compare/v5.13.0...HEAD][Unreleased]]
+
+** ADDED =js2-function-param= face.
+
+** ADDED =magit-log-head-label-head= face.
+
+** ADDED =magit-log-head-label-default= face.
+
+** ADDED Some hydra faces.
+
+   Add the =hydra-face-amaranth=, =hydra-face-blue=, =hydra-face-pink=,
+   =hydra-face-red= and =hydra-face-teal= faces.
+
+** CHANGED Change faces to stop using certain colors.
+
+** CHANGED Change =gnus-signature= foreground to =fgdim=.
+
+** CHANGED Change =message-header-xheader= foreground to =fgdim= and make it italic.
+
+** CHANGED Change =mode-line= background and box color to =bgblue=.
+
+** CHANGED Change =mode-line-buffer-id= foreground to =fggreen=.
+
+** CHANGED Change =org-agenda-done= foreground to =fgorange=.
+
+** CHANGED Remove =org-block-begin-line= background.
+
+** CHANGED Remove =org-block-end-line= background.
+
+** CHANGED Change =org-headline-done= foreground to =fgdim=.
+
+** CHANGED Remove bold weight from =org-level-1=.
+
+** CHANGED Change =org-level-2= foreground to =fgcyan= and remove bold weight.
+
+** CHANGED Change =org-level-3= foreground to =fgred= and remove bold weight.
+
+** CHANGED Change =org-level-4= foreground to =fgblue= and remove bold weight.
+
+** CHANGED Change =org-level-5= foreground to =fgyellow= and remove bold weight.
+
+** CHANGED Change =org-level-6= foreground to =fgpurple= and remove bold weight.
+
+** CHANGED Change =org-level-7= foreground to =fgturquoise= and remove bold weight.
+
+** CHANGED Change =org-level-8= foreground to =fgorange= and remove bold weight.
+
+** CHANGED Remove =whitespace-tab= foreground and change underline to =bgbright=.
+
+** REMOVED Stop using and remove certain colors for simplicity.
+
+   Stop using and remove the following colors: =fgdim-1=, =fgdim-2=,
+   =fgorange-1=, =fggreen-1=, =fggreen-2=, =fggreen-3=, =fggreen-4= and =bgblue-1=
+   colors.
+
+* COMMENT Local variables
+
+# Local Variables:
+# org-html-validation-link: ""
+# End:

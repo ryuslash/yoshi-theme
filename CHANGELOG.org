@@ -20,6 +20,17 @@ This project adheres to [[http://semver.org][Semantic Versioning]].
    Add the =hydra-face-amaranth=, =hydra-face-blue=, =hydra-face-pink=,
    =hydra-face-red= and =hydra-face-teal= faces.
 
+** ADDED Some magit faces.
+
+   Magit came out with a new version and changed (almost) all the face
+   names. The following faces have been added because of this:
+   =magit-bisect-bad=, =magit-bisect-good=, =magit-bisect-skip=,
+   =magit-blame-date=, =magit-blame-hash=, =magit-blame-heading=,
+   =magit-blame-name=, =magit-blame-summary=, =magit-branch-current=,
+   =magit-branch-local=, =magit-branch-remote=, =magit-diff-added=,
+   =magit-diff-added-highlight=, =magit-diff-context=,
+   =magit-diff-context-highlight=.
+
 ** CHANGED Change faces to stop using certain colors.
 
 ** CHANGED Change =gnus-signature= foreground to =fgdim=.

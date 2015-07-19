@@ -74,6 +74,7 @@
    `(ediff-current-diff-B ((t (:inherit diff-added))))
    `(ediff-fine-diff-A ((t (:inherit diff-refine-removed))))
    `(ediff-fine-diff-B ((t (:inherit diff-refine-added))))
+   `(erc-button ((t (:weight unspecified :inherit button))))
    `(erc-current-nick-face ((t (:foreground ,fgred :weight bold))))
    `(erc-input-face ((t (:inherit shadow))))
    `(erc-my-nick-face ((t (:inherit erc-current-nick-face))))

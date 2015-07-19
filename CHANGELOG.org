@@ -31,6 +31,8 @@ This project adheres to [[http://semver.org][Semantic Versioning]].
    =magit-diff-added-highlight=, =magit-diff-context=,
    =magit-diff-context-highlight=.
 
+** ADDED =erc-button= face.
+
 ** CHANGED Change faces to stop using certain colors.
 
 ** CHANGED Change =gnus-signature= foreground to =fgdim=.

@@ -29,7 +29,9 @@ This project adheres to [[http://semver.org][Semantic Versioning]].
    =magit-blame-name=, =magit-blame-summary=, =magit-branch-current=,
    =magit-branch-local=, =magit-branch-remote=, =magit-diff-added=,
    =magit-diff-added-highlight=, =magit-diff-context=,
-   =magit-diff-context-highlight=.
+   =magit-diff-context-highlight=, =magit-diff-file-heading=,
+   =magit-diff-removed=, =magit-diff-removed-highlight=, =magit-process-ng=,
+   =magit-process-ok=, =magit-section-heading=.
 
 ** ADDED =erc-button= face.
 

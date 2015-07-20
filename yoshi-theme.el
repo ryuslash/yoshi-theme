@@ -52,7 +52,7 @@
    `(default ((t (:background ,bgdefault :foreground ,fgdefault))))
    `(diff-added ((t (:background ,bggreen :inherit unspecified))))
    `(diff-changed ((t (:background ,bgorange))))
-   `(diff-file-header ((t (:foreground ,fgred :background unspecified))))
+   `(diff-file-header ((t (:foreground ,fgbright :background unspecified :weight bold))))
    `(diff-function ((t (:inherit unspecified :foreground ,fgorange))))
    `(diff-header ((t (:background ,bgbright))))
    `(diff-hl-change ((t (:foreground ,fgyellow :background unspecified :inherit diff-changed))))

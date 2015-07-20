@@ -69,6 +69,8 @@ This project adheres to [[http://semver.org][Semantic Versioning]].
 
 ** CHANGED Remove =whitespace-tab= foreground and change underline to =bgbright=.
 
+** CHANGED Change the foreground color of =diff-file-header= to bright and add bold weight
+
 ** REMOVED Stop using and remove certain colors for simplicity.
 
    Stop using and remove the following colors: =fgdim-1=, =fgdim-2=,

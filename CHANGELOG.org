@@ -7,7 +7,9 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [[http://semver.org][Semantic Versioning]].
 
-* [[https://github.com/ryuslash/yoshi-theme/compare/v5.13.0...HEAD][Unreleased]]
+* COMMENT [[https://github.com/ryuslash/yoshi-theme/compare/v6.0.0...HEAD][Unreleased]]
+
+* [[https://github.com/ryuslash/yoshi-theme/compare/v5.13.0...v6.0.0][6.0.0]] -- 2015-08-31
 
 ** ADDED =js2-function-param= face.
 

@@ -7,7 +7,13 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [[http://semver.org][Semantic Versioning]].
 
-* COMMENT [[https://github.com/ryuslash/yoshi-theme/compare/v6.0.0...HEAD][Unreleased]]
+* [[https://github.com/ryuslash/yoshi-theme/compare/v6.0.0...HEAD][Unreleased]]
+** ADDED Some helm faces
+
+   Add the helm faces: =helm-M-x-key=, =helm-buffer-directory=,
+   =helm-buffer-file=, =helm-buffer-not-saved=, =helm-buffer-process=,
+   =helm-buffer-size=, =helm-match=, =helm-selection= and
+   =helm-source-header=.
 
 * [[https://github.com/ryuslash/yoshi-theme/compare/v5.13.0...v6.0.0][6.0.0]] -- 2015-08-31
 

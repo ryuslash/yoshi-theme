@@ -160,7 +160,7 @@
    `(gnus-summary-normal-unread ((t (:foreground ,fgdefault))))
    `(gnus-summary-selected ((t (:background ,bgblue :weight bold))))
    `(helm-M-x-key ((t (:underline unspecified :foreground ,fgpink :weight bold))))
-   `(helm-buffer-directory ((t (:background unspecified :foreground ,fgblue :weight bold))))
+   `(helm-buffer-directory ((t (:background unspecified :foreground ,fgblue))))
    `(helm-buffer-file ((t (:inherit default))))
    `(helm-buffer-not-saved ((t (:foreground ,fgcyan))))
    `(helm-buffer-process ((t (:foreground ,fggreen))))

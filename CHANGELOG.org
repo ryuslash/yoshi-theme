@@ -12,8 +12,9 @@ This project adheres to [[http://semver.org][Semantic Versioning]].
 
    Add the helm faces: =helm-M-x-key=, =helm-buffer-directory=,
    =helm-buffer-file=, =helm-buffer-not-saved=, =helm-buffer-process=,
-   =helm-buffer-size=, =helm-match=, =helm-selection= and
-   =helm-source-header=.
+   =helm-buffer-size=, =helm-match=, =helm-selection=, =helm-source-header=,
+   =helm-ff-directory=, =helm-ff-dotted-directory=, =helm-ff-executable=,
+   =helm-ff-file=, =helm-ff-invalid-symlink=, =helm-ff-symlink=.
 
 ** ADDED Some circe faces
 

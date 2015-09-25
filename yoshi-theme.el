@@ -47,6 +47,8 @@
   (custom-theme-set-faces
    'yoshi
 
+   `(circe-highlight-nick-face ((t (:foreground ,fgred :weight bold))))
+   `(circe-server-face ((t (:foreground ,fgdim))))
    `(compilation-info ((t (:foreground ,fgblue :inherit unspecified))))
    `(cursor ((t (:background ,fgdim))))
    `(default ((t (:background ,bgdefault :foreground ,fgdefault))))
@@ -199,6 +201,8 @@
    `(js2-function-param ((t (:foreground ,fggreen))))
    `(link ((t (:foreground ,fgorange :underline t))))
    `(link-visited ((t (:foreground ,fgmagenta :underline t))))
+   `(lui-button-face ((t (:foreground unspecified :underline unspecified :inherit button))))
+   `(lui-time-stamp-face ((t (:foreground ,fggreen :weight unspecified))))
    `(magit-bisect-bad ((t (:foreground ,fgred))))
    `(magit-bisect-good ((t (:foreground ,fggreen))))
    `(magit-bisect-skip ((t (:foreground ,fgdim))))

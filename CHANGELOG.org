@@ -15,6 +15,15 @@ This project adheres to [[http://semver.org][Semantic Versioning]].
    =helm-buffer-size=, =helm-match=, =helm-selection= and
    =helm-source-header=.
 
+** ADDED Some circe faces
+
+   Add the circe faces: =circe-highlight-nick-face= and
+   =circe-server-face=.
+
+** ADDED Some lui faces
+
+   Add the lui faces: =lui-button-face=, =lui-time-stamp-face=.
+
 * [[https://github.com/ryuslash/yoshi-theme/compare/v5.13.0...v6.0.0][6.0.0]] -- 2015-08-31
 
 ** ADDED =js2-function-param= face.

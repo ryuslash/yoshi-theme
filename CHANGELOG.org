@@ -25,6 +25,11 @@ This project adheres to [[http://semver.org][Semantic Versioning]].
 
    Add the lui faces: =lui-button-face=, =lui-time-stamp-face=.
 
+** ADDED CSS faces
+
+   Add the CSS faces: =css-property=, =css-selector= and
+   =css-proprietary-property=.
+
 * [[https://github.com/ryuslash/yoshi-theme/compare/v5.13.0...v6.0.0][6.0.0]] -- 2015-08-31
 
 ** ADDED =js2-function-param= face.

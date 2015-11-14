@@ -1,7 +1,8 @@
 #+TITLE: Change Log
 #+STARTUP: content
 #+OPTIONS: H:1 num:nil author:nil creator:nil timestamp:nil toc:nil
-#+HTML_HEAD: <link type="text/css" rel="stylesheet" href="style.css"/>
+#+HTML_HEAD: <link type="text/css" rel="stylesheet" href="css/changelog.css"/>
+#+HTML_LINK_UP: ./
 #+TODO: ADDED CHANGED DEPRECATED REMOVED FIXED SECURITY
 
 All notable changes to this project will be documented in this file.
@@ -31,6 +32,9 @@ This project adheres to [[http://semver.org][Semantic Versioning]].
    =css-proprietary-property=.
 
 * [[https://github.com/ryuslash/yoshi-theme/compare/v5.13.0...v6.0.0][6.0.0]] -- 2015-08-31
+  :PROPERTIES:
+  :CUSTOM_ID: release-6.0.0
+  :END:
 
 ** ADDED =js2-function-param= face.
 

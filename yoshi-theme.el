@@ -243,6 +243,7 @@
    `(magit-process-ng ((t (:foreground ,fgred :inherit unspecified))))
    `(magit-process-ok ((t (:foreground ,fggreen :inherit unspecified))))
    `(magit-section-heading ((t (:foreground ,fgturquoise :weight unspecified :height 1.3))))
+   `(magit-section-highlight ((t (:background unspecified :slant italic))))
    `(magit-section-title ((t (:foreground ,fgturquoise :inherit unspecified :height 1.8))))
    `(makefile-space ((t (:background ,bgpink))))
    `(markdown-header-face-1 ((t (:inherit org-level-1))))

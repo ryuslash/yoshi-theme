@@ -33,6 +33,8 @@ This project adheres to [[http://semver.org][Semantic Versioning]].
 
 ** ADDED =magit-section-highlight= face
 
+** ADDED =highlight-numbers-number= face
+
 * [[https://github.com/ryuslash/yoshi-theme/compare/v5.13.0...v6.0.0][6.0.0]] -- 2015-08-31
   :PROPERTIES:
   :CUSTOM_ID: release-6.0.0

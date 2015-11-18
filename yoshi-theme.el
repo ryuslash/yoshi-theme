@@ -180,6 +180,7 @@
    `(helm-source-header ((t (:font-family unspecified :height 1.1 :weight bold :foreground ,fgturquoise :background unspecified))))
    `(highlight ((t (:background ,bgcyan))))
    `(highlight-80+ ((t (:underline (:color ,fgred :style wave) :background unspecified))))
+   `(highlight-numbers-number ((t (:foreground ,fgcyan :inherit unspecified))))
    `(hl-indent-face ((t (:inherit unspecified :background ,bgdim))))
    `(hydra-face-amaranth ((t (:foreground ,fgorange :weight bold))))
    `(hydra-face-blue ((t (:foreground ,fgblue :weight bold))))

@@ -35,6 +35,12 @@ This project adheres to [[http://semver.org][Semantic Versioning]].
 
 ** ADDED =highlight-numbers-number= face
 
+** FIXED Make markdown header faces work without loading Org
+
+   Stop making the =markdown-header-face-*= faces inherit from the
+   equivalent =org-level-*= faces, this kept the markdown faces from
+   working if Org mode wasn't loaded.
+
 * [[https://github.com/ryuslash/yoshi-theme/compare/v5.13.0...v6.0.0][6.0.0]] -- 2015-08-31
   :PROPERTIES:
   :CUSTOM_ID: release-6.0.0

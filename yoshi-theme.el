@@ -456,7 +456,9 @@
   (custom-theme-set-variables
    'yoshi
    '(rainbow-delimiters-max-face-count 10)
-   `(fci-rule-color ,bgred)))
+   `(fci-rule-color ,bgred)
+   `(ansi-color-names-vector [,bgdim ,fgred ,fggreen ,fgyellow
+                              ,fgblue ,fgmagenta ,fgcyan ,fgdim])))
 
 ;;;###autoload
 (and load-file-name

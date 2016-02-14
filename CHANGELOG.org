@@ -8,8 +8,8 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [[http://semver.org][Semantic Versioning]].
 
-* COMMENT [[https://github.com/ryuslash/yoshi-theme/compare/v6.1.0...HEAD][Unreleased]]
-
+* [[https://github.com/ryuslash/yoshi-theme/compare/v6.1.0...HEAD][Unreleased]]
+** ADDED Colors for modes using ansi-color.el, such as Eshell
 * [[https://github.com/ryuslash/yoshi-theme/compare/v6.0.0...v6.1.0][6.1.0]] -- 2015-11-20
   :PROPERTIES:
   :CUSTOM_ID: release-6.1.0

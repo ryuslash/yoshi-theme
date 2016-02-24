@@ -469,7 +469,3 @@
 
 (provide-theme 'yoshi)
 ;;; yoshi-theme.el ends here
-
-;; Local Variables:
-;; eval: (rainbow-mode 1)
-;; End:

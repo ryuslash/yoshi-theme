@@ -93,3 +93,26 @@
    #+BEGIN_SRC emacs-lisp
      (load-theme 'yoshi :no-confirm)
    #+END_SRC
+
+** Installation in Spacemacs
+
+   Edit your .spacemacs file ~(SPC f e d)~ and add the ~yoshi-theme~
+   package:
+
+   #+BEGIN_SRC emacs-lisp
+     dotspacemacs-additional-packages '(yoshi-theme)
+   #+END_SRC
+
+   Add the theme to the top of the themes list to make it the default
+   theme, for example:
+
+   #+BEGIN_SRC emacs-lisp
+     dotspacemacs-themes '(yoshi
+                           monokai
+                           spacemacs-dark
+                           spacemacs-light
+                           solarized-light
+                           solarized-dark
+                           leuven
+                           zenburn)
+   #+END_SRC

@@ -230,6 +230,12 @@
    `(highlight-numbers-number ((t (:foreground ,fgcyan :inherit unspecified))))
 
    ;;; Highlight indent
+   `(hl-indent-block-face-1 ((t (:background ,bgred))))
+   `(hl-indent-block-face-2 ((t (:background ,bgpink))))
+   `(hl-indent-block-face-3 ((t (:background ,bgorange))))
+   `(hl-indent-block-face-4 ((t (:background ,bgyellow))))
+   `(hl-indent-block-face-5 ((t (:background ,bggreen))))
+   `(hl-indent-block-face-6 ((t (:background ,bgturquoise))))
    `(hl-indent-face ((t (:inherit unspecified :background ,bgdim))))
 
    ;;; Hydra

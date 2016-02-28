@@ -60,10 +60,12 @@
 
 *** Installation with ELPA
 
-    To install Yoshi theme using the built-in Emacs package manager
-    you should have [[https://marmalade-repo.org/][Marmalade]] in your =package-archives= list. When
-    that's ready you can =M-x list-packages=, find =yoshi-theme=, press =i=
-    and =x= and you're done.
+    To install Yoshi theme using the built-in Emacs package
+    manager you should have [[https://melpa.org/][MELPA]]
+    or [[https://marmalade-repo.org/][Marmalade]] in your
+    =package-archives= list. When that's ready you can
+    =M-x list-packages=, find =yoshi-theme=, press =i= and =x=
+    and you're done.
 
 *** Installation from git
 

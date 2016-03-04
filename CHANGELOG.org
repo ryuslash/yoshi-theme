@@ -13,6 +13,8 @@ This project adheres to [[http://semver.org][Semantic Versioning]].
 
 ** CHANGED the color of high-scoring unread mails in gnus
 
+** CHANGED the color of normal ticked mails in gnus
+
 * [[https://github.com/ryuslash/yoshi-theme/compare/v6.0.0...v6.1.0][6.1.0]] -- 2015-11-20
   :PROPERTIES:
   :CUSTOM_ID: release-6.1.0

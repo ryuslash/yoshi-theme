@@ -377,7 +377,6 @@
 
    ;;; Rainbow delimiters
    `(rainbow-delimiters-depth-1-face ((t (:foreground ,fgred))))
-   `(rainbow-delimiters-depth-10-face ((t (:foreground ,fgpink))))
    `(rainbow-delimiters-depth-2-face ((t (:foreground ,fgorange))))
    `(rainbow-delimiters-depth-3-face ((t (:foreground ,fgyellow))))
    `(rainbow-delimiters-depth-4-face ((t (:foreground ,fggreen))))
@@ -461,7 +460,6 @@
 
   (custom-theme-set-variables
    'yoshi
-   '(rainbow-delimiters-max-face-count 10)
    `(fci-rule-color ,bgred)
    `(ansi-color-names-vector [,bgdim ,fgred ,fggreen ,fgyellow
                               ,fgblue ,fgmagenta ,fgcyan ,fgdim])))

@@ -372,6 +372,12 @@
    `(outline-7 ((t (:inherit org-level-7))))
    `(outline-8 ((t (:inherit org-level-8))))
 
+   ;;; Package
+   `(package-status-avail-obso ((t (:foreground ,bggreen))))
+   `(package-status-available ((t (:foreground ,fggreen))))
+   `(package-status-dependency ((t (:foreground ,fgdim))))
+   `(package-status-installed ((t (:foreground ,fgdefault))))
+
    ;;; Pretty-print ^L highlight
    `(pp^L-highlight ((t (:box unspecified :foreground ,fgbright))))
 

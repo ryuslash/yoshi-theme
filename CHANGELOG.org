@@ -11,6 +11,12 @@ This project adheres to [[http://semver.org][Semantic Versioning]].
 * [[https://github.com/ryuslash/yoshi-theme/compare/v6.1.0...HEAD][Unreleased]]
 ** ADDED Colors for modes using ansi-color.el, such as Eshell
 
+** ADDED Some package faces
+
+   Add the package faces: =package-status-avail-obso=,
+   =package-status-available=, =package-status-dependency=,
+   =package-status-installed=.
+
 ** CHANGED the color of high-scoring unread mails in gnus
 
 ** CHANGED the color of normal ticked mails in gnus

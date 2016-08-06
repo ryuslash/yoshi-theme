@@ -21,6 +21,8 @@ This project adheres to [[http://semver.org][Semantic Versioning]].
 
 ** CHANGED the color of normal ticked mails in gnus
 
+** CHANGED the padding around the mode-line
+
 ** REMOVED the 10th rainbow delimiters depth face
 
 * [[https://github.com/ryuslash/yoshi-theme/compare/v6.0.0...v6.1.0][6.1.0]] -- 2015-11-20

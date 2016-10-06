@@ -32,7 +32,7 @@
 (deftheme yoshi
   "Created 2012-09-24")
 
-(let ((bgdefault   "#111111") (fgdefault   "#bfbfbf")
+(let ((bgdefault   "#111414") (fgdefault   "#bfbfbf")
       (bgbright    "#3d3d3d") (fgbright    "#ededed")
       (bgdim       "#222222") (fgdim       "#969696")
       (bgred       "#3f1a1a") (fgred       "#a85454")

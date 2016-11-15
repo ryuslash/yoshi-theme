@@ -194,7 +194,7 @@
    `(gnus-header-subject ((t (:foreground ,fgyellow))))
    `(gnus-signature ((t (:foreground ,fgdim :slant italic))))
    `(gnus-splash ((t (:foreground ,fgdefault))))
-   `(gnus-summary-cancelled ((t (:foreground ,fgyellow :background ,bgbright))))
+   `(gnus-summary-cancelled ((t (:foreground ,fgdim :background unspecified :strike-through t))))
    `(gnus-summary-high-ancient ((t (:inherit gnus-summary-normal-ancient :weight bold))))
    `(gnus-summary-high-read ((t (:inherit gnus-summary-normal-read :weight bold))))
    `(gnus-summary-high-ticked ((t (:inherit gnus-summary-normal-ticked :weight bold))))

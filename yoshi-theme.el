@@ -67,6 +67,7 @@
    `(font-lock-variable-name-face ((t (:foreground ,fgyellow))))
    `(font-lock-warning-face ((t (:foreground ,fgorange :inherit unspecified :weight bold))))
    `(fringe ((t (:background unspecified :inherit default))))
+   `(header-line ((t (:background ,bgblue :foreground ,fgbright :box (:color ,bgblue :line-width 5 :style nil)))))
    `(highlight ((t (:background ,bgcyan))))
    `(italic ((t (:slant italic))))
    `(link ((t (:foreground ,fgorange :underline t))))

@@ -123,8 +123,10 @@
    ;;; Ediff
    `(ediff-current-diff-A ((t (:inherit diff-removed))))
    `(ediff-current-diff-B ((t (:inherit diff-added))))
+   `(ediff-current-diff-C ((t (:inherit diff-changed))))
    `(ediff-fine-diff-A ((t (:inherit diff-refine-removed))))
    `(ediff-fine-diff-B ((t (:inherit diff-refine-added))))
+   `(ediff-fine-diff-C ((t (:inherit diff-refine-change))))
 
    ;;; ERC
    `(erc-button ((t (:weight unspecified :inherit button))))

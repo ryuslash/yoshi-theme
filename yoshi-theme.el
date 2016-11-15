@@ -465,6 +465,17 @@
    `(widget-documentation ((t (:inherit font-lock-doc-face))))
    `(widget-field ((t (:background ,bgblue :box (:color ,bgblue :line-width 2)))))
 
+   ;;; rpm-spec-mode
+   `(rpm-spec-tag-face ((t (:foreground ,fgblue))))
+   `(rpm-spec-obsolete-tag-face ((t (:background ,bgred))))
+   `(rpm-spec-macro-face ((t (:foreground ,fgyellow))))
+   `(rpm-spec-var-face ((t (:foreground ,fgcyan))))
+   `(rpm-spec-doc-face ((t (:foreground ,fgmagenta))))
+   `(rpm-spec-dir-face ((t (:foreground ,fgturquoise))))
+   `(rpm-spec-package-face ((t (:foreground ,fgred))))
+   `(rpm-spec-ghost-face ((t (:foreground ,fgred))))
+   `(rpm-spec-section-face ((t (:foreground ,fgyellow :underline t))))
+
    )
 
   (custom-theme-set-variables

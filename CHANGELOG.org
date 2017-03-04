@@ -17,6 +17,16 @@ This project adheres to [[http://semver.org][Semantic Versioning]].
    =package-status-available=, =package-status-dependency=,
    =package-status-installed=.
 
+** ADDED Window divider faces
+
+   Add the Window Divider faces: =window-divider=,
+   =window-divider-first-pixel= and =window-divider-last-pixel=.
+
+** ADDED Window divider settings
+
+   Enable =window-divider-mode= and set the
+   =window-divider-default-right-width= to ~1~.
+
 ** CHANGED the color of high-scoring unread mails in gnus
 
 ** CHANGED the color of normal ticked mails in gnus

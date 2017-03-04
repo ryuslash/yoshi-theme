@@ -476,13 +476,19 @@
    `(rpm-spec-ghost-face ((t (:foreground ,fgred))))
    `(rpm-spec-section-face ((t (:foreground ,fgyellow :underline t))))
 
+   ;;; Window dividers
+   `(window-divider ((t (:foreground ,bgdim))))
+   `(window-divider-first-pixel ((t (:foreground unspecified :inherit window-divider))))
+   `(window-divider-last-pixel ((t (:foreground unspecified :inherit window-divider))))
    )
 
   (custom-theme-set-variables
    'yoshi
    `(fci-rule-color ,bgred)
    `(ansi-color-names-vector [,bgdim ,fgred ,fggreen ,fgyellow
-                              ,fgblue ,fgmagenta ,fgcyan ,fgdim])))
+                              ,fgblue ,fgmagenta ,fgcyan ,fgdim])
+   '(window-divider-mode t)
+   '(window-divider-default-right-width 1)))
 
 ;;;###autoload
 (and load-file-name

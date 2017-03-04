@@ -277,8 +277,12 @@
    `(jabber-roster-user-xa ((t (:foreground ,fgmagenta))))
 
    ;;; JS2 mode
+   `(js2-error ((t (:foreground unspecified :inherit error))))
    `(js2-external-variable ((t (:foreground ,fgmagenta))))
-   `(js2-function-param ((t (:foreground ,fggreen))))
+   `(js2-function-call ((t (:inherit font-lock-function-name-face))))
+   `(js2-function-param ((t (:foreground unspecified :inherit font-lock-variable-name-face))))
+   `(js2-object-property ((t (:inherit font-lock-variable-name-face))))
+   `(js2-warning ((t (:underline unspecified :inherit font-lock-warning-face))))
 
    ;;; Magit
    `(magit-bisect-bad ((t (:foreground ,fgred))))

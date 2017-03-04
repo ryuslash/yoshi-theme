@@ -27,11 +27,21 @@ This project adheres to [[http://semver.org][Semantic Versioning]].
    Enable =window-divider-mode= and set the
    =window-divider-default-right-width= to ~1~.
 
+** ADDED Some js2-mode faces
+
+   Add the JS2 Mode faces: =js2-error=, =js2-function-call=,
+   =js2-object-property=, =js2-warning=.
+
 ** CHANGED the color of high-scoring unread mails in gnus
 
 ** CHANGED the color of normal ticked mails in gnus
 
 ** CHANGED the padding around the mode-line
+
+** CHANGED the JS2 function param face color
+
+   Inherit from =font-lock-warning-face= and don't specify a special
+   underline.
 
 ** REMOVED the 10th rainbow delimiters depth face
 

@@ -356,9 +356,9 @@
    `(org-date ((t (:foreground ,fgpink :underline unspecified))))
    `(org-document-title ((t (:foreground ,fgorange :height 1.5))))
    `(org-headline-done ((t (:foreground ,fgdim))))
-   `(org-level-1 ((t (:foreground ,fggreen))))
-   `(org-level-2 ((t (:foreground ,fgcyan))))
-   `(org-level-3 ((t (:foreground ,fgred))))
+   `(org-level-1 ((t (:foreground ,fggreen :underline t))))
+   `(org-level-2 ((t (:foreground ,fgcyan :weight bold))))
+   `(org-level-3 ((t (:foreground ,fgred :slant italic))))
    `(org-level-4 ((t (:foreground ,fgblue))))
    `(org-level-5 ((t (:foreground ,fgyellow))))
    `(org-level-6 ((t (:foreground ,fgpurple))))
@@ -488,9 +488,10 @@
 
   (custom-theme-set-variables
    'yoshi
-   `(fci-rule-color ,bgred)
    `(ansi-color-names-vector [,bgdim ,fgred ,fggreen ,fgyellow
                               ,fgblue ,fgmagenta ,fgcyan ,fgdim])
+   `(fci-rule-color ,bgred)
+   '(org-fontify-whole-heading-line t)
    '(window-divider-mode t)
    '(window-divider-default-right-width 1)))
 

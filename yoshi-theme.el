@@ -481,7 +481,7 @@
    `(rpm-spec-section-face ((t (:foreground ,fgyellow :underline t))))
 
    ;;; Window dividers
-   `(window-divider ((t (:foreground ,bgdim))))
+   `(window-divider ((t (:foreground ,bgbright))))
    `(window-divider-first-pixel ((t (:foreground unspecified :inherit window-divider))))
    `(window-divider-last-pixel ((t (:foreground unspecified :inherit window-divider))))
    )

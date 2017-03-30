@@ -272,6 +272,13 @@
    `(isearch ((t (:background ,bgyellow :foreground unspecified))))
    `(isearch-fail ((t (:background ,bgred))))
 
+   ;;; Ivy
+   `(ivy-current-match ((t (:background ,bgblue :foreground ,fgdefault))))
+   `(ivy-minibuffer-match-face-1 ((t (:background unspecified :underline t))))
+   `(ivy-minibuffer-match-face-2 ((t (:background unspecified :weight bold))))
+   `(ivy-minibuffer-match-face-3 ((t (:background unspecified :weight bold))))
+   `(ivy-minibuffer-match-face-4 ((t (:background unspecified :weight bold))))
+
    ;;; Jabber
    `(jabber-activity-face ((t (:foreground ,fgred :weight unspecified))))
    `(jabber-activity-personal-face ((t (:foreground ,fgblue :weight unspecified))))

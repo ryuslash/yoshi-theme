@@ -40,6 +40,12 @@ This project adheres to [[http://semver.org][Semantic Versioning]].
    =common-tooltip-search=, =common-tooltip-search-selecion=,
    =common-tooltip-selection=.
 
+** ADDED Some ivy faces
+
+   Add the Ivy faces: =ivy-current-match=,
+   =ivy-minibuffer-match-face-1=, =ivy-minibuffer-match-face-2=,
+   =ivy-minibuffer-match-face-3=, =ivy-minibuffer-match-face-4=.
+
 ** CHANGED the color of high-scoring unread mails in gnus
 
 ** CHANGED the color of normal ticked mails in gnus

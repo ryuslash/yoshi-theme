@@ -32,6 +32,14 @@ This project adheres to [[http://semver.org][Semantic Versioning]].
    Add the JS2 Mode faces: =js2-error=, =js2-function-call=,
    =js2-object-property=, =js2-warning=.
 
+** ADDED Some company-mode faces
+
+   Add the Company faces: =company-preview=, =company-preview-common=,
+   =company-scrollbar-bg=, =company-scrollbar-fg=, =company-tooltip=,
+   =company-tooltip-annotation=, =company-tooltip-common=,
+   =common-tooltip-search=, =common-tooltip-search-selecion=,
+   =common-tooltip-selection=.
+
 ** CHANGED the color of high-scoring unread mails in gnus
 
 ** CHANGED the color of normal ticked mails in gnus

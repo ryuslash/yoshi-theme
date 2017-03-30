@@ -88,6 +88,18 @@
    `(lui-button-face ((t (:foreground unspecified :underline unspecified :inherit button))))
    `(lui-time-stamp-face ((t (:foreground ,fggreen :weight unspecified))))
 
+   ;;; Company
+   `(company-preview ((t (:background unspecified :foreground ,fgdim))))
+   `(company-preview-common ((t (:foreground ,bgcyan :inherit unspecified :weight bold))))
+   `(company-scrollbar-bg ((t (:background ,bgdim))))
+   `(company-scrollbar-fg ((t (:background ,bgbright))))
+   `(company-tooltip ((t (:foreground ,fgdefault :background ,bgdim))))
+   `(company-tooltip-annotation ((t (:foreground ,fgblue))))
+   `(company-tooltip-common ((t (:foreground ,fgcyan))))
+   `(company-tooltip-search ((t (:background ,bgyellow :inherit unspecified))))
+   `(company-tooltip-search-selection ((t (:background ,bgyellow :inherit unspecified))))
+   `(company-tooltip-selection ((t (:background ,bgblue))))
+
    ;;; Compilation
    `(compilation-info ((t (:foreground ,fgblue :inherit unspecified))))
 

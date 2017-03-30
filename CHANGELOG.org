@@ -60,7 +60,8 @@ This project adheres to [[http://semver.org][Semantic Versioning]].
 
    Make the =org-level-1=, =org-level-2= and =org-level-3= stand out
    more by giving them and underline, bold weight and italic slant
-   respectively.
+   respectively. Also give the =org-level-1= and =org-level-2= some
+   extra height.
 
 ** REMOVED the 10th rainbow delimiters depth face
 

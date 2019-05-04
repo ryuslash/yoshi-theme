@@ -46,6 +46,11 @@ This project adheres to [[http://semver.org][Semantic Versioning]].
    =ivy-minibuffer-match-face-1=, =ivy-minibuffer-match-face-2=,
    =ivy-minibuffer-match-face-3=, =ivy-minibuffer-match-face-4=.
 
+** ADDED flycheck-inline faces
+
+   Add the flycheck-inline faces: =flycheck-inline-error=, =flycheck-inline-info=,
+   =flycheck-inline-warning=.
+
 ** CHANGED the color of high-scoring unread mails in gnus
 
 ** CHANGED the color of normal ticked mails in gnus

@@ -173,6 +173,11 @@
    `(flycheck-error ((t (:inherit unspecified :underline (:color ,fgred :style wave)))))
    `(flycheck-warning ((t (:inherit unspecified :underline (:color ,fgorange :style wave)))))
 
+   ;;; Flycheck inline
+   `(flycheck-inline-error ((t (:inherit unspecified :foreground ,fgred :height 0.8))))
+   `(flycheck-inline-info ((t (:inherit unspecified :foreground ,fgblue :height 0.8))))
+   `(flycheck-inline-warning ((t (:inherit unspecified :foreground ,fgorange :height 0.8))))
+
    ;;; Flymake
    `(flymake-errline ((t (:background unspecified :underline (:color ,fgred :style wave)))))
    `(flymake-infoline ((t (:background unspecified :underline (:color ,fgblue :style wave)))))

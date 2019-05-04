@@ -54,7 +54,7 @@
    `(error ((t (:foreground ,fgred :weight bold))))
    `(font-lock-builtin-face ((t (:foreground ,fgcyan))))
    `(font-lock-comment-delimiter-face ((t (:foreground ,fgdim :inherit unspecified))))
-   `(font-lock-comment-face ((t (:foreground ,fgdim))))
+   `(font-lock-comment-face ((t (:foreground ,fgpink))))
    `(font-lock-constant-face ((t (:foreground ,fgred))))
    `(font-lock-doc-face ((t (:foreground ,fggreen :inherit unspecified))))
    `(font-lock-function-name-face ((t (:foreground ,fgblue))))

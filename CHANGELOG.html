@@ -3,10 +3,10 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<meta  name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Change Log</title>
-<meta  name="generator" content="Org-mode" />
+<meta name="generator" content="Org mode" />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
   .title  { text-align: center;
@@ -51,13 +51,98 @@
     border: 1px solid black;
   }
   pre.src:hover:before { display: inline;}
-  pre.src-sh:before    { content: 'sh'; }
-  pre.src-bash:before  { content: 'sh'; }
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
   pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
-  pre.src-R:before     { content: 'R'; }
-  pre.src-perl:before  { content: 'Perl'; }
-  pre.src-java:before  { content: 'Java'; }
-  pre.src-sql:before   { content: 'SQL'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
 
   table { border-collapse:collapse; }
   caption.t-above { caption-side: top; }
@@ -74,6 +159,19 @@
   .footdef  { margin-bottom: 1em; }
   .figure { padding: 1em; }
   .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
   .inlinetask {
     padding: 10px;
     border: 2px solid gray;
@@ -90,6 +188,7 @@
     { font-size: 10px; font-weight: bold; white-space: nowrap; }
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
   /*]]>*/-->
 </style>
 <link type="text/css" rel="stylesheet" href="css/changelog.css"/>
@@ -98,7 +197,7 @@
 @licstart  The following is the entire license notice for the
 JavaScript code in this tag.
 
-Copyright (C) 2012-2013 Free Software Foundation, Inc.
+Copyright (C) 2012-2019 Free Software Foundation, Inc.
 
 The JavaScript code in this tag is free software: you can
 redistribute it and/or modify it under the terms of the GNU
@@ -149,14 +248,147 @@ for the JavaScript code in this tag.
 <h1 class="title">Change Log</h1>
 <p>
 All notable changes to this project will be documented in this file.
-This project adheres to <a href="http://semver.org/">Semantic Versioning</a>.
+This project adheres to <a href="http://semver.org">Semantic Versioning</a>.
 </p>
 
-<div id="outline-container-orgheadline8" class="outline-2">
-<h2 id="release-6.1.0"><a id="orgheadline8"></a><a href="https://github.com/ryuslash/yoshi-theme/compare/v6.0.0...v6.1.0">6.1.0</a> &#x2013; 2015-11-20</h2>
+<div id="outline-container-org38eeafe" class="outline-2">
+<h2 id="release-6.2.0"><a href="https://github.com/ryuslash/yoshi-theme/compare/v6.1.0...v6.2.0">6.2.0</a> &#x2013; 2019-05-05</h2>
+<div class="outline-text-2" id="text-release-6.2.0">
+</div>
+<ul class="org-ul">
+<li><a id="orgb0c344b"></a><span class="todo ADDED">ADDED</span> Colors for modes using ansi-color.el, such as Eshell<br /></li>
+
+<li><a id="orgd618ee1"></a><span class="todo ADDED">ADDED</span> Some package faces<br />
+<div class="outline-text-3" id="text-orgd618ee1">
+<p>
+Add the package faces: <code>package-status-avail-obso</code>,
+<code>package-status-available</code>, <code>package-status-dependency</code>,
+<code>package-status-installed</code>.
+</p>
+</div>
+</li>
+
+<li><a id="org3372e0d"></a><span class="todo ADDED">ADDED</span> Window divider faces<br />
+<div class="outline-text-3" id="text-org3372e0d">
+<p>
+Add the Window Divider faces: <code>window-divider</code>,
+<code>window-divider-first-pixel</code> and <code>window-divider-last-pixel</code>.
+</p>
+</div>
+</li>
+
+<li><a id="org23ce7a0"></a><span class="todo ADDED">ADDED</span> Window divider settings<br />
+<div class="outline-text-3" id="text-org23ce7a0">
+<p>
+Enable <code>window-divider-mode</code> and set the
+<code>window-divider-default-right-width</code> to <code>1</code>.
+</p>
+</div>
+</li>
+
+<li><a id="org61486b0"></a><span class="todo ADDED">ADDED</span> Some js2-mode faces<br />
+<div class="outline-text-3" id="text-org61486b0">
+<p>
+Add the JS2 Mode faces: <code>js2-error</code>, <code>js2-function-call</code>,
+<code>js2-object-property</code>, <code>js2-warning</code>.
+</p>
+</div>
+</li>
+
+<li><a id="org4c39398"></a><span class="todo ADDED">ADDED</span> Some company-mode faces<br />
+<div class="outline-text-3" id="text-org4c39398">
+<p>
+Add the Company faces: <code>company-preview</code>, <code>company-preview-common</code>,
+<code>company-scrollbar-bg</code>, <code>company-scrollbar-fg</code>, <code>company-tooltip</code>,
+<code>company-tooltip-annotation</code>, <code>company-tooltip-common</code>,
+<code>common-tooltip-search</code>, <code>common-tooltip-search-selecion</code>,
+<code>common-tooltip-selection</code>.
+</p>
+</div>
+</li>
+
+<li><a id="org414910d"></a><span class="todo ADDED">ADDED</span> Some ivy faces<br />
+<div class="outline-text-3" id="text-org414910d">
+<p>
+Add the Ivy faces: <code>ivy-current-match</code>,
+<code>ivy-minibuffer-match-face-1</code>, <code>ivy-minibuffer-match-face-2</code>,
+<code>ivy-minibuffer-match-face-3</code>, <code>ivy-minibuffer-match-face-4</code>.
+</p>
+</div>
+</li>
+
+<li><a id="org83ae842"></a><span class="todo ADDED">ADDED</span> flycheck-inline faces<br />
+<div class="outline-text-3" id="text-org83ae842">
+<p>
+Add the flycheck-inline faces: <code>flycheck-inline-error</code>, <code>flycheck-inline-info</code>,
+<code>flycheck-inline-warning</code>.
+</p>
+</div>
+</li>
+
+<li><a id="orgffef94c"></a><span class="todo ADDED">ADDED</span> highlight-indent-guides face<br />
+<div class="outline-text-3" id="text-orgffef94c">
+<p>
+Add the highlight-indent-guides face: <code>highlight-indent-guides-character-face</code>.
+</p>
+</div>
+</li>
+
+<li><a id="org492dde4"></a><span class="todo CHANGED">CHANGED</span> the color of high-scoring unread mails in gnus<br /></li>
+
+<li><a id="org9d26cc9"></a><span class="todo CHANGED">CHANGED</span> the color of normal ticked mails in gnus<br /></li>
+
+<li><a id="org2be9c62"></a><span class="todo CHANGED">CHANGED</span> the padding around the mode-line<br /></li>
+
+<li><a id="org2121d51"></a><span class="todo CHANGED">CHANGED</span> the JS2 function param face color<br />
+<div class="outline-text-3" id="text-org2121d51">
+<p>
+Inherit from <code>font-lock-warning-face</code> and don't specify a special
+underline.
+</p>
+</div>
+</li>
+
+<li><a id="orgfb402b0"></a><span class="todo CHANGED">CHANGED</span> the Diff Highlight faces<br />
+<div class="outline-text-3" id="text-orgfb402b0">
+<p>
+Make the foreground and background color on the <code>diff-hl-change</code>,
+<code>diff-hl-add</code> and <code>diff-hl-remove</code> the same.
+</p>
+</div>
+</li>
+
+<li><a id="org217dd4c"></a><span class="todo CHANGED">CHANGED</span> the top 3 Org heading faces<br />
+<div class="outline-text-3" id="text-org217dd4c">
+<p>
+Make the <code>org-level-1</code>, <code>org-level-2</code> and <code>org-level-3</code> stand out
+more by giving them and underline, bold weight and italic slant
+respectively. Also give the <code>org-level-1</code> and <code>org-level-2</code> some
+extra height.
+</p>
+</div>
+</li>
+
+<li><a id="orgdec9d20"></a><span class="todo CHANGED">CHANGED</span> the color of comments<br />
+<div class="outline-text-3" id="text-orgdec9d20">
+<p>
+Change the color of <code>font-lock-comment-face</code> to stand out more, since comments
+are generally important pieces of information that show up scarcely.
+</p>
+</div>
+</li>
+
+<li><a id="org6a764d6"></a><span class="todo REMOVED">REMOVED</span> the 10th rainbow delimiters depth face<br /></li>
+</ul>
+</div>
+
+<div id="outline-container-org0e218cb" class="outline-2">
+<h2 id="release-6.1.0"><a href="https://github.com/ryuslash/yoshi-theme/compare/v6.0.0...v6.1.0">6.1.0</a> &#x2013; 2015-11-20</h2>
 <div class="outline-text-2" id="text-release-6.1.0">
 </div>
-<ul class="org-ul"><li><a id="orgheadline1"></a><span class="todo ADDED">ADDED</span> Some helm faces<br  /><div class="outline-text-3" id="text-orgheadline1">
+<ul class="org-ul">
+<li><a id="orgbe195bb"></a><span class="todo ADDED">ADDED</span> Some helm faces<br />
+<div class="outline-text-3" id="text-orgbe195bb">
 <p>
 Add the helm faces: <code>helm-M-x-key</code>, <code>helm-buffer-directory</code>,
 <code>helm-buffer-file</code>, <code>helm-buffer-not-saved</code>, <code>helm-buffer-process</code>,
@@ -164,60 +396,74 @@ Add the helm faces: <code>helm-M-x-key</code>, <code>helm-buffer-directory</code
 <code>helm-ff-directory</code>, <code>helm-ff-dotted-directory</code>, <code>helm-ff-executable</code>,
 <code>helm-ff-file</code>, <code>helm-ff-invalid-symlink</code>, <code>helm-ff-symlink</code>.
 </p>
-</div></li>
+</div>
+</li>
 
-<li><a id="orgheadline2"></a><span class="todo ADDED">ADDED</span> Some circe faces<br  /><div class="outline-text-3" id="text-orgheadline2">
+<li><a id="org3c54872"></a><span class="todo ADDED">ADDED</span> Some circe faces<br />
+<div class="outline-text-3" id="text-org3c54872">
 <p>
 Add the circe faces: <code>circe-highlight-nick-face</code> and
 <code>circe-server-face</code>.
 </p>
-</div></li>
+</div>
+</li>
 
-<li><a id="orgheadline3"></a><span class="todo ADDED">ADDED</span> Some lui faces<br  /><div class="outline-text-3" id="text-orgheadline3">
+<li><a id="org2671c34"></a><span class="todo ADDED">ADDED</span> Some lui faces<br />
+<div class="outline-text-3" id="text-org2671c34">
 <p>
 Add the lui faces: <code>lui-button-face</code>, <code>lui-time-stamp-face</code>.
 </p>
-</div></li>
+</div>
+</li>
 
-<li><a id="orgheadline4"></a><span class="todo ADDED">ADDED</span> CSS faces<br  /><div class="outline-text-3" id="text-orgheadline4">
+<li><a id="org305abad"></a><span class="todo ADDED">ADDED</span> CSS faces<br />
+<div class="outline-text-3" id="text-org305abad">
 <p>
 Add the CSS faces: <code>css-property</code>, <code>css-selector</code> and
 <code>css-proprietary-property</code>.
 </p>
-</div></li>
+</div>
+</li>
 
-<li><a id="orgheadline5"></a><span class="todo ADDED">ADDED</span> <code>magit-section-highlight</code> face<br  /></li>
+<li><a id="org44f75f3"></a><span class="todo ADDED">ADDED</span> <code>magit-section-highlight</code> face<br /></li>
 
-<li><a id="orgheadline6"></a><span class="todo ADDED">ADDED</span> <code>highlight-numbers-number</code> face<br  /></li>
+<li><a id="org7b8ec07"></a><span class="todo ADDED">ADDED</span> <code>highlight-numbers-number</code> face<br /></li>
 
-<li><a id="orgheadline7"></a><span class="todo FIXED">FIXED</span> Make markdown header faces work without loading Org<br  /><div class="outline-text-3" id="text-orgheadline7">
+<li><a id="orge824738"></a><span class="todo FIXED">FIXED</span> Make markdown header faces work without loading Org<br />
+<div class="outline-text-3" id="text-orge824738">
 <p>
 Stop making the <code>markdown-header-face-*</code> faces inherit from the
 equivalent <code>org-level-*</code> faces, this kept the markdown faces from
 working if Org mode wasn't loaded.
 </p>
-</div></li></ul>
+</div>
+</li>
+</ul>
 </div>
 
-<div id="outline-container-orgheadline35" class="outline-2">
-<h2 id="release-6.0.0"><a id="orgheadline35"></a><a href="https://github.com/ryuslash/yoshi-theme/compare/v5.13.0...v6.0.0">6.0.0</a> &#x2013; 2015-08-31</h2>
+<div id="outline-container-org13b25d5" class="outline-2">
+<h2 id="release-6.0.0"><a href="https://github.com/ryuslash/yoshi-theme/compare/v5.13.0...v6.0.0">6.0.0</a> &#x2013; 2015-08-31</h2>
 <div class="outline-text-2" id="text-release-6.0.0">
 </div>
 
-<ul class="org-ul"><li><a id="orgheadline9"></a><span class="todo ADDED">ADDED</span> <code>js2-function-param</code> face.<br  /></li>
+<ul class="org-ul">
+<li><a id="orgf2eae48"></a><span class="todo ADDED">ADDED</span> <code>js2-function-param</code> face.<br /></li>
 
-<li><a id="orgheadline10"></a><span class="todo ADDED">ADDED</span> <code>magit-log-head-label-head</code> face.<br  /></li>
+<li><a id="orgc18b4c5"></a><span class="todo ADDED">ADDED</span> <code>magit-log-head-label-head</code> face.<br /></li>
 
-<li><a id="orgheadline11"></a><span class="todo ADDED">ADDED</span> <code>magit-log-head-label-default</code> face.<br  /></li>
+<li><a id="org0c71a13"></a><span class="todo ADDED">ADDED</span> <code>magit-log-head-label-default</code> face.<br /></li>
 
-<li><a id="orgheadline12"></a><span class="todo ADDED">ADDED</span> Some hydra faces.<br  /><div class="outline-text-3" id="text-orgheadline12">
+<li><a id="org9b6e73d"></a><span class="todo ADDED">ADDED</span> Some hydra faces.<br />
+<div class="outline-text-3" id="text-org9b6e73d">
 <p>
 Add the <code>hydra-face-amaranth</code>, <code>hydra-face-blue</code>, <code>hydra-face-pink</code>,
 <code>hydra-face-red</code> and <code>hydra-face-teal</code> faces.
 </p>
-</div></li>
+</div>
+</li>
 
-<li><a id="orgheadline13"></a><span class="todo ADDED">ADDED</span> Some magit faces.<br  /><div class="outline-text-3" id="text-orgheadline13">
+<li><a id="orgd62b476"></a><span class="todo ADDED">ADDED</span> Some magit faces.<br />
+<div class="outline-text-3" id="text-orgd62b476">
 <p>
 Magit came out with a new version and changed (almost) all the face
 names. The following faces have been added because of this:
@@ -230,55 +476,59 @@ names. The following faces have been added because of this:
 <code>magit-diff-removed</code>, <code>magit-diff-removed-highlight</code>, <code>magit-process-ng</code>,
 <code>magit-process-ok</code>, <code>magit-section-heading</code>.
 </p>
-</div></li>
+</div>
+</li>
 
-<li><a id="orgheadline14"></a><span class="todo ADDED">ADDED</span> <code>erc-button</code> face.<br  /></li>
+<li><a id="org5d86bc7"></a><span class="todo ADDED">ADDED</span> <code>erc-button</code> face.<br /></li>
 
-<li><a id="orgheadline15"></a><span class="todo CHANGED">CHANGED</span> Change faces to stop using certain colors.<br  /></li>
+<li><a id="orgb956a8a"></a><span class="todo CHANGED">CHANGED</span> Change faces to stop using certain colors.<br /></li>
 
-<li><a id="orgheadline16"></a><span class="todo CHANGED">CHANGED</span> Change <code>gnus-signature</code> foreground to <code>fgdim</code>.<br  /></li>
+<li><a id="org443f382"></a><span class="todo CHANGED">CHANGED</span> Change <code>gnus-signature</code> foreground to <code>fgdim</code>.<br /></li>
 
-<li><a id="orgheadline17"></a><span class="todo CHANGED">CHANGED</span> Change <code>message-header-xheader</code> foreground to <code>fgdim</code> and make it italic.<br  /></li>
+<li><a id="org5715119"></a><span class="todo CHANGED">CHANGED</span> Change <code>message-header-xheader</code> foreground to <code>fgdim</code> and make it italic.<br /></li>
 
-<li><a id="orgheadline18"></a><span class="todo CHANGED">CHANGED</span> Change <code>mode-line</code> background and box color to <code>bgblue</code>.<br  /></li>
+<li><a id="org3c6cb2e"></a><span class="todo CHANGED">CHANGED</span> Change <code>mode-line</code> background and box color to <code>bgblue</code>.<br /></li>
 
-<li><a id="orgheadline19"></a><span class="todo CHANGED">CHANGED</span> Change <code>mode-line-buffer-id</code> foreground to <code>fggreen</code>.<br  /></li>
+<li><a id="org988f032"></a><span class="todo CHANGED">CHANGED</span> Change <code>mode-line-buffer-id</code> foreground to <code>fggreen</code>.<br /></li>
 
-<li><a id="orgheadline20"></a><span class="todo CHANGED">CHANGED</span> Change <code>org-agenda-done</code> foreground to <code>fgorange</code>.<br  /></li>
+<li><a id="orgc0d58be"></a><span class="todo CHANGED">CHANGED</span> Change <code>org-agenda-done</code> foreground to <code>fgorange</code>.<br /></li>
 
-<li><a id="orgheadline21"></a><span class="todo CHANGED">CHANGED</span> Remove <code>org-block-begin-line</code> background.<br  /></li>
+<li><a id="orgbaa621d"></a><span class="todo CHANGED">CHANGED</span> Remove <code>org-block-begin-line</code> background.<br /></li>
 
-<li><a id="orgheadline22"></a><span class="todo CHANGED">CHANGED</span> Remove <code>org-block-end-line</code> background.<br  /></li>
+<li><a id="org1d317cd"></a><span class="todo CHANGED">CHANGED</span> Remove <code>org-block-end-line</code> background.<br /></li>
 
-<li><a id="orgheadline23"></a><span class="todo CHANGED">CHANGED</span> Change <code>org-headline-done</code> foreground to <code>fgdim</code>.<br  /></li>
+<li><a id="orga44542c"></a><span class="todo CHANGED">CHANGED</span> Change <code>org-headline-done</code> foreground to <code>fgdim</code>.<br /></li>
 
-<li><a id="orgheadline24"></a><span class="todo CHANGED">CHANGED</span> Remove bold weight from <code>org-level-1</code>.<br  /></li>
+<li><a id="orgfc9c58c"></a><span class="todo CHANGED">CHANGED</span> Remove bold weight from <code>org-level-1</code>.<br /></li>
 
-<li><a id="orgheadline25"></a><span class="todo CHANGED">CHANGED</span> Change <code>org-level-2</code> foreground to <code>fgcyan</code> and remove bold weight.<br  /></li>
+<li><a id="org1a5afd4"></a><span class="todo CHANGED">CHANGED</span> Change <code>org-level-2</code> foreground to <code>fgcyan</code> and remove bold weight.<br /></li>
 
-<li><a id="orgheadline26"></a><span class="todo CHANGED">CHANGED</span> Change <code>org-level-3</code> foreground to <code>fgred</code> and remove bold weight.<br  /></li>
+<li><a id="org2e32ced"></a><span class="todo CHANGED">CHANGED</span> Change <code>org-level-3</code> foreground to <code>fgred</code> and remove bold weight.<br /></li>
 
-<li><a id="orgheadline27"></a><span class="todo CHANGED">CHANGED</span> Change <code>org-level-4</code> foreground to <code>fgblue</code> and remove bold weight.<br  /></li>
+<li><a id="org84736d1"></a><span class="todo CHANGED">CHANGED</span> Change <code>org-level-4</code> foreground to <code>fgblue</code> and remove bold weight.<br /></li>
 
-<li><a id="orgheadline28"></a><span class="todo CHANGED">CHANGED</span> Change <code>org-level-5</code> foreground to <code>fgyellow</code> and remove bold weight.<br  /></li>
+<li><a id="org7523709"></a><span class="todo CHANGED">CHANGED</span> Change <code>org-level-5</code> foreground to <code>fgyellow</code> and remove bold weight.<br /></li>
 
-<li><a id="orgheadline29"></a><span class="todo CHANGED">CHANGED</span> Change <code>org-level-6</code> foreground to <code>fgpurple</code> and remove bold weight.<br  /></li>
+<li><a id="orge09e103"></a><span class="todo CHANGED">CHANGED</span> Change <code>org-level-6</code> foreground to <code>fgpurple</code> and remove bold weight.<br /></li>
 
-<li><a id="orgheadline30"></a><span class="todo CHANGED">CHANGED</span> Change <code>org-level-7</code> foreground to <code>fgturquoise</code> and remove bold weight.<br  /></li>
+<li><a id="orgdb5ae92"></a><span class="todo CHANGED">CHANGED</span> Change <code>org-level-7</code> foreground to <code>fgturquoise</code> and remove bold weight.<br /></li>
 
-<li><a id="orgheadline31"></a><span class="todo CHANGED">CHANGED</span> Change <code>org-level-8</code> foreground to <code>fgorange</code> and remove bold weight.<br  /></li>
+<li><a id="orgcac25df"></a><span class="todo CHANGED">CHANGED</span> Change <code>org-level-8</code> foreground to <code>fgorange</code> and remove bold weight.<br /></li>
 
-<li><a id="orgheadline32"></a><span class="todo CHANGED">CHANGED</span> Remove <code>whitespace-tab</code> foreground and change underline to <code>bgbright</code>.<br  /></li>
+<li><a id="org194c885"></a><span class="todo CHANGED">CHANGED</span> Remove <code>whitespace-tab</code> foreground and change underline to <code>bgbright</code>.<br /></li>
 
-<li><a id="orgheadline33"></a><span class="todo CHANGED">CHANGED</span> Change the foreground color of <code>diff-file-header</code> to bright and add bold weight<br  /></li>
+<li><a id="org556c988"></a><span class="todo CHANGED">CHANGED</span> Change the foreground color of <code>diff-file-header</code> to bright and add bold weight<br /></li>
 
-<li><a id="orgheadline34"></a><span class="todo REMOVED">REMOVED</span> Stop using and remove certain colors for simplicity.<br  /><div class="outline-text-3" id="text-orgheadline34">
+<li><a id="org2e18690"></a><span class="todo REMOVED">REMOVED</span> Stop using and remove certain colors for simplicity.<br />
+<div class="outline-text-3" id="text-org2e18690">
 <p>
 Stop using and remove the following colors: <code>fgdim-1</code>, <code>fgdim-2</code>,
 <code>fgorange-1</code>, <code>fggreen-1</code>, <code>fggreen-2</code>, <code>fggreen-3</code>, <code>fggreen-4</code> and <code>bgblue-1</code>
 colors.
 </p>
-</div></li></ul>
+</div>
+</li>
+</ul>
 </div>
 </div>
 <div id="postamble" class="status">

@@ -51,6 +51,10 @@ This project adheres to [[http://semver.org][Semantic Versioning]].
    Add the flycheck-inline faces: =flycheck-inline-error=, =flycheck-inline-info=,
    =flycheck-inline-warning=.
 
+** ADDED highlight-indent-guides face
+
+  Add the highlight-indent-guides face: =highlight-indent-guides-character-face=.
+
 ** CHANGED the color of high-scoring unread mails in gnus
 
 ** CHANGED the color of normal ticked mails in gnus

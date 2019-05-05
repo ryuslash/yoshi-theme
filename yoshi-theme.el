@@ -258,6 +258,9 @@
    `(hl-indent-block-face-6 ((t (:background ,bgturquoise))))
    `(hl-indent-face ((t (:inherit unspecified :background ,bgdim))))
 
+   ;;; Highlight indent guides
+   `(highlight-indent-guides-character-face ((t (:inherit unspecified :foreground ,bgbright))))
+
    ;;; Hydra
    `(hydra-face-amaranth ((t (:foreground ,fgorange :weight bold))))
    `(hydra-face-blue ((t (:foreground ,fgblue :weight bold))))

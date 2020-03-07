@@ -19,6 +19,11 @@ This project adheres to [[http://semver.org][Semantic Versioning]].
 
    Add the hydra-posframe: ~hydra-posframe-show-params~.
 
+** ADDED Colors and variables for flycheck-posframe
+
+   Add the flycheck-posframe faces: ~flycheck-posframe-background-face~,
+   ~flycheck-posframe-border-face~. And variables: ~flycheck-posframe-border-width~.
+
 * [[https://github.com/ryuslash/yoshi-theme/compare/v6.1.0...v6.2.0][6.2.0]] -- 2019-05-05
 :PROPERTIES:
 :CUSTOM_ID: release-6.2.0

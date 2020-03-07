@@ -178,6 +178,10 @@
    `(flycheck-inline-info ((t (:inherit unspecified :foreground ,fgblue :height 0.8))))
    `(flycheck-inline-warning ((t (:inherit unspecified :foreground ,fgorange :height 0.8))))
 
+   ;;; Flycheck posframe
+   `(flycheck-posframe-background-face ((t (:background ,bgdim))))
+   `(flycheck-posframe-border-face ((t (:background ,bgdim))))
+
    ;;; Flymake
    `(flymake-errline ((t (:background unspecified :underline (:color ,fgred :style wave)))))
    `(flymake-infoline ((t (:background unspecified :underline (:color ,fgblue :style wave)))))
@@ -529,7 +533,8 @@
      '(:poshandler posframe-poshandler-frame-bottom-center
                    :internal-border-width 15
                    :internal-border-color ,bgdim
-                   :background-color ,bgdim))))
+                   :background-color ,bgdim))
+   '(flycheck-posframe-border-width 5)))
 
 ;;;###autoload
 (and load-file-name

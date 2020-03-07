@@ -524,7 +524,12 @@
    '(window-divider-mode t)
    '(window-divider-default-right-width 1)
    '(ivy-posframe-border-width 15)
-   '(ivy-posframe-style 'frame-bottom-window-center)))
+   '(ivy-posframe-style 'frame-bottom-window-center)
+   `(hydra-posframe-show-params
+     '(:poshandler posframe-poshandler-frame-bottom-center
+                   :internal-border-width 15
+                   :internal-border-color ,bgdim
+                   :background-color ,bgdim))))
 
 ;;;###autoload
 (and load-file-name

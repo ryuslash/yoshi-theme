@@ -286,6 +286,8 @@
    `(ivy-minibuffer-match-face-2 ((t (:background unspecified :weight bold))))
    `(ivy-minibuffer-match-face-3 ((t (:background unspecified :weight bold))))
    `(ivy-minibuffer-match-face-4 ((t (:background unspecified :weight bold))))
+   `(ivy-posframe ((t (:background ,bgdim :foreground ,fgdefault :inherit unspecified))))
+   `(ivy-posframe-border ((t (:background ,bgdim :inherit unspecified))))
 
    ;;; Jabber
    `(jabber-activity-face ((t (:foreground ,fgred :weight unspecified))))
@@ -520,7 +522,9 @@
    `(fci-rule-color ,bgred)
    '(org-fontify-whole-heading-line t)
    '(window-divider-mode t)
-   '(window-divider-default-right-width 1)))
+   '(window-divider-default-right-width 1)
+   '(ivy-posframe-border-width 15)
+   '(ivy-posframe-style 'frame-bottom-window-center)))
 
 ;;;###autoload
 (and load-file-name

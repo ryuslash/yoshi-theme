@@ -12,7 +12,7 @@ This project adheres to [[http://semver.org][Semantic Versioning]].
 
 ** ADDED Colors and variables for ivy-posframe
 
-   Add the ivy-posframe faces: ~ivy-posframe~, ~ivy-posframe-border~,
+   Add the ivy-posframe faces: ~ivy-posframe~, ~ivy-posframe-border~. And variables:
    ~ivy-posframe-border-width~, ~ivy-posframe-style~.
 
 ** ADDED Variables for hydra-posframe

@@ -24,6 +24,15 @@ This project adheres to [[http://semver.org][Semantic Versioning]].
    Add the flycheck-posframe faces: ~flycheck-posframe-background-face~,
    ~flycheck-posframe-border-face~. And variables: ~flycheck-posframe-border-width~.
 
+** CHANGED the background colors of org blocks
+
+   Instead of showing an underline and an overline for the beginning and end
+   blocks, give them a background color. With the variable
+   =org-fontify-whole-block-delimiter-line= set to =t=, this causes it to create a
+   line-thick border at the top and bottom of the block. The background of the
+   block itself has been changed to match that of other highlighted backgrounds,
+   such as the posframe pop-ups for ivy and company.
+
 * [[https://github.com/ryuslash/yoshi-theme/compare/v6.1.0...v6.2.0][6.2.0]] -- 2019-05-05
 :PROPERTIES:
 :CUSTOM_ID: release-6.2.0

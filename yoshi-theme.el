@@ -525,6 +525,7 @@
    `(ansi-color-names-vector [,bgdim ,fgred ,fggreen ,fgyellow
                               ,fgblue ,fgmagenta ,fgcyan ,fgdim])
    `(fci-rule-color ,bgred)
+   '(org-fontify-whole-block-delimiter-line t)
    '(org-fontify-whole-heading-line t)
    '(window-divider-mode t)
    '(window-divider-default-right-width 1)

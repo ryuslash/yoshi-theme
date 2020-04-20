@@ -33,6 +33,11 @@ This project adheres to [[http://semver.org][Semantic Versioning]].
    block itself has been changed to match that of other highlighted backgrounds,
    such as the posframe pop-ups for ivy and company.
 
+** ADDED the setting to fontify whole block delimiter lines
+
+   With =org-fontify-whole-block-delimiter-line= set to =t= the org block colors
+   have a better appearance.
+
 * [[https://github.com/ryuslash/yoshi-theme/compare/v6.1.0...v6.2.0][6.2.0]] -- 2019-05-05
 :PROPERTIES:
 :CUSTOM_ID: release-6.2.0

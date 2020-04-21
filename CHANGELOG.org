@@ -29,9 +29,10 @@ This project adheres to [[http://semver.org][Semantic Versioning]].
    Instead of showing an underline and an overline for the beginning and end
    blocks, give them a background color. With the variable
    =org-fontify-whole-block-delimiter-line= set to =t=, this causes it to create a
-   line-thick border at the top and bottom of the block. The background of the
-   block itself has been changed to match that of other highlighted backgrounds,
-   such as the posframe pop-ups for ivy and company.
+   line-thick border at the top of the block. The background of the block itself
+   has been changed to match that of other highlighted backgrounds, such as the
+   posframe pop-ups for ivy and company. The bottom line has been given the same
+   color so that blocks don't look too busy all over your document.
 
 ** ADDED the setting to fontify whole block delimiter lines
 

@@ -39,6 +39,11 @@ This project adheres to [[http://semver.org][Semantic Versioning]].
    With =org-fontify-whole-block-delimiter-line= set to =t= the org block colors
    have a better appearance.
 
+** ADDED Some ediff faces
+
+   Add the ediff faces: =ediff-even-diff-A=, =ediff-even-diff-B=, =ediff-odd-diff-A=,
+   and =ediff-odd-diff-B=.
+
 * [[https://github.com/ryuslash/yoshi-theme/compare/v6.1.0...v6.2.0][6.2.0]] -- 2019-05-05
 :PROPERTIES:
 :CUSTOM_ID: release-6.2.0

@@ -4,7 +4,7 @@
 
 (require 'custom)
 
-(defun my-make-screenshot ()
+(defun my-make-screenshot (output-directory)
   (let ((standard-output #'external-debugging-output))
     (add-to-list 'custom-theme-load-path "/src")
     (load-theme 'yoshi t)
@@ -16,7 +16,9 @@
     (force-window-update)
     (redisplay)
 
-    (princ (shell-command-to-string "scrot \"/screenshot/screenshot.png\""))
+    (princ (shell-command-to-string
+            (format "scrot %s/screenshot.png"
+                    (shell-quote-argument output-directory))))
 
     (princ
      (with-current-buffer (messages-buffer)

@@ -6,7 +6,7 @@
 
 (defun my-make-screenshot (output-directory)
   (let ((standard-output #'external-debugging-output))
-    (add-to-list 'custom-theme-load-path "/src")
+    (add-to-list 'custom-theme-load-path "/github/workspace")
     (load-theme 'yoshi t)
 
     (find-file "/emacs-lisp.el")

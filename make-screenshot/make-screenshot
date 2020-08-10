@@ -14,7 +14,7 @@ echo "Creating screenshot in ${output_directory}"
 emacs -Q --eval "(setq standard-output #'external-debugging-output)" \
     --eval '(message "Starting Emacs")' \
     --geometry 80x24 \
-    --load make-screenshot.el \
+    --load /make-screenshot.el \
     --eval "(my-make-screenshot \"${output_directory}\")"
 
 ls "${output_directory}"

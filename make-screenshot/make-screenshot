@@ -15,7 +15,7 @@ emacs -Q --eval "(setq standard-output #'external-debugging-output)" \
     --eval '(message "Starting Emacs")' \
     --geometry 80x24 \
     --load /make-screenshot.el \
-    --eval "(my-make-screenshot \"${output_directory}\")"
+    --eval "(my-make-screenshot \"${GITHUB_WORKSPACE}/${output_directory}\")"
 
 ls "${output_directory}"
 kill "$xvfb_pid"

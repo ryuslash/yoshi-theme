@@ -17,7 +17,7 @@
     (redisplay)
 
     (princ (shell-command-to-string
-            (format "scrot %s/screenshot.png"
+            (format "scrot --overwrite %s/screenshot.png"
                     (shell-quote-argument output-directory))))
 
     (princ

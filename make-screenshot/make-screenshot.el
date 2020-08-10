@@ -16,9 +16,15 @@
     (force-window-update)
     (redisplay)
 
-    (princ (shell-command-to-string
-            (format "scrot --overwrite %s/screenshot.png"
-                    (shell-quote-argument output-directory))))
+    (with-temp-buffer
+      (let ((exit-code (call-process-shell-command
+                        (format "scrot --overwrite %s/screenshot.png"
+                                (shell-quote-argument output-directory))
+                        nil
+                        '(t t))))
+        (princ (format "Scrot exit code: %d\n" exit-code)))
+      (princ (format "Scrot output: %s\n"
+                     (buffer-substring-no-properties (point-min) (point-max)))))
 
     (princ
      (with-current-buffer (messages-buffer)

@@ -5,7 +5,7 @@ on:
 
 jobs:
   take-screenshot:
-    name: Load the theme and take a screenshot
+    name: Update the screenshot
     runs-on: ubuntu-latest
     steps:
     - name: Checkout

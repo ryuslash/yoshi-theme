@@ -1,0 +1,11 @@
+name: 'Make Screenshot'
+description: 'Load the theme in Emacs and make a screenshot'
+inputs:
+  output-directory:
+    description: 'The directory in which to output the screenshot'
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.output-directory }}

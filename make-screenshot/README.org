@@ -1,0 +1,5 @@
+This project is an attempt at making a GitHub Action that can be used to automatically make screenshots for any theme that you might publish.
+
+This first version is very strictly tied to my own theme ([[https://github.com/ryuslash/yoshi-theme][yoshi-theme]]) and I intend to generalize it from there for others to use.
+
+Pull requests and issues are welcome.

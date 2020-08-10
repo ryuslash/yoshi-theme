@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+output_directory="$1"
+
+Xvfb :99 -screen 0 896x576x24 -nolisten tcp &
+xvfb_pid="$!"
+
+sleep 3
+
+export DISPLAY=:99
+
+echo "Creating screenshot in ${output_directory}"
+
+emacs -Q --geometry 80x24 --load make-screenshot.el --funcall my-make-screenshot
+
+ls "${output_directory}"
+kill "$xvfb_pid"

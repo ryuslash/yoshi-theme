@@ -1,0 +1,21 @@
+on:
+  push:
+    paths-ignore:
+    - 'screenshot.png'
+
+jobs:
+  take-screenshot:
+    name: Load the theme and take a screenshot
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Take a screenshot
+      uses: ./make-screenshot
+      with:
+        output-directory: .
+    - name: Commit screenshot
+      run: |
+        git add screenshot.png
+        git commit --author="Screenshot maker <tom+screenshot@ryuslash.org>"
+        git push

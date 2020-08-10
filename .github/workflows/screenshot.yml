@@ -16,6 +16,7 @@ jobs:
         output-directory: .
     - name: Commit screenshot
       run: |
+        git config --global user.email "tom+screenshot@ryuslash.org"
+        git config --global user.name "Screenshot maker"
         git add screenshot.png
-        git commit --author="Screenshot maker <tom+screenshot@ryuslash.org>"
         git push

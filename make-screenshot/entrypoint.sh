@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-xvfb_run ./make-screenshot "$@"
+xvfb-run ./make-screenshot "$@"

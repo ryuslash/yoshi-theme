@@ -7,8 +7,8 @@ RUN mkdir /screenshot /src
 VOLUME /screenshot
 VOLUME /src
 
-COPY make-screenshot make-screenshot.el emacs-lisp.el /
+COPY entrypoint.sh make-screenshot make-screenshot.el emacs-lisp.el /
 
 CMD ["/screenshot"]
 
-ENTRYPOINT ["/make-screenshot"]
+ENTRYPOINT ["/entrypoint.sh"]

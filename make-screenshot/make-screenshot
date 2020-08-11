@@ -31,12 +31,12 @@ while true; do
     esac
 done
 
-Xvfb :99 -screen 0 896x576x24 -nolisten tcp &
-xvfb_pid="$!"
+# Xvfb :99 -screen 0 896x576x24 -nolisten tcp &
+# xvfb_pid="$!"
 
-sleep 3
+# sleep 3
 
-export DISPLAY=:99
+# export DISPLAY=:99
 
 echo "Creating screenshot in ${output_directory}"
 
@@ -47,4 +47,4 @@ emacs -Q --eval "(setq standard-output #'external-debugging-output)" \
     --eval "(my-make-screenshot \"${theme_name}\" \"${GITHUB_WORKSPACE}/${output_directory}\")"
 
 ls "${output_directory}"
-kill "$xvfb_pid"
+# kill "$xvfb_pid"

@@ -4,8 +4,14 @@ inputs:
   output-directory:
     description: 'The directory in which to output the screenshot'
     required: true
+  theme-name:
+    descriptoin: 'The name of the theme to load'
+    required: true
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
+    - --output-directory
     - ${{ inputs.output-directory }}
+    - --name
+    - ${{ inputs.theme-name }}

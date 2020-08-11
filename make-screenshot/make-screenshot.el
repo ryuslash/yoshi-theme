@@ -4,10 +4,10 @@
 
 (require 'custom)
 
-(defun my-make-screenshot (output-directory)
+(defun my-make-screenshot (theme-name output-directory)
   (let ((standard-output #'external-debugging-output))
     (add-to-list 'custom-theme-load-path "/github/workspace")
-    (load-theme 'yoshi t)
+    (load-theme (intern theme-name) t)
 
     (find-file "/emacs-lisp.el")
 

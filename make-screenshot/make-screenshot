@@ -1,6 +1,32 @@
 #!/usr/bin/env bash
 
-output_directory="$1"
+TEMP=$(getopt --long 'output-directory:,name:' -n 'make-screenshot' -- "$@")
+
+if [ $? -ne 0 ]; then
+    echo 'Terminating...' >&2
+    exit 1
+fi
+
+while true; do
+    case "$1" in
+        --output-directory)
+            output_directory="$2"
+            shift 2
+            ;;
+        --name)
+            theme_name="$2"
+            shift 2
+            ;;
+        --)
+            shift
+            break
+            ;;
+        *)
+            echo "Unexpected option: $1"
+            exit 1
+            ;;
+    esac
+done
 
 Xvfb :99 -screen 0 896x576x24 -nolisten tcp &
 xvfb_pid="$!"
@@ -15,7 +41,7 @@ emacs -Q --eval "(setq standard-output #'external-debugging-output)" \
     --eval '(message "Starting Emacs")' \
     --geometry 80x24 \
     --load /make-screenshot.el \
-    --eval "(my-make-screenshot \"${GITHUB_WORKSPACE}/${output_directory}\")"
+    --eval "(my-make-screenshot \"${theme_name}\" \"${GITHUB_WORKSPACE}/${output_directory}\")"
 
 ls "${output_directory}"
 kill "$xvfb_pid"

@@ -13,6 +13,7 @@
 
     (princ "Taking screenshot!")
 
+    (toggle-frame-maximized)
     (force-window-update)
     (redisplay)
 

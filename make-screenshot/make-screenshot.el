@@ -5,7 +5,8 @@
 (require 'custom)
 
 (defun my-make-screenshot (theme-name output-directory)
-  (let ((standard-output #'external-debugging-output))
+  (let ((standard-output #'external-debugging-output)
+        (frame-resize-pixelwise t))
     (add-to-list 'custom-theme-load-path "/github/workspace")
     (load-theme (intern theme-name) t)
 

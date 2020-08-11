@@ -1,11 +1,14 @@
 #!/usr/bin/env bash
 
-TEMP=$(getopt --long 'output-directory:,name:' -n 'make-screenshot' -- "$@")
+PARSED_ARGUMENTS=$(getopt --long 'output-directory:,name:' -n 'make-screenshot' -- "$@")
+VALID_ARGUMENTS=$?
 
-if [ $? -ne 0 ]; then
+if [ $VALID_ARGUMENTS -ne 0 ]; then
     echo 'Terminating...' >&2
     exit 1
 fi
+
+eval set -- "$PARSED_ARGUMENTS"
 
 while true; do
     case "$1" in

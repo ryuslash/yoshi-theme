@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-PARSED_ARGUMENTS=$(getopt --long 'output-directory:,name:' -n 'make-screenshot' -- "$@")
+PARSED_ARGUMENTS=$(getopt --long 'output-directory:,name:' -n 'make-screenshot' '' "$@")
 VALID_ARGUMENTS=$?
 
 if [ $VALID_ARGUMENTS -ne 0 ]; then

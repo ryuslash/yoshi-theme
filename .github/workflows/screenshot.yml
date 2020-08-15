@@ -19,7 +19,5 @@ jobs:
       run: |
         git config --global user.email "tom+screenshot@ryuslash.org"
         git config --global user.name "Screenshot maker"
-        git diff-index --quiet HEAD -- && echo no changes && exit 0 || true
         git add screenshot.png
-        git commit -m "Update screenshot"
-        git push
+        git commit -m "Update screenshot" && git push || echo no changes

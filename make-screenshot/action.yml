@@ -7,10 +7,29 @@ inputs:
   theme-name:
     descriptoin: 'The name of the theme to load'
     required: true
+  screen-width:
+    description: 'The width of the screenshot'
+    required: true
+    default: 896
+  screen-height:
+    description: 'The height of the screenshot'
+    required: true
+    default: 576
+  screen-depth:
+    description: 'The color-depth for the screenshot'
+    required: true
+    default: 24
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
+    - --width
+    - ${{ inputs.screen-width }}
+    - --height
+    - ${{ inputs.screen-height }}
+    - --depth
+    - ${{ inputs.screen-depth }}
+    - --
     - --output-directory
     - ${{ inputs.output-directory }}
     - --name

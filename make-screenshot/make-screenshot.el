@@ -4,7 +4,7 @@
 
 (require 'custom)
 
-(defun my-make-screenshot (theme-name output-directory)
+(defun my-make-screenshot (theme-name output-file)
   (let ((standard-output #'external-debugging-output)
         (frame-resize-pixelwise t))
     (add-to-list 'custom-theme-load-path "/github/workspace")
@@ -20,8 +20,8 @@
 
     (with-temp-buffer
       (let ((exit-code (call-process-shell-command
-                        (format "scrot --overwrite %s/screenshot.png"
-                                (shell-quote-argument output-directory))
+                        (format "scrot --overwrite %s"
+                                (shell-quote-argument output-file))
                         nil
                         '(t t))))
         (princ (format "Scrot exit code: %d\n" exit-code)))

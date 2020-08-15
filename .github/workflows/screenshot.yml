@@ -13,10 +13,10 @@ jobs:
     - name: Take a screenshot
       uses: ./make-screenshot
       with:
-        output-directory: .
+        file-name: screenshot.png
         theme-name: yoshi
-        screen-width: 800
-        screen-height: 600
+        width: 800
+        height: 600
     - name: Commit screenshot
       run: |
         git config --global user.email "tom+screenshot@ryuslash.org"

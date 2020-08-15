@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-PARSED_ARGUMENTS=$(getopt --long 'output-directory:,name:' -n 'make-screenshot' '' "$@")
+PARSED_ARGUMENTS=$(getopt --long 'output:,name:' -n 'make-screenshot' '' "$@")
 VALID_ARGUMENTS=$?
 
 if [ $VALID_ARGUMENTS -ne 0 ]; then
@@ -12,8 +12,8 @@ eval set -- "$PARSED_ARGUMENTS"
 
 while true; do
     case "$1" in
-        --output-directory)
-            output_directory="$2"
+        --output)
+            output="$2"
             shift 2
             ;;
         --name)
@@ -31,10 +31,10 @@ while true; do
     esac
 done
 
-echo "Creating screenshot in ${output_directory}"
+echo "Creating screenshot in ${output}"
 
 emacs -Q --eval "(setq standard-output #'external-debugging-output)" \
     --eval '(message "Starting Emacs")' \
     --geometry 80x24 \
     --load /make-screenshot.el \
-    --eval "(my-make-screenshot \"${theme_name}\" \"${GITHUB_WORKSPACE}/${output_directory}\")"
+    --eval "(my-make-screenshot \"${theme_name}\" \"${GITHUB_WORKSPACE}/${output}\")"

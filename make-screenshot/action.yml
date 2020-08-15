@@ -1,21 +1,21 @@
 name: 'Make Screenshot'
 description: 'Load the theme in Emacs and make a screenshot'
 inputs:
-  output-directory:
-    description: 'The directory in which to output the screenshot'
+  file-name:
+    description: 'The file name in which to output the screenshot'
     required: true
   theme-name:
     descriptoin: 'The name of the theme to load'
     required: true
-  screen-width:
+  width:
     description: 'The width of the screenshot'
     required: true
     default: 896
-  screen-height:
+  height:
     description: 'The height of the screenshot'
     required: true
     default: 576
-  screen-depth:
+  depth:
     description: 'The color-depth for the screenshot'
     required: true
     default: 24
@@ -24,13 +24,13 @@ runs:
   image: 'Dockerfile'
   args:
     - --width
-    - ${{ inputs.screen-width }}
+    - ${{ inputs.width }}
     - --height
-    - ${{ inputs.screen-height }}
+    - ${{ inputs.height }}
     - --depth
-    - ${{ inputs.screen-depth }}
+    - ${{ inputs.depth }}
     - --
-    - --output-directory
-    - ${{ inputs.output-directory }}
+    - --output
+    - ${{ inputs.file-name }}
     - --name
     - ${{ inputs.theme-name }}

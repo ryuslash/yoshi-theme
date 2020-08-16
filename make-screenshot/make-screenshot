@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-PARSED_ARGUMENTS=$(getopt --long 'output:,name:' -n 'make-screenshot' '' "$@")
+PARSED_ARGUMENTS=$(getopt --long 'script:,name:' -n 'make-screenshot' '' "$@")
 VALID_ARGUMENTS=$?
 
 if [ $VALID_ARGUMENTS -ne 0 ]; then
@@ -10,10 +10,12 @@ fi
 
 eval set -- "$PARSED_ARGUMENTS"
 
+script="/default-showcase.el"
+
 while true; do
     case "$1" in
-        --output)
-            output="$2"
+        --script)
+            script="$2"
             shift 2
             ;;
         --name)
@@ -31,10 +33,6 @@ while true; do
     esac
 done
 
-echo "Creating screenshot in ${output}"
-
-emacs -Q --eval "(setq standard-output #'external-debugging-output)" \
-    --eval '(message "Starting Emacs")' \
-    --geometry 80x24 \
+emacs -Q \
     --load /make-screenshot.el \
-    --eval "(my-make-screenshot \"${theme_name}\" \"${GITHUB_WORKSPACE}/${output}\")"
+    --eval "(my-make-screenshot \"${theme_name}\" \"${script}\")"

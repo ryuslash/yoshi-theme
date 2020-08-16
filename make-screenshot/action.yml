@@ -1,9 +1,8 @@
 name: 'Make Screenshot'
 description: 'Load the theme in Emacs and make a screenshot'
 inputs:
-  file-name:
-    description: 'The file name in which to output the screenshot'
-    required: true
+  script:
+    description: 'The file name relative to the git root to run to make any screenshots'
   theme-name:
     descriptoin: 'The name of the theme to load'
     required: true
@@ -30,7 +29,7 @@ runs:
     - --depth
     - ${{ inputs.depth }}
     - --
-    - --output
-    - ${{ inputs.file-name }}
+    - --script
+    - ${{ inputs.script }}
     - --name
     - ${{ inputs.theme-name }}

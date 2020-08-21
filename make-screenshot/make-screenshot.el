@@ -22,7 +22,8 @@
   (let* ((standard-output #'external-debugging-output)
          (frame-resize-pixelwise t)
          (default-directory (getenv "GITHUB_WORKSPACE"))
-         (script-file (expand-file-name script default-directory)))
+         (script-file (expand-file-name script default-directory))
+         success)
     (toggle-frame-maximized)
 
     (add-to-list 'custom-theme-load-path default-directory)
@@ -30,7 +31,8 @@
     (load-theme (intern theme-name) t)
 
     (unwind-protect
-        (with-timeout (300 (kill-emacs))
+        (with-timeout (300 (kill-emacs 2))
           (princ (format "Loading script: %s\n" script-file))
-          (load script-file))
-      (kill-emacs))))
+          (load script-file)
+          (setq success t))
+      (kill-emacs (if success 0 1)))))

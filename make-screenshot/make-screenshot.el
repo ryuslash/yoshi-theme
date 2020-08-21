@@ -26,11 +26,11 @@
     (toggle-frame-maximized)
 
     (add-to-list 'custom-theme-load-path default-directory)
-    (princ "Loading theme: %s\n" theme-name)
+    (princ (format "Loading theme: %s\n" theme-name))
     (load-theme (intern theme-name) t)
 
     (unwind-protect
         (with-timeout (300 (kill-emacs))
-          (princ "Loading script: %s\n" script-file)
+          (princ (format "Loading script: %s\n" script-file))
           (load script-file))
       (kill-emacs))))

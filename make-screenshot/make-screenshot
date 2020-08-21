@@ -10,8 +10,6 @@ fi
 
 eval set -- "$PARSED_ARGUMENTS"
 
-script="/default-showcase.el"
-
 while true; do
     case "$1" in
         --script)

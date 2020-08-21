@@ -3,6 +3,8 @@ description: 'Load the theme in Emacs and make a screenshot'
 inputs:
   script:
     description: 'The file name relative to the git root to run to make any screenshots'
+    required: true
+    defualt: /default-showcase.el
   theme-name:
     descriptoin: 'The name of the theme to load'
     required: true

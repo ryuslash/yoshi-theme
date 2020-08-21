@@ -19,9 +19,10 @@
                        (buffer-substring-no-properties (point-min) (point-max))))))))
 
 (defun make-screenshot-run (theme-name script)
-  (let ((standard-output #'external-debugging-output)
-        (frame-resize-pixelwise t)
-        (default-directory (getenv "GITHUB_WORKSPACE")))
+  (let* ((standard-output #'external-debugging-output)
+         (frame-resize-pixelwise t)
+         (default-directory (getenv "GITHUB_WORKSPACE"))
+         (script-file (expand-file-name script default-directory)))
     (toggle-frame-maximized)
 
     (add-to-list 'custom-theme-load-path default-directory)
@@ -29,5 +30,6 @@
 
     (unwind-protect
         (with-timeout (300 (kill-emacs))
-          (load (expand-file-name script default-directory)))
+          (princ "Loading script: %s" script-file)
+          (load script-file))
       (kill-emacs))))

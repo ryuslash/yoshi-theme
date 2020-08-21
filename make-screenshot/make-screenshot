@@ -35,4 +35,4 @@ done
 
 emacs -Q \
     --load /make-screenshot.el \
-    --eval "(my-make-screenshot \"${theme_name}\" \"${script}\")"
+    --eval "(make-screenshot-run \"${theme_name}\" \"${script}\")"

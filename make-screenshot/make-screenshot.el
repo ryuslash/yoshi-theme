@@ -32,9 +32,7 @@
 
     (unwind-protect
         (with-timeout (300 (kill-emacs 2))
-          (princ (format "Loading script: %s\n" script-file))
-          (princ (format "Script loaded: %S\n" (load script-file t)))
-          (princ (format "Messages:\n%s\n" (with-current-buffer (messages-buffer)
-                                             (buffer-substring-no-properties (point-min) (point-max)))))
+          (load script-file)
+          (showcase)
           (setq success t))
       (kill-emacs (if success 0 1)))))

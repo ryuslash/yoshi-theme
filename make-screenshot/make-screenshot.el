@@ -33,6 +33,7 @@
     (unwind-protect
         (with-timeout (300 (kill-emacs 2))
           (load script-file)
-          (showcase)
+          (let ((default-directory default-directory))
+            (showcase))
           (setq success t))
       (kill-emacs (if success 0 1)))))

@@ -4,6 +4,7 @@
 
 (defun make-screenshot (file-name)
   "Make a screenshot, saving the output to FILE-NAME."
+  (message "Smile! }:-)")
   (force-window-update)
   (redisplay)
 

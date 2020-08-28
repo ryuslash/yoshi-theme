@@ -33,6 +33,6 @@
     (unwind-protect
         (with-timeout (300 (kill-emacs 2))
           (princ (format "Loading script: %s\n" script-file))
-          (load script-file)
+          (princ (format "Script loaded: %S\n" (load script-file t)))
           (setq success t))
       (kill-emacs (if success 0 1)))))

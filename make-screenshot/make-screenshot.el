@@ -7,7 +7,6 @@
   (message "Smile! }:-)")
   (force-window-update)
   (redisplay)
-  (sit-for 3)
 
   (with-temp-buffer
     (let ((exit-code (call-process-shell-command

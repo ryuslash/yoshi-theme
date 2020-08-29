@@ -2,7 +2,6 @@
   (princ "Turning off menu-bar-mode\n")
   (sit-for 3)
   (menu-bar-mode -1)
-  (sit-for 3)
   (princ "Turning off tool-bar-mode\n")
   (tool-bar-mode -1)
   (princ "Turning off scroll-bar-mode\n")

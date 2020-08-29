@@ -7,8 +7,6 @@
   (princ "Turning off scroll-bar-mode\n")
   (scroll-bar-mode -1)
 
-  (sit-for 3)
-
   (find-file "/emacs-lisp.el")
 
   (let ((file-name (expand-file-name "screenshot.png" working-directory)))

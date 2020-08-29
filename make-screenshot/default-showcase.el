@@ -1,7 +1,6 @@
 (defun showcase (working-directory)
   (princ "Turning off menu-bar-mode\n")
-  (menu-bar-mode 'toggle)
-  (menu-bar-mode 'toggle)
+  (toggle-menu-bar-mode-from-frame -1)
   (princ "Turning off tool-bar-mode\n")
   (tool-bar-mode -1)
   (princ "Turning off scroll-bar-mode\n")

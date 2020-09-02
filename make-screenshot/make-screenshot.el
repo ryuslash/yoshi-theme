@@ -33,6 +33,9 @@
 
     (unwind-protect
         (with-timeout (300 (kill-emacs 2))
+          (force-window-update)
+          (redisplay)
+
           (load script-file)
           (showcase default-directory)
           (setq success t))

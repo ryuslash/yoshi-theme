@@ -1,9 +1,5 @@
 (defun showcase (working-directory)
   (princ "Turning off menu-bar-mode\n")
-
-  (force-window-update)
-  (redisplay)
-
   (menu-bar-mode -1)
   (princ "Turning off tool-bar-mode\n")
   (tool-bar-mode -1)

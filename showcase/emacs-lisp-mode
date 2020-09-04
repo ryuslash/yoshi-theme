@@ -1,0 +1,37 @@
+;; -*- mode: emacs-lisp; -*-
+
+(require 'cask)
+
+(defvar modes-path
+  (expand-file-name "modes")
+  "The directory where test mode files are located.")
+
+(defun find-test-modes ()
+  "Find all test mode files.
+
+This always includes nil, which indicates to use the *scratch*
+buffer to test a theme."
+  (cons nil
+        (directory-files modes-path nil "^[^.]")))
+
+(defun try-theme (theme)
+  "Try out THEME by making some screenshots of it."
+  (load-theme theme :no-confirm)
+  (for-each-mode
+   (lambda (mode) (make-screenshot mode (symbol-name theme))))
+  (disable-theme theme))
+
+(cask-initialize)
+
+(setq custom-theme-load-path
+      (append custom-theme-load-path load-path))
+
+(tool-bar-mode -1)
+(menu-bar-mode -1)
+(scroll-bar-mode -1)
+
+(set-frame-size (selected-frame) 80 24)
+
+(if command-line-args-left
+    (try-themes (mapcar #'intern command-line-args-left))
+  (try-all-themes))

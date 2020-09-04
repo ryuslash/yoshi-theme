@@ -1,0 +1,41 @@
+-- -*- mode: haskell; -*-
+module Main
+where
+
+import Data.Maybe
+import Data.Char
+import Control.Monad
+
+newtype Parser a = P (String -> [ (a, String) ])
+
+------------------------------------------------
+
+charFinder :: String -> Maybe Char
+charFinder (c:_) = Just c
+charFinder [] = Nothing
+
+singleChar :: Parser Char
+singleChar :: P $ \cs -> case cs of
+  (x:xs) -> [ (x, xs) ]
+  []     -> []
+
+parse :: Parser a -> String -> [ (a, String) ]
+parse (P p) s = p s
+
+-- An Either parser
+(<!>) :: Parser a -> Parser a -> Parser a
+p1 <!> p2 = P $ \cs -> case parse p1 cs of
+  [] -> parse p2 cs
+  ps -> ps
+
+------------------------------------------------
+
+instance Monad Parser where
+  -- Return brings x into a Parser
+  return x   = P $ \cs -> [ (x, cs) ]
+  -- Monadic bind
+  p1 >>= fp2 = P $ \cs ->
+    do
+      (a, cs') <- parse p1 cs
+      parse (fp2 a) cs'
+  -- Fail just returns the empty list

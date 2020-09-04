@@ -2,6 +2,7 @@ on:
   push:
     paths-ignore:
     - 'screenshot.png'
+    - 'screenshots/**'
 
 jobs:
   take-screenshot:
@@ -16,9 +17,11 @@ jobs:
         theme-name: yoshi
         width: 800
         height: 600
+        script: showcase/showcase.el
     - name: Commit screenshot
       run: |
         git config --global user.email "tom+screenshot@ryuslash.org"
         git config --global user.name "Screenshot maker"
         git add screenshot.png
-        git commit -m "Update screenshot" && git push || echo no changes
+        git add screenshots
+        git commit -m "Update screenshots" && git push || echo no changes

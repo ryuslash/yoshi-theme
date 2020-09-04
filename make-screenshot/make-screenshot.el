@@ -19,8 +19,9 @@
                        (buffer-substring-no-properties (point-min) (point-max))))))))
 
 (defun make-screenshot-run (theme-name script)
-  (let* ((standard-output #'external-debugging-output)
-         (frame-resize-pixelwise t)
+  (setq standard-output #'external-debugging-output)
+
+  (let* ((frame-resize-pixelwise t)
          (default-directory (getenv "GITHUB_WORKSPACE"))
          (script-file (expand-file-name script default-directory))
          success)

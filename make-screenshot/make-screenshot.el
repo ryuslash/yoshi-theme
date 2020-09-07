@@ -41,6 +41,10 @@
               (progn
                 (load script-file)
                 (showcase default-directory))
-            (t (message "::error::Encountered error: %s" err)))
+            (t
+             (princ (format "::error::Encountered error: %s" err))
+             (print (format "::debug::Message buffer contents: \n%s"
+                            (with-current-buffer (messages-buffer)
+                              (buffer-string))))))
           (setq success t))
       (kill-emacs (if success 0 1)))))

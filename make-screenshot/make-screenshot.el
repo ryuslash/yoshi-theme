@@ -42,9 +42,9 @@
                 (load script-file)
                 (showcase default-directory))
             (t
-             (princ (format "::error::Encountered error: %s" err))
-             (print (format "::debug::Message buffer contents: \n%s"
-                            (with-current-buffer (messages-buffer)
-                              (buffer-string))))))
+             (princ (format "::error::Encountered error: %s" err))))
           (setq success t))
-      (kill-emacs (if success 0 1)))))
+      (kill-emacs (if success 0 1))
+      (print (format "::debug::Message buffer contents: \n%s"
+                     (with-current-buffer (messages-buffer)
+                       (buffer-string)))))))

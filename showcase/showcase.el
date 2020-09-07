@@ -3,11 +3,11 @@
   ;; (package-refresh-contents)
   ;; (package-install "haskell-mode")
 
-  (find-file "showcase/emacs-lisp-mode")
-  (make-screenshot "screenshots/emacs-lisp.png")
+  (find-file (expand-file-name "showcase/emacs-lisp-mode" working-directory))
+  (make-screenshot (expand-file-name "screenshots/emacs-lisp.png" working-directory))
 
   ;; (find-file "showcase/haskell-mode")
   ;; (make-screenshot "screenshots/haskell.png")
 
-  (find-file "showcase/ruby-mode")
-  (make-screenshot "screenshots/ruby.png"))
+  (find-file (expand-file-name "showcase/ruby-mode" working-directory))
+  (make-screenshot (expand-file-name "screenshots/ruby.png" working-directory)))

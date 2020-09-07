@@ -37,7 +37,10 @@
         (with-timeout (300 (kill-emacs 2))
           (sit-for 3)
 
-          (load script-file)
-          (showcase default-directory)
+          (condition-case err
+              (progn
+                (load script-file)
+                (showcase default-directory))
+            (t (message "::error::Encountered error: %s" err)))
           (setq success t))
       (kill-emacs (if success 0 1)))))

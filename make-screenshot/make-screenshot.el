@@ -21,8 +21,7 @@
                       '(t t))))
       (unless (and (= exit-code 0)
                    (= (point-min) (point-max)))
-        (princ (format "Scrot output: %s\n"
-                       (buffer-substring-no-properties (point-min) (point-max))))))))
+        (princ (format "Scrot output: %s\n" (buffer-string)))))))
 
 (defun make-screenshot-run (theme-name script)
   (condition-case outer-err

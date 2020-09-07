@@ -28,6 +28,7 @@
       (progn
         (setq standard-output #'external-debugging-output
               network-security-protocol-checks nil)
+        (princ (format "::debug::Using Emacs version: %s\n" emacs-version))
 
         (let* ((frame-resize-pixelwise t)
                (default-directory (getenv "GITHUB_WORKSPACE"))

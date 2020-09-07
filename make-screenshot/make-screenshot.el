@@ -49,8 +49,8 @@
                       (showcase default-directory))
                   (t (princ (format "::error::Encountered error while running showcase: %s\n" err))))
                 (setq success t))
-            (kill-emacs (if success 0 1))
             (print (format "::debug::Message buffer contents: \n%s\n"
                            (with-current-buffer (messages-buffer)
-                             (buffer-string)))))))
+                             (buffer-string))))
+            (kill-emacs (if success 0 1)))))
     (t (princ (format "::error::Encountered error: %s\n" outer-err)))))

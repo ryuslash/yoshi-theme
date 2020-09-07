@@ -8,12 +8,12 @@
   (sit-for 3)
 
   (let ((directory (file-name-directory file-name)))
-    (princ (format "::debug::Creating directory: %s..." directory))
+    (princ (format "::debug::Creating directory: %s...\n" directory))
     (make-directory directory t)
-    (princ (format "::debug::Creating directory: %s...DONE" directory)))
+    (princ (format "::debug::Creating directory: %s...DONE\n" directory)))
 
   (with-temp-buffer
-    (princ (format "::debug::Taking screenshot, saving in: %s" file-name))
+    (princ (format "::debug::Taking screenshot, saving in: %s\n" file-name))
     (let ((exit-code (call-process-shell-command
                       (format "scrot --overwrite %s"
                               (shell-quote-argument file-name))
@@ -47,10 +47,10 @@
                     (progn
                       (load script-file)
                       (showcase default-directory))
-                  (t (princ (format "::error::Encountered error while running showcase: %s" err))))
+                  (t (princ (format "::error::Encountered error while running showcase: %s\n" err))))
                 (setq success t))
             (kill-emacs (if success 0 1))
-            (print (format "::debug::Message buffer contents: \n%s"
+            (print (format "::debug::Message buffer contents: \n%s\n"
                            (with-current-buffer (messages-buffer)
                              (buffer-string)))))))
-    (t (princ (format "::error::Encountered error: %s" outer-err)))))
+    (t (princ (format "::error::Encountered error: %s\n" outer-err)))))

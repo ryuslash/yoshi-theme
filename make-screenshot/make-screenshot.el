@@ -40,7 +40,7 @@
           (princ (format "::debug::Loaded theme: %s\n" theme-name))
 
           (unwind-protect
-              (with-timeout (300 (kill-emacs 2))
+              (with-timeout (300)
                 (sit-for 3)
 
                 (condition-case err

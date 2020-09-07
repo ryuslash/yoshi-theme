@@ -33,4 +33,5 @@ done
 
 emacs -Q \
     --load /make-screenshot.el \
+    --eval "(setq noninteractive t)" \
     --eval "(make-screenshot-run \"${theme_name}\" \"${script}\")"

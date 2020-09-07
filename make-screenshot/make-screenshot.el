@@ -57,5 +57,8 @@
             (princ (format "::debug::Help buffer contens: \n%s\n"
                            (with-current-buffer (help-buffer)
                              (buffer-string))))
+            (princ (format "::debug::Warning buffer contents:\n%s\n"
+                           (with-current-buffer "*Warnings*"
+                             (buffer-string))))
             (kill-emacs (if success 0 1)))))
     (t (princ (format "::error::Encountered error: %s\n" outer-err)))))

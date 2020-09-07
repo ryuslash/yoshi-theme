@@ -30,7 +30,7 @@
     (toggle-frame-maximized)
 
     (add-to-list 'custom-theme-load-path default-directory)
-    (princ (format "Loading theme: %s\n" theme-name))
+    (princ (format "::debug::Loading theme: %s\n" theme-name))
     (load-theme (intern theme-name) t)
 
     (unwind-protect

@@ -7,6 +7,8 @@
   (message "Smile! }:-)")
   (sit-for 3)
 
+  (make-directory (file-name-directory file-name) t)
+
   (with-temp-buffer
     (let ((exit-code (call-process-shell-command
                       (format "scrot --overwrite %s"

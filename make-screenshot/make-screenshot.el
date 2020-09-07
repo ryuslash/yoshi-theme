@@ -7,9 +7,13 @@
   (message "Smile! }:-)")
   (sit-for 3)
 
-  (make-directory (file-name-directory file-name) t)
+  (let ((directory (file-name-directory file-name)))
+    (princ (format "::debug::Creating directory: %s..." directory))
+    (make-directory directory t)
+    (princ (format "::debug::Creating directory: %s...DONE" directory)))
 
   (with-temp-buffer
+    (princ (format "::debug::Taking screenshot, saving in: %s" file-name))
     (let ((exit-code (call-process-shell-command
                       (format "scrot --overwrite %s"
                               (shell-quote-argument file-name))

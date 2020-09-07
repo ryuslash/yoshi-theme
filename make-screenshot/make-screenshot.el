@@ -26,7 +26,8 @@
 (defun make-screenshot-run (theme-name script)
   (condition-case outer-err
       (progn
-        (setq standard-output #'external-debugging-output)
+        (setq standard-output #'external-debugging-output
+              network-security-protocol-checks nil)
 
         (let* ((frame-resize-pixelwise t)
                (default-directory (getenv "GITHUB_WORKSPACE"))

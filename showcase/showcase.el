@@ -1,4 +1,8 @@
 (defun showcase (working-directory)
+  (menu-bar-mode -1)
+  (tool-bar-mode -1)
+  (scroll-bar-mode -1)
+
   (package-refresh-contents)
   (package-install "haskell-mode")
 

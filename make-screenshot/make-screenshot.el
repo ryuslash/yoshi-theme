@@ -42,7 +42,7 @@
           (princ (format "::debug::Loaded theme: %s\n" theme-name))
 
           (unwind-protect
-              (with-timeout (300)
+              (with-timeout (300 nil)
                 (sit-for 3)
 
                 (condition-case err

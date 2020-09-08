@@ -54,9 +54,6 @@
             (princ (format "::debug::Message buffer contents: \n%s\n"
                            (with-current-buffer (messages-buffer)
                              (buffer-string))))
-            (princ (format "::debug::Help buffer contens: \n%s\n"
-                           (with-current-buffer (help-buffer)
-                             (buffer-string))))
             (princ (format "::debug::Warning buffer contents:\n%s\n"
                            (with-current-buffer "*Warnings*"
                              (buffer-string))))

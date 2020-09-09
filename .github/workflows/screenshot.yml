@@ -22,6 +22,5 @@ jobs:
       run: |
         git config --global user.email "tom+screenshot@ryuslash.org"
         git config --global user.name "Screenshot maker"
-        git add screenshot.png
         git add screenshots
         git commit -m "Update screenshots" && git push || echo no changes

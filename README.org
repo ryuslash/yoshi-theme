@@ -6,9 +6,17 @@
   which was =new-theme= for a while.  I couldn't think of a name so I
   named it after him.
 
-** Screenshot
+** Screenshots
 
-   [[file:screenshot.png]]
+Here is two random mode screenshots.
+
+*** Emacs Lisp Mode
+
+[[file:screenshots/emacs-lisp.png]]
+
+*** Ruby Mode
+
+[[file:screenshots/ruby.png]]
 
 ** Themed modes
 

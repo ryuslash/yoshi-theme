@@ -44,6 +44,10 @@ This project adheres to [[http://semver.org][Semantic Versioning]].
    Add the ediff faces: =ediff-even-diff-A=, =ediff-even-diff-B=, =ediff-odd-diff-A=,
    and =ediff-odd-diff-B=.
 
+** ADDED fill-column-indicator face
+
+Add the face =fill-column-indicator=.
+
 * [[https://github.com/ryuslash/yoshi-theme/compare/v6.1.0...v6.2.0][6.2.0]] -- 2019-05-05
 :PROPERTIES:
 :CUSTOM_ID: release-6.2.0

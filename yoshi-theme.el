@@ -173,6 +173,8 @@
    `(eshell-ls-unreadable ((t (:foreground ,fgred))))
    `(eshell-prompt ((t (:foreground ,fgbright :weight unspecified))))
 
+   `(fill-column-indicator ((t (:foreground ,bgred :inherit unspecified))))
+
    ;;; Flycheck
    `(flycheck-error ((t (:inherit unspecified :underline (:color ,fgred :style wave)))))
    `(flycheck-warning ((t (:inherit unspecified :underline (:color ,fgorange :style wave)))))

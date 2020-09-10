@@ -26,9 +26,14 @@
 (defun make-screenshot-run (theme-name script)
   (condition-case outer-err
       (progn
-        (setq standard-output #'external-debugging-output
-              network-security-protocol-checks nil)
+        (setq standard-output #'external-debugging-output)
         (princ (format "::debug::Using Emacs version: %s\n" emacs-version))
+
+        (package-initialize)
+        (princ "::debug::Initialized package.el\n")
+        (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
+        (package-refresh-contents)
+        (princ "::debug::Refreshed package archive contents\n")
 
         (let* ((frame-resize-pixelwise t)
                (default-directory (getenv "GITHUB_WORKSPACE"))

@@ -32,9 +32,13 @@
 (deftheme yoshi
   "Created 2012-09-24")
 
-(let ((bgdefault   "#111414") (fgdefault   "#bfbfbf")
-      (bgbright    "#3d3d3d") (fgbright    "#ededed")
-      (bgdim       "#222222") (fgdim       "#969696")
+(let ((yoshi-0 "#141414")
+      (yoshi-1 "#2c3434")
+      (yoshi-2 "#475454")
+      (yoshi-3 "#627373")
+      (fgdefault   "#bfbfbf")
+      (fgbright    "#ededed")
+      (fgdim       "#969696")
       (bgred       "#3f1a1a") (fgred       "#a85454")
       (bgorange    "#3f321f") (fgorange    "#a88654")
       (bgyellow    "#343922") (fgyellow    "#8d995c")
@@ -49,7 +53,7 @@
    'yoshi
 
    ;;; General
-   `(default ((t (:background ,bgdefault :foreground ,fgdefault))))
+   `(default ((t (:background ,yoshi-0 :foreground ,fgdefault))))
    `(cursor ((t (:background ,fgdim))))
    `(error ((t (:foreground ,fgred :weight bold))))
    `(font-lock-builtin-face ((t (:foreground ,fgcyan))))
@@ -75,7 +79,7 @@
    `(minibuffer-prompt ((t (:foreground ,fgblue))))
    `(mode-line ((t (:background ,bgblue :foreground ,fgbright :box (:color ,bgblue :line-width 5 :style nil)))))
    `(mode-line-buffer-id ((t (:foreground ,fggreen :weight bold))))
-   `(mode-line-inactive ((t (:weight normal :background ,bgbright :foreground ,fgdefault :box (:color ,bgbright :line-width 5 :style nil) :inherit unspecified))))
+   `(mode-line-inactive ((t (:weight normal :background ,yoshi-1 :foreground ,fgdefault :box (:color ,yoshi-1 :line-width 5 :style nil) :inherit unspecified))))
    `(region ((t (:background ,bgblue))))
    `(shadow ((t (:foreground ,fgdim))))
    `(success ((t (:foreground ,fggreen :weight bold))))
@@ -91,9 +95,9 @@
    ;;; Company
    `(company-preview ((t (:background unspecified :foreground ,fgdim))))
    `(company-preview-common ((t (:foreground ,bgcyan :inherit unspecified :weight bold))))
-   `(company-scrollbar-bg ((t (:background ,bgdim))))
-   `(company-scrollbar-fg ((t (:background ,bgbright))))
-   `(company-tooltip ((t (:foreground ,fgdefault :background ,bgdim))))
+   `(company-scrollbar-bg ((t (:background ,yoshi-1))))
+   `(company-scrollbar-fg ((t (:background ,yoshi-2))))
+   `(company-tooltip ((t (:foreground ,fgdefault :background ,yoshi-1))))
    `(company-tooltip-annotation ((t (:foreground ,fgblue))))
    `(company-tooltip-common ((t (:foreground ,fgcyan))))
    `(company-tooltip-search ((t (:background ,bgyellow :inherit unspecified))))
@@ -113,7 +117,7 @@
    `(diff-changed ((t (:background ,bgorange))))
    `(diff-file-header ((t (:foreground ,fgbright :background unspecified :weight bold))))
    `(diff-function ((t (:inherit unspecified :foreground ,fgorange))))
-   `(diff-header ((t (:background ,bgbright))))
+   `(diff-header ((t (:background ,yoshi-1))))
    `(diff-hl-change ((t (:foreground ,bgyellow :background unspecified :inherit diff-changed))))
    `(diff-hl-delete ((t (:foreground ,bgred :inherit diff-removed))))
    `(diff-hl-insert ((t (:foreground ,bggreen :inherit diff-added))))
@@ -185,8 +189,8 @@
    `(flycheck-inline-warning ((t (:inherit unspecified :foreground ,fgorange :height 0.8))))
 
    ;;; Flycheck posframe
-   `(flycheck-posframe-background-face ((t (:background ,bgdim))))
-   `(flycheck-posframe-border-face ((t (:background ,bgdim))))
+   `(flycheck-posframe-background-face ((t (:background ,yoshi-1))))
+   `(flycheck-posframe-border-face ((t (:background ,yoshi-1))))
 
    ;;; Flymake
    `(flymake-errline ((t (:background unspecified :underline (:color ,fgred :style wave)))))
@@ -266,10 +270,10 @@
    `(hl-indent-block-face-4 ((t (:background ,bgyellow))))
    `(hl-indent-block-face-5 ((t (:background ,bggreen))))
    `(hl-indent-block-face-6 ((t (:background ,bgturquoise))))
-   `(hl-indent-face ((t (:inherit unspecified :background ,bgdim))))
+   `(hl-indent-face ((t (:inherit unspecified :background ,yoshi-3))))
 
    ;;; Highlight indent guides
-   `(highlight-indent-guides-character-face ((t (:inherit unspecified :foreground ,bgbright))))
+   `(highlight-indent-guides-character-face ((t (:inherit unspecified :foreground ,yoshi-3))))
 
    ;;; Hydra
    `(hydra-face-amaranth ((t (:foreground ,fgorange :weight bold))))
@@ -279,7 +283,7 @@
    `(hydra-face-teal ((t (:foreground ,fgcyan :weight bold))))
 
    ;;; Identica
-   `(identica-stripe-face ((t (:background ,bgbright))))
+   `(identica-stripe-face ((t (:background ,yoshi-2))))
    `(identica-uri-face ((t (:foreground ,fgorange :underline t))))
    `(identica-username-face ((t (:foreground ,fgblue :weight bold :underline unspecified))))
 
@@ -296,8 +300,8 @@
    `(ivy-minibuffer-match-face-2 ((t (:background unspecified :weight bold))))
    `(ivy-minibuffer-match-face-3 ((t (:background unspecified :weight bold))))
    `(ivy-minibuffer-match-face-4 ((t (:background unspecified :weight bold))))
-   `(ivy-posframe ((t (:background ,bgdim :foreground ,fgdefault :inherit unspecified))))
-   `(ivy-posframe-border ((t (:background ,bgdim :inherit unspecified))))
+   `(ivy-posframe ((t (:background ,yoshi-1 :foreground ,fgdefault :inherit unspecified))))
+   `(ivy-posframe-border ((t (:background ,yoshi-1 :inherit unspecified))))
 
    ;;; Jabber
    `(jabber-activity-face ((t (:foreground ,fgred :weight unspecified))))
@@ -329,8 +333,8 @@
    `(magit-bisect-skip ((t (:foreground ,fgdim))))
    `(magit-blame-date ((t (:foreground ,fgpink :inherit magit-blame-heading))))
    `(magit-blame-hash ((t (:foreground ,fgmagenta :inherit magit-blame-heading))))
-   `(magit-blame-header ((t (:foreground ,fggreen :background ,bgdim :weight bold :inherit unspecified))))
-   `(magit-blame-heading ((t (:foreground ,fgdefault :background ,bgbright))))
+   `(magit-blame-header ((t (:foreground ,fggreen :background ,yoshi-1 :weight bold :inherit unspecified))))
+   `(magit-blame-heading ((t (:foreground ,fgdefault :background ,yoshi-2))))
    `(magit-blame-name ((t (:foreground ,fgturquoise :inherit magit-blame-heading))))
    `(magit-blame-summary ((t (:foreground ,fggreen :inherit magit-blame-heading))))
    `(magit-branch ((t (:foreground ,fgpink :weight bold :inherit unspecified))))
@@ -340,7 +344,7 @@
    `(magit-diff-added ((t (:foreground unspecified :background unspecified :inherit diff-added))))
    `(magit-diff-added-highlight ((t (:foreground unspecified :background unspecified :inherit magit-diff-added))))
    `(magit-diff-context ((t (:foreground unspecified :inherit shadow))))
-   `(magit-diff-context-highlight ((t (:foreground unspecified :background ,bgdim :inherit magit-diff-context))))
+   `(magit-diff-context-highlight ((t (:foreground unspecified :background ,yoshi-1 :inherit magit-diff-context))))
    `(magit-diff-file-heading ((t (:foreground unspecified :underline unspecified :inherit diff-file-header))))
    `(magit-diff-removed ((t (:foreground unspecified :background unspecified :inherit diff-removed))))
    `(magit-diff-removed-highlight ((t (:foreground unspecified :background unspecified :inherit magit-diff-removed))))
@@ -387,10 +391,10 @@
    `(org-agenda-date-weekend ((t (:foreground ,fgcyan))))
    `(org-agenda-done ((t (:foreground ,fgorange))))
    `(org-agenda-structure ((t (:foreground ,fgblue))))
-   `(org-block ((t (:foreground ,fgdefault :background ,bgdim :inherit unspecified))))
-   `(org-block-background ((t (:background ,bgdim))))
-   `(org-block-begin-line ((t (:foreground ,fgdim :slant unspecified :background ,bgbright :height 0.71))))
-   `(org-block-end-line ((t (:foreground ,fgdim :slant unspecified :background ,bgdim :height 0.71))))
+   `(org-block ((t (:foreground ,fgdefault :background ,yoshi-1 :inherit unspecified))))
+   `(org-block-background ((t (:background ,yoshi-1))))
+   `(org-block-begin-line ((t (:foreground ,fgdim :slant unspecified :background ,yoshi-2 :height 0.71))))
+   `(org-block-end-line ((t (:foreground ,fgdim :slant unspecified :background ,yoshi-1 :height 0.71))))
    `(org-checkbox-statistics-done ((t (:foreground ,bgcyan))))
    `(org-checkbox-statistics-todo ((t (:foreground ,fgcyan))))
    `(org-date ((t (:foreground ,fgpink :underline unspecified))))
@@ -468,7 +472,7 @@
 
    ;;; Smerge
    `(smerge-base ((t (:background ,bggreen))))
-   `(smerge-markers ((t (:background ,bgbright))))
+   `(smerge-markers ((t (:background ,yoshi-2))))
    `(smerge-mine ((t (:background ,bgblue))))
    `(smerge-other ((t (:background ,bgred))))
    `(smerge-refined-added ((t (:inherit diff-refine-added))))
@@ -476,13 +480,13 @@
    `(smerge-refined-removed ((t (:inherit diff-refine-removed))))
 
    ;;; Term
-   `(term-color-black ((t (:background ,bgdefault :foreground ,fgbright))))
+   `(term-color-black ((t (:background ,yoshi-0 :foreground ,fgbright))))
    `(term-color-blue ((t (:background ,bgblue :foreground ,fgblue))))
    `(term-color-cyan ((t (:background ,bgcyan :foreground ,fgcyan))))
    `(term-color-green ((t (:background ,bggreen :foreground ,fggreen))))
    `(term-color-magenta ((t (:background ,bgmagenta :foreground ,fgmagenta))))
    `(term-color-red ((t (:background ,bgred :foreground ,fgred))))
-   `(term-color-white ((t (:background ,bgbright :foreground ,fgdefault))))
+   `(term-color-white ((t (:background ,yoshi-2 :foreground ,fgdefault))))
    `(term-color-yellow ((t (:background ,bgyellow :foreground ,fgyellow))))
 
    ;;; Texinfo
@@ -493,14 +497,14 @@
 
    ;;; Whitespace mode
    `(whitespace-empty ((t (:background ,bgcyan :foreground ,fgdefault))))
-   `(whitespace-hspace ((t (:background ,bgbright :foreground ,fgbright))))
+   `(whitespace-hspace ((t (:background ,yoshi-2 :foreground ,fgbright))))
    `(whitespace-indentation ((t (:background ,bgyellow :foreground unspecified))))
    `(whitespace-line ((t (:background ,bgred :foreground unspecified))))
    `(whitespace-newline ((t (:foreground ,fgpink))))
    `(whitespace-space ((t (:background unspecified :foreground ,fgpink))))
    `(whitespace-space-after-tab ((t (:background ,bgorange :foreground unspecified))))
    `(whitespace-space-before-tab ((t (:background ,bgorange :foreground unspecified))))
-   `(whitespace-tab ((t (:background unspecified :underline ,bgbright))))
+   `(whitespace-tab ((t (:background unspecified :underline ,yoshi-2))))
    `(whitespace-trailing ((t (:background ,bgorange :foreground unspecified))))
 
    ;;; Widget
@@ -521,15 +525,15 @@
    `(rpm-spec-section-face ((t (:foreground ,fgyellow :underline t))))
 
    ;;; Window dividers
-   `(window-divider ((t (:foreground ,bgbright))))
+   `(window-divider ((t (:foreground ,yoshi-2))))
    `(window-divider-first-pixel ((t (:foreground unspecified :inherit window-divider))))
    `(window-divider-last-pixel ((t (:foreground unspecified :inherit window-divider))))
    )
 
   (custom-theme-set-variables
    'yoshi
-   `(ansi-color-names-vector [,bgdim ,fgred ,fggreen ,fgyellow
-                              ,fgblue ,fgmagenta ,fgcyan ,fgdim])
+   `(ansi-color-names-vector [,yoshi-1 ,fgred ,fggreen ,fgyellow
+                                       ,fgblue ,fgmagenta ,fgcyan ,fgdim])
    `(fci-rule-color ,bgred)
    '(org-fontify-whole-block-delimiter-line t)
    '(org-fontify-whole-heading-line t)
@@ -540,8 +544,8 @@
    `(hydra-posframe-show-params
      '(:poshandler posframe-poshandler-frame-bottom-center
                    :internal-border-width 15
-                   :internal-border-color ,bgdim
-                   :background-color ,bgdim))
+                   :internal-border-color ,yoshi-1
+                   :background-color ,yoshi-1))
    '(flycheck-posframe-border-width 5)))
 
 ;;;###autoload

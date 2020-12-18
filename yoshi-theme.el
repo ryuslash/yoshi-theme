@@ -71,15 +71,15 @@
    `(font-lock-variable-name-face ((t (:foreground ,fgyellow))))
    `(font-lock-warning-face ((t (:foreground ,fgorange :inherit unspecified :weight bold))))
    `(fringe ((t (:background unspecified :inherit default))))
-   `(header-line ((t (:background ,bgblue :foreground ,yoshi-5 :box (:color ,bgblue :line-width 5 :style nil)))))
+   `(header-line ((t (:inherit mode-line))))
    `(highlight ((t (:background ,bgcyan))))
    `(italic ((t (:slant italic))))
    `(link ((t (:foreground ,fgorange :underline t))))
    `(link-visited ((t (:foreground ,fgmagenta :underline t))))
    `(minibuffer-prompt ((t (:foreground ,fgblue))))
-   `(mode-line ((t (:background ,bgblue :foreground ,yoshi-5 :box (:color ,bgblue :line-width 5 :style nil)))))
-   `(mode-line-buffer-id ((t (:foreground ,fggreen :weight bold))))
-   `(mode-line-inactive ((t (:weight normal :background ,yoshi-1 :foreground ,yoshi-6 :box (:color ,yoshi-1 :line-width 5 :style nil) :inherit unspecified))))
+   `(mode-line ((t (:background ,yoshi-2 :foreground ,yoshi-6 :box (:color ,yoshi-2 :line-width 5 :style nil)))))
+   `(mode-line-buffer-id ((t (:background ,fgred :foreground ,yoshi-6 :box (:color ,fgred :line-width 5 :style nil)))))
+   `(mode-line-inactive ((t (:background ,yoshi-1 :foreground ,yoshi-5 :box (:color ,yoshi-1 :line-width 5 :sytle nil)))))
    `(region ((t (:background ,bgblue))))
    `(shadow ((t (:foreground ,yoshi-4))))
    `(success ((t (:foreground ,fggreen :weight bold))))
@@ -546,7 +546,8 @@
                    :internal-border-width 15
                    :internal-border-color ,yoshi-1
                    :background-color ,yoshi-1))
-   '(flycheck-posframe-border-width 5)))
+   '(flycheck-posframe-border-width 5)
+   '(mode-line-buffer-identification (propertized-buffer-identification " %b "))))
 
 ;;;###autoload
 (and load-file-name

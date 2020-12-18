@@ -32,6 +32,13 @@
 (deftheme yoshi
   "Created 2012-09-24")
 
+(defun yoshi-theme-add-space-to-first-arg (args)
+  "Return ARGS with the car modified to contain 2 spaces."
+  (cons (format " %s " (car args)) (cdr args)))
+
+(advice-add 'propertized-buffer-identification
+            :filter-args #'yoshi-theme-add-space-to-first-arg)
+
 (let ((yoshi-0 "#111414")
       (yoshi-1 "#2c3434")
       (yoshi-2 "#475454")
@@ -547,7 +554,7 @@
                    :internal-border-color ,yoshi-1
                    :background-color ,yoshi-1))
    '(flycheck-posframe-border-width 5)
-   '(mode-line-buffer-identification (propertized-buffer-identification " %b "))))
+   '(mode-line-buffer-identification (propertized-buffer-identification "%b"))))
 
 ;;;###autoload
 (and load-file-name

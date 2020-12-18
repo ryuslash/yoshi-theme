@@ -1,4 +1,4 @@
-;;; yoshi-theme.el --- Theme named after my cat
+;;; yoshi-theme.el --- Theme named after my cat  -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2012, 2013, 2014, 2015  Tom Willemsen
 

@@ -40,15 +40,15 @@
       (yoshi-5 "#a2a2a2")
       (yoshi-6 "#bfbfbf")
       (bgred       "#3f1a1a") (fgred       "#a85454")
-      (bgorange    "#3f321f") (fgorange    "#a88654")
-      (bgyellow    "#343922") (fgyellow    "#8d995c")
-      (bggreen     "#263f1f") (fggreen     "#65a854")
-      (bgturquoise "#1f3f2c") (fgturquoise "#54a875")
+      (bgorange    "#3f321f") (fgorange    "#a87e54")
+      (bgyellow    "#343922") (fgyellow    "#a8a854")
+      (bggreen     "#263f1f") (fggreen     "#54a854")
+      (bgturquoise "#1f3f2c") (fgturquoise "#54a87e")
       (bgcyan      "#1f3f3f") (fgcyan      "#54a8a8")
-      (bgblue      "#1f2c3f") (fgblue      "#5476a8")
+      (bgblue      "#1f2c3f") (fgblue      "#547ea8")
       (bgpurple    "#2f2a3f") (fgpurple    "#7d71a8")
-      (bgmagenta   "#381f3f") (fgmagenta   "#9754a8")
-      (bgpink      "#3f1f32") (fgpink      "#a85487"))
+      (bgmagenta   "#381f3f") (fgmagenta   "#a845a8")
+      (bgpink      "#3f1f32") (fgpink      "#a8547e"))
   (custom-theme-set-faces
    'yoshi
 

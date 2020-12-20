@@ -59,9 +59,9 @@
   (custom-theme-set-faces
    'yoshi
 
-   ;;; General
-   `(default ((t (:background ,yoshi-0 :foreground ,yoshi-6))))
+;;; General
    `(cursor ((t (:background ,yoshi-4))))
+   `(default ((t (:background ,yoshi-0 :foreground ,yoshi-6))))
    `(error ((t (:foreground ,fgred :weight bold))))
    `(font-lock-builtin-face ((t (:foreground ,fgcyan))))
    `(font-lock-comment-delimiter-face ((t (:foreground ,yoshi-4 :inherit unspecified))))
@@ -94,13 +94,13 @@
    `(trailing-whitespace ((t (:background ,fgred))))
    `(warning ((t (:foreground ,fgorange :weight unspecified))))
 
-   ;;; Circe
+;;; Circe
    `(circe-highlight-nick-face ((t (:foreground ,fgred :weight bold))))
    `(circe-server-face ((t (:foreground ,yoshi-4))))
    `(lui-button-face ((t (:foreground unspecified :underline unspecified :inherit button))))
    `(lui-time-stamp-face ((t (:foreground ,fggreen :weight unspecified))))
 
-   ;;; Company
+;;; Company
    `(company-preview ((t (:background unspecified :foreground ,yoshi-4))))
    `(company-preview-common ((t (:foreground ,bgcyan :inherit unspecified :weight bold))))
    `(company-scrollbar-bg ((t (:background ,yoshi-1))))
@@ -112,15 +112,15 @@
    `(company-tooltip-search-selection ((t (:background ,bgyellow :inherit unspecified))))
    `(company-tooltip-selection ((t (:background ,bgblue))))
 
-   ;;; Compilation
+;;; Compilation
    `(compilation-info ((t (:foreground ,fgblue :inherit unspecified))))
 
-   ;;; CSS
+;;; CSS
    `(css-property ((t (:foreground ,fgorange))))
    `(css-proprietary-property ((t (:foreground ,fgred :inherit unspecified :slant italic))))
    `(css-selector ((t (:foreground ,fgblue))))
 
-   ;;; Diff
+;;; Diff
    `(diff-added ((t (:background ,bggreen :inherit unspecified))))
    `(diff-changed ((t (:background ,bgorange))))
    `(diff-file-header ((t (:foreground ,yoshi-5 :background unspecified :weight bold))))
@@ -138,13 +138,13 @@
    `(diff-refine-removed ((t (:foreground ,fgred :background unspecified :inherit unspecified))))
    `(diff-removed ((t (:background ,bgred :inherit unspecified))))
 
-   ;;; Dired
+;;; Dired
    `(dired-flagged ((t (:inherit region))))
    `(dired-header ((t (:foreground ,fgturquoise :weight bold :inherit unspecified))))
    `(dired-mark ((t (:foreground ,fgpink :inherit unspecified))))
    `(dired-marked ((t (:background ,bgpink :inherit unspecified))))
 
-   ;;; Ediff
+;;; Ediff
    `(ediff-current-diff-A ((t (:inherit diff-removed))))
    `(ediff-current-diff-B ((t (:inherit diff-added))))
    `(ediff-current-diff-C ((t (:inherit diff-changed))))
@@ -156,7 +156,7 @@
    `(ediff-odd-diff-A ((t (:background ,bgyellow))))
    `(ediff-odd-diff-B ((t (:background ,bgyellow))))
 
-   ;;; ERC
+;;; ERC
    `(erc-button ((t (:weight unspecified :inherit button))))
    `(erc-current-nick-face ((t (:foreground ,fgred :weight bold))))
    `(erc-input-face ((t (:inherit shadow))))
@@ -165,11 +165,11 @@
    `(erc-prompt-face ((t (:foreground ,yoshi-5 :weight bold))))
    `(erc-timestamp-face ((t (:foreground ,yoshi-4 :weight normal))))
 
-   ;;; ERT
+;;; ERT
    `(ert-test-result-expected ((t (:background unspecified :foreground ,fggreen))))
    `(ert-test-result-unexpected ((t (:background unspecified :foreground ,fgred))))
 
-   ;;; Eshell
+;;; Eshell
    `(eshell-fringe-status-failure ((t (:foreground ,fgred))))
    `(eshell-fringe-status-success ((t (:foreground ,fggreen))))
    `(eshell-ls-archive ((t (:foreground ,fgpink :weight unspecified))))
@@ -187,29 +187,29 @@
 
    `(fill-column-indicator ((t (:foreground ,bgred :inherit unspecified))))
 
-   ;;; Flycheck
+;;; Flycheck
    `(flycheck-error ((t (:inherit unspecified :underline (:color ,fgred :style wave)))))
    `(flycheck-warning ((t (:inherit unspecified :underline (:color ,fgorange :style wave)))))
 
-   ;;; Flycheck inline
+;;; Flycheck inline
    `(flycheck-inline-error ((t (:inherit unspecified :foreground ,fgred :height 0.8))))
    `(flycheck-inline-info ((t (:inherit unspecified :foreground ,fgblue :height 0.8))))
    `(flycheck-inline-warning ((t (:inherit unspecified :foreground ,fgorange :height 0.8))))
 
-   ;;; Flycheck posframe
+;;; Flycheck posframe
    `(flycheck-posframe-background-face ((t (:background ,yoshi-1))))
    `(flycheck-posframe-border-face ((t (:background ,yoshi-1))))
 
-   ;;; Flymake
+;;; Flymake
    `(flymake-errline ((t (:background unspecified :underline (:color ,fgred :style wave)))))
    `(flymake-infoline ((t (:background unspecified :underline (:color ,fgblue :style wave)))))
    `(flymake-warnline ((t (:background unspecified :underline (:color ,fgorange :style wave)))))
 
-   ;;; Flyspell
+;;; Flyspell
    `(flyspell-duplicate ((t (:inherit unspecified :underline (:color ,fgorange :style wave)))))
    `(flyspell-incorrect ((t (:inherit unspecified :underline (:color ,fgred :style wave)))))
 
-   ;;; Gnus
+;;; Gnus
    `(gnus-button ((t (:weight bold))))
    `(gnus-cite-1 ((t (:foreground ,fgred))))
    `(gnus-cite-10 ((t (:foreground ,fgpink))))
@@ -248,7 +248,7 @@
    `(gnus-summary-normal-unread ((t (:foreground ,yoshi-6))))
    `(gnus-summary-selected ((t (:background ,bgblue :weight bold))))
 
-   ;;; Helm
+;;; Helm
    `(helm-M-x-key ((t (:underline unspecified :foreground ,fgpink :weight bold))))
    `(helm-buffer-directory ((t (:background unspecified :foreground ,fgblue))))
    `(helm-buffer-file ((t (:inherit default))))
@@ -265,13 +265,13 @@
    `(helm-selection ((t (:distant-foreground unspecified :background ,bgblue))))
    `(helm-source-header ((t (:font-family unspecified :height 1.1 :weight bold :foreground ,fgturquoise :background unspecified))))
 
-   ;;; Highlight 80+
+;;; Highlight 80+
    `(highlight-80+ ((t (:underline (:color ,fgred :style wave) :background unspecified))))
 
-   ;;; Highlight numbers
+;;; Highlight numbers
    `(highlight-numbers-number ((t (:foreground ,fgcyan :inherit unspecified))))
 
-   ;;; Highlight indent
+;;; Highlight indent
    `(hl-indent-block-face-1 ((t (:background ,bgred))))
    `(hl-indent-block-face-2 ((t (:background ,bgpink))))
    `(hl-indent-block-face-3 ((t (:background ,bgorange))))
@@ -280,29 +280,29 @@
    `(hl-indent-block-face-6 ((t (:background ,bgturquoise))))
    `(hl-indent-face ((t (:inherit unspecified :background ,yoshi-3))))
 
-   ;;; Highlight indent guides
+;;; Highlight indent guides
    `(highlight-indent-guides-character-face ((t (:inherit unspecified :foreground ,yoshi-3))))
 
-   ;;; Hydra
+;;; Hydra
    `(hydra-face-amaranth ((t (:foreground ,fgorange :weight bold))))
    `(hydra-face-blue ((t (:foreground ,fgblue :weight bold))))
    `(hydra-face-pink ((t (:foreground ,fgpink :weight bold))))
    `(hydra-face-red ((t (:foreground ,fgred :weight bold))))
    `(hydra-face-teal ((t (:foreground ,fgcyan :weight bold))))
 
-   ;;; Identica
+;;; Identica
    `(identica-stripe-face ((t (:background ,yoshi-2))))
    `(identica-uri-face ((t (:foreground ,fgorange :underline t))))
    `(identica-username-face ((t (:foreground ,fgblue :weight bold :underline unspecified))))
 
-   ;;; Ido
+;;; Ido
    `(ido-subdir ((t (:foreground ,fgred))))
 
-   ;;; Isearch
+;;; Isearch
    `(isearch ((t (:background ,bgyellow :foreground unspecified))))
    `(isearch-fail ((t (:background ,bgred))))
 
-   ;;; Ivy
+;;; Ivy
    `(ivy-current-match ((t (:background ,bgblue :foreground ,yoshi-6))))
    `(ivy-minibuffer-match-face-1 ((t (:background unspecified :underline t))))
    `(ivy-minibuffer-match-face-2 ((t (:background unspecified :weight bold))))
@@ -311,7 +311,7 @@
    `(ivy-posframe ((t (:background ,yoshi-1 :foreground ,yoshi-6 :inherit unspecified))))
    `(ivy-posframe-border ((t (:background ,yoshi-1 :inherit unspecified))))
 
-   ;;; Jabber
+;;; Jabber
    `(jabber-activity-face ((t (:foreground ,fgred :weight unspecified))))
    `(jabber-activity-personal-face ((t (:foreground ,fgblue :weight unspecified))))
    `(jabber-chat-error ((t (:foreground ,fgred :weight bold))))
@@ -327,7 +327,7 @@
    `(jabber-roster-user-online ((t (:foreground ,fgblue))))
    `(jabber-roster-user-xa ((t (:foreground ,fgmagenta))))
 
-   ;;; JS2 mode
+;;; JS2 mode
    `(js2-error ((t (:foreground unspecified :inherit error))))
    `(js2-external-variable ((t (:foreground ,fgmagenta))))
    `(js2-function-call ((t (:inherit font-lock-function-name-face))))
@@ -335,7 +335,7 @@
    `(js2-object-property ((t (:inherit font-lock-variable-name-face))))
    `(js2-warning ((t (:underline unspecified :inherit font-lock-warning-face))))
 
-   ;;; Magit
+;;; Magit
    `(magit-bisect-bad ((t (:foreground ,fgred))))
    `(magit-bisect-good ((t (:foreground ,fggreen))))
    `(magit-bisect-skip ((t (:foreground ,yoshi-4))))
@@ -369,10 +369,10 @@
    `(magit-section-highlight ((t (:background unspecified :slant italic))))
    `(magit-section-title ((t (:foreground ,fgturquoise :inherit unspecified :height 1.8))))
 
-   ;;; Makefile
+;;; Makefile
    `(makefile-space ((t (:background ,bgpink))))
 
-   ;;; Markdown
+;;; Markdown
    `(markdown-header-face-1 ((t (:foreground ,fggreen :inherit unspecified))))
    `(markdown-header-face-2 ((t (:foreground ,fgcyan :inherit unspecified))))
    `(markdown-header-face-3 ((t (:foreground ,fgred :inherit unspecified))))
@@ -380,7 +380,7 @@
    `(markdown-header-face-5 ((t (:foreground ,fgyellow :inherit unspecified))))
    `(markdown-header-face-6 ((t (:foreground ,fgpurple :inherit unspecified))))
 
-   ;;; Message mode
+;;; Message mode
    `(message-header-cc ((t (:foreground ,yoshi-4))))
    `(message-header-name ((t (:inherit gnus-header-name))))
    `(message-header-newsgroups ((t (:foreground ,yoshi-4 :weight bold))))
@@ -391,7 +391,7 @@
    `(message-mml ((t (:foreground ,fggreen))))
    `(message-separator ((t (:foreground ,fgblue))))
 
-   ;;; Org
+;;; Org
    `(org-agenda-calendar-sexp ((t (:foreground ,fgyellow))))
    `(org-agenda-current-time ((t (:foreground ,fgorange :weight bold))))
    `(org-agenda-date ((t (:foreground ,bgcyan))))
@@ -421,7 +421,7 @@
    `(org-scheduled-today ((t (:foreground ,yoshi-6))))
    `(org-time-grid ((t (:foreground ,fgorange))))
 
-   ;;; Outline
+;;; Outline
    `(outline-1 ((t (:inherit org-level-1))))
    `(outline-2 ((t (:inherit org-level-2))))
    `(outline-3 ((t (:inherit org-level-3))))
@@ -431,16 +431,16 @@
    `(outline-7 ((t (:inherit org-level-7))))
    `(outline-8 ((t (:inherit org-level-8))))
 
-   ;;; Package
+;;; Package
    `(package-status-avail-obso ((t (:foreground ,bggreen))))
    `(package-status-available ((t (:foreground ,fggreen))))
    `(package-status-dependency ((t (:foreground ,yoshi-4))))
    `(package-status-installed ((t (:foreground ,yoshi-6))))
 
-   ;;; Pretty-print ^L highlight
+;;; Pretty-print ^L highlight
    `(pp^L-highlight ((t (:box unspecified :foreground ,yoshi-5))))
 
-   ;;; Rainbow delimiters
+;;; Rainbow delimiters
    `(rainbow-delimiters-depth-1-face ((t (:foreground ,fgred))))
    `(rainbow-delimiters-depth-2-face ((t (:foreground ,fgorange))))
    `(rainbow-delimiters-depth-3-face ((t (:foreground ,fgyellow))))
@@ -452,10 +452,10 @@
    `(rainbow-delimiters-depth-9-face ((t (:foreground ,fgmagenta))))
    `(rainbow-delimiters-unmatched-face ((t (:background ,bgred :foreground unspecified))))
 
-   ;;; Rebase mode
+;;; Rebase mode
    `(rebase-mode-description-face ((t (:foreground ,yoshi-5))))
 
-   ;;; reStructuredText
+;;; reStructuredText
    `(rst-level-1 ((t (:background unspecified))))
    `(rst-level-2 ((t (:background unspecified))))
    `(rst-level-3 ((t (:background unspecified))))
@@ -463,22 +463,22 @@
    `(rst-level-5 ((t (:background unspecified))))
    `(rst-level-6 ((t (:background unspecified))))
 
-   ;;; Sh
+;;; Sh
    `(sh-escaped-newline ((t (:foreground ,fgpurple :inherit unspecified :weight bold))))
    `(sh-heredoc ((t (:foreground ,fggreen))))
    `(sh-quoted-exec ((t (:foreground ,fgpink))))
 
-   ;;; Show paren
+;;; Show paren
    `(show-paren-match ((t (:inverse-video t))))
    `(show-paren-mismatch ((t (:background unspecified :foreground ,fgred))))
 
-   ;;; Slime
+;;; Slime
    `(slime-repl-input-face ((t (:foreground ,yoshi-5))))
    `(slime-repl-inputed-output-face ((t (:foreground ,yoshi-5))))
    `(slime-repl-output-face ((t (:foreground ,yoshi-6))))
    `(slime-repl-prompt-face ((t (:foreground ,fgblue))))
 
-   ;;; Smerge
+;;; Smerge
    `(smerge-base ((t (:background ,bggreen))))
    `(smerge-markers ((t (:background ,yoshi-2))))
    `(smerge-mine ((t (:background ,bgblue))))
@@ -487,7 +487,7 @@
    `(smerge-refined-change ((t (:inherit diff-refine-change))))
    `(smerge-refined-removed ((t (:inherit diff-refine-removed))))
 
-   ;;; Term
+;;; Term
    `(term-color-black ((t (:background ,yoshi-0 :foreground ,yoshi-5))))
    `(term-color-blue ((t (:background ,bgblue :foreground ,fgblue))))
    `(term-color-cyan ((t (:background ,bgcyan :foreground ,fgcyan))))
@@ -497,13 +497,13 @@
    `(term-color-white ((t (:background ,yoshi-2 :foreground ,yoshi-6))))
    `(term-color-yellow ((t (:background ,bgyellow :foreground ,fgyellow))))
 
-   ;;; Texinfo
+;;; Texinfo
    `(texinfo-heading ((t (:foreground ,fgpink :inherit unspecified :height 1.3))))
 
-   ;;; Which function mode
+;;; Which function mode
    `(which-func ((t (:foreground ,fgblue))))
 
-   ;;; Whitespace mode
+;;; Whitespace mode
    `(whitespace-empty ((t (:background ,bgcyan :foreground ,yoshi-6))))
    `(whitespace-hspace ((t (:background ,yoshi-2 :foreground ,yoshi-5))))
    `(whitespace-indentation ((t (:background ,bgyellow :foreground unspecified))))
@@ -515,13 +515,13 @@
    `(whitespace-tab ((t (:background unspecified :underline ,yoshi-2))))
    `(whitespace-trailing ((t (:background ,bgorange :foreground unspecified))))
 
-   ;;; Widget
+;;; Widget
    `(widget-button ((t (:inherit button))))
    `(widget-button-pressed ((t (:inherit widget-button :weight bold))))
    `(widget-documentation ((t (:inherit font-lock-doc-face))))
    `(widget-field ((t (:background ,bgblue :box (:color ,bgblue :line-width 2)))))
 
-   ;;; rpm-spec-mode
+;;; rpm-spec-mode
    `(rpm-spec-tag-face ((t (:foreground ,fgblue))))
    `(rpm-spec-obsolete-tag-face ((t (:background ,bgred))))
    `(rpm-spec-macro-face ((t (:foreground ,fgyellow))))
@@ -532,7 +532,7 @@
    `(rpm-spec-ghost-face ((t (:foreground ,fgred))))
    `(rpm-spec-section-face ((t (:foreground ,fgyellow :underline t))))
 
-   ;;; Window dividers
+;;; Window dividers
    `(window-divider ((t (:foreground ,yoshi-2))))
    `(window-divider-first-pixel ((t (:foreground unspecified :inherit window-divider))))
    `(window-divider-last-pixel ((t (:foreground unspecified :inherit window-divider))))

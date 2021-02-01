@@ -60,7 +60,7 @@ Add the face ~org-code~.
 
 Change all the gray faces to provide a little bit more flexibility in which colors I can use and allow for more distinctive use of certain colors.
 
-This is based on ideas from the [[https://www.nordtheme.com/docs/colors-and-palettes][Nord theme Colors and Palettes]].
+This is inspired by ideas from the [[https://www.nordtheme.com/docs/colors-and-palettes][Nord theme Colors and Palettes]].
 
 ** CHANGED mode-line faces
 

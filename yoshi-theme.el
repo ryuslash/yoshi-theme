@@ -94,6 +94,10 @@
    `(trailing-whitespace ((t (:background ,fgred))))
    `(warning ((t (:foreground ,fgorange :weight unspecified))))
 
+;;; Cider
+   `(cider-test-success-face ((t (:foreground ,fggreen :background unspecified :weight bold))))
+   `(cider-test-failure-face ((t (:foreground ,fgred :background unspecified :weight bold))))
+
 ;;; Circe
    `(circe-highlight-nick-face ((t (:foreground ,fgred :weight bold))))
    `(circe-server-face ((t (:foreground ,yoshi-4))))

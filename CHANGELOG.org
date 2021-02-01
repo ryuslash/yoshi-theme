@@ -48,6 +48,10 @@ This project adheres to [[http://semver.org][Semantic Versioning]].
 
 Add the face =fill-column-indicator=.
 
+** ADDED A couple of cider faces
+
+Add the cider faces: ~cider-test-success-face~ and ~cider-test-failure-face~.
+
 * [[https://github.com/ryuslash/yoshi-theme/compare/v6.1.0...v6.2.0][6.2.0]] -- 2019-05-05
 :PROPERTIES:
 :CUSTOM_ID: release-6.2.0

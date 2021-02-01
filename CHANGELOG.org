@@ -56,6 +56,16 @@ Add the cider faces: ~cider-test-success-face~ and ~cider-test-failure-face~.
 
 Add the face ~org-code~.
 
+** CHANGED All the gray faces
+
+Change all the gray faces to provide a little bit more flexibility in which colors I can use and allow for more distinctive use of certain colors.
+
+This is based on ideas from the [[https://www.nordtheme.com/docs/colors-and-palettes][Nord theme Colors and Palettes]].
+
+** CHANGED mode-line faces
+
+I hope that these changes make the mode-line more distinctive and nicer to look at. I wanted to use one of the new colors after reading some of the [[https://www.nordtheme.com/docs/colors-and-palettes][Nord theme Colors and Palettes]] notes about the use of their colors for different “levels” of UI elements. I thought this worked quite well with the mode-line and some of the other elements such as hydras as well.
+
 * [[https://github.com/ryuslash/yoshi-theme/compare/v6.1.0...v6.2.0][6.2.0]] -- 2019-05-05
 :PROPERTIES:
 :CUSTOM_ID: release-6.2.0

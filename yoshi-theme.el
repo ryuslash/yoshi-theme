@@ -409,7 +409,7 @@
    `(org-block-end-line ((t (:foreground ,yoshi-4 :slant unspecified :background ,yoshi-1 :height 0.71))))
    `(org-checkbox-statistics-done ((t (:foreground ,bgcyan))))
    `(org-checkbox-statistics-todo ((t (:foreground ,fgcyan))))
-   `(org-code ((t (:background ,yoshi-1 :box unspecified :inherit unspecified))))
+   `(org-code ((t (:background ,yoshi-1 :box (:line-width (5 . -1) :color ,yoshi-1) :inherit fixed-pitch))))
    `(org-date ((t (:foreground ,fgpink :underline unspecified))))
    `(org-document-title ((t (:foreground ,fgorange :height 1.5))))
    `(org-headline-done ((t (:foreground ,yoshi-4))))

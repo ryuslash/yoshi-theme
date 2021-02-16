@@ -66,6 +66,10 @@ This is inspired by ideas from the [[https://www.nordtheme.com/docs/colors-and-p
 
 I hope that these changes make the mode-line more distinctive and nicer to look at. I wanted to use one of the new colors after reading some of the [[https://www.nordtheme.com/docs/colors-and-palettes][Nord theme Colors and Palettes]] notes about the use of their colors for different “levels” of UI elements. I thought this worked quite well with the mode-line and some of the other elements such as hydras as well.
 
+** CHANGED org-block face
+
+Made =org-block= inherit from the =fixed-pitch= face so that when =variable-pitch-mode= is used for Org mode, code in code blocks are still using monospaced fonts.
+
 * [[https://github.com/ryuslash/yoshi-theme/compare/v6.1.0...v6.2.0][6.2.0]] -- 2019-05-05
 :PROPERTIES:
 :CUSTOM_ID: release-6.2.0

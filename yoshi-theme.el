@@ -403,7 +403,7 @@
    `(org-agenda-date-weekend ((t (:foreground ,fgcyan))))
    `(org-agenda-done ((t (:foreground ,fgorange))))
    `(org-agenda-structure ((t (:foreground ,fgblue))))
-   `(org-block ((t (:foreground ,yoshi-6 :background ,yoshi-1 :inherit unspecified))))
+   `(org-block ((t (:foreground ,yoshi-6 :background ,yoshi-1 :inherit fixed-pitch))))
    `(org-block-background ((t (:background ,yoshi-1))))
    `(org-block-begin-line ((t (:foreground ,yoshi-4 :slant unspecified :background ,yoshi-2 :height 0.71))))
    `(org-block-end-line ((t (:foreground ,yoshi-4 :slant unspecified :background ,yoshi-1 :height 0.71))))

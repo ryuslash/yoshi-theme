@@ -52,9 +52,9 @@ Add the face =fill-column-indicator=.
 
 Add the cider faces: ~cider-test-success-face~ and ~cider-test-failure-face~.
 
-** ADDED org-code face
+** ADDED Some org-mode faces
 
-Add the face ~org-code~.
+Add the ~org-code~ and =org-verbatim= faces.
 
 ** CHANGED All the gray faces
 

@@ -425,6 +425,7 @@
    `(org-scheduled-previously ((t (:weight bold))))
    `(org-scheduled-today ((t (:foreground ,yoshi-6))))
    `(org-time-grid ((t (:foreground ,fgorange))))
+   `(org-verbatim ((t (:foreground ,fgcyan :inherit fixed-pitch))))
 
 ;;; Outline
    `(outline-1 ((t (:inherit org-level-1))))

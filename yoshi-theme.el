@@ -39,6 +39,13 @@
 (advice-add 'propertized-buffer-identification
             :filter-args #'yoshi-theme-add-space-to-first-arg)
 
+(defun yoshi-theme--make-inline-box (border-color)
+  "Return a list representing a box specification using BORDER-COLOR."
+  (let ((line-width (if (> emacs-major-version 27)
+                        '(5 . -1)
+                      5)))
+   `(:line-width ,line-width :color ,border-color)))
+
 (let ((yoshi-0 "#111414")
       (yoshi-1 "#2c3434")
       (yoshi-2 "#475454")
@@ -409,7 +416,7 @@
    `(org-block-end-line ((t (:foreground ,yoshi-4 :slant unspecified :background ,yoshi-1 :height 0.71))))
    `(org-checkbox-statistics-done ((t (:foreground ,bgcyan))))
    `(org-checkbox-statistics-todo ((t (:foreground ,fgcyan))))
-   `(org-code ((t (:background ,yoshi-1 :box (:line-width (5 . -1) :color ,yoshi-1) :inherit fixed-pitch))))
+   `(org-code ((t (:background ,yoshi-1 :box ,(yoshi-theme--make-inline-box yoshi-1) :inherit fixed-pitch))))
    `(org-date ((t (:foreground ,fgpink :underline unspecified))))
    `(org-document-info-keyword ((t (:foreground ,yoshi-4 :inherit fixed-pitch))))
    `(org-document-title ((t (:foreground ,fgorange :height 1.5))))

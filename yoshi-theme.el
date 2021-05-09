@@ -1,6 +1,6 @@
 ;;; yoshi-theme.el --- Theme named after my cat  -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2012, 2013, 2014, 2015  Tom Willemsen
+;; Copyright (C) 2012, 2013, 2014, 2015, 2019, 2021  Tom Willemsen
 
 ;; Author: Tom Willemse <tom@ryuslash.org>
 ;; Keywords: faces

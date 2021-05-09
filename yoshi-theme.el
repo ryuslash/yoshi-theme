@@ -502,6 +502,12 @@
    `(smerge-refined-change ((t (:inherit diff-refine-change))))
    `(smerge-refined-removed ((t (:inherit diff-refine-removed))))
 
+   ;; Tab bar
+
+   `(tab-bar ((t (:background ,yoshi-1 :foreground ,yoshi-5))))
+   `(tab-bar-tab ((t (:background ,fgred :foreground ,yoshi-6 :box (:color ,fgred :line-width 5 :style nil)))))
+   `(tab-bar-tab-inactive ((t (:background ,yoshi-2 :foreground ,yoshi-6 :box (:color ,yoshi-2 :line-width 5 :style nil)))))
+
    ;; Term
    `(term-color-black ((t (:background ,yoshi-0 :foreground ,yoshi-5))))
    `(term-color-blue ((t (:background ,bgblue :foreground ,fgblue))))

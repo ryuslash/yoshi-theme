@@ -121,7 +121,7 @@
    `(company-tooltip-common ((t (:foreground ,fgcyan))))
    `(company-tooltip-search ((t (:background ,bgyellow :inherit unspecified))))
    `(company-tooltip-search-selection ((t (:background ,bgyellow :inherit unspecified))))
-   `(company-tooltip-selection ((t (:background ,bgblue))))
+   `(company-tooltip-selection ((t (:background ,yoshi-2))))
 
    ;; Compilation
    `(compilation-info ((t (:foreground ,fgblue :inherit unspecified))))
@@ -314,7 +314,7 @@
    `(isearch-fail ((t (:background ,bgred))))
 
    ;; Ivy
-   `(ivy-current-match ((t (:background ,bgblue :foreground ,yoshi-6))))
+   `(ivy-current-match ((t (:background ,yoshi-2 :foreground ,yoshi-6))))
    `(ivy-minibuffer-match-face-1 ((t (:background unspecified :underline t))))
    `(ivy-minibuffer-match-face-2 ((t (:background unspecified :weight bold))))
    `(ivy-minibuffer-match-face-3 ((t (:background unspecified :weight bold))))

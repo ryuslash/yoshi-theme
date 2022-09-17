@@ -317,8 +317,9 @@
    `(ido-subdir ((t (:foreground ,fgred))))
 
    ;; Isearch
-   `(isearch ((t (:background ,bgyellow :foreground unspecified))))
-   `(isearch-fail ((t (:background ,bgred))))
+   `(isearch ((t (:background ,fgorange :foreground ,yoshi-1))))
+   `(isearch-fail ((t (:background ,fgred :foreground ,yoshi-1))))
+   `(lazy-highlight ((t (:background ,fgblue :foreground ,yoshi-1))))
 
    ;; Ivy
    `(ivy-current-match ((t (:background ,yoshi-2 :foreground ,yoshi-6))))

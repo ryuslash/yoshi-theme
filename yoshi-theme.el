@@ -410,6 +410,9 @@
    `(message-mml ((t (:foreground ,fggreen))))
    `(message-separator ((t (:foreground ,fgblue))))
 
+   ;; Notmuch
+   `(notmuch-message-summary-face ((t (:background ,yoshi-1))))
+
    ;; Org
    `(org-agenda-calendar-sexp ((t (:foreground ,fgyellow))))
    `(org-agenda-current-time ((t (:foreground ,fgorange :weight bold))))

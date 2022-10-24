@@ -74,6 +74,10 @@ Made =org-block= inherit from the =fixed-pitch= face so that when =variable-pitc
 
 Add the =tab-bar=, =tab-bar-tab=, and =tab-bar-tab-inactive= faces.
 
+** ADDED A notmuch face
+
+Add the =notmuch-message-summary-face=.
+
 * [[https://github.com/ryuslash/yoshi-theme/compare/v6.1.0...v6.2.0][6.2.0]] -- 2019-05-05
 :PROPERTIES:
 :CUSTOM_ID: release-6.2.0

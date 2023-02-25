@@ -564,6 +564,9 @@
    `(rpm-spec-ghost-face ((t (:foreground ,fgred))))
    `(rpm-spec-section-face ((t (:foreground ,fgyellow :underline t))))
 
+   ;; vterm
+   `(vterm-color-black ((t (:background ,yoshi-2 :inherit term-color-black))))
+
    ;; Window dividers
    `(window-divider ((t (:foreground ,yoshi-2))))
    `(window-divider-first-pixel ((t (:foreground unspecified :inherit window-divider))))

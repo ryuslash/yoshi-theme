@@ -1,4 +1,5 @@
 #+STARTUP: showall
+#+STARTUP: inlineimages
 
 * Yoshi theme
 

@@ -3,119 +3,102 @@
 
 * Yoshi theme
 
-  My cat is named Yoshi and I was just working on a random new theme,
-  which was =new-theme= for a while.  I couldn't think of a name so I
-  named it after him.
+My cat is named Yoshi and I was just working on a random new theme, which was =new-theme= for a while. I couldn't think of a name so I named it after him.
 
 ** Screenshot
 
-   [[file:screenshot.png]]
+[[file:screenshot.png]]
 
 ** Themed modes
 
-   Here is a list of the themed major and minor modes. Certain modes
-   may only have been themed partially and this list may not be
-   complete.
+Here is a list of the themed major and minor modes. Certain modes may only have been themed partially and this list may not be complete.
 
-   - Circe
-   - Compilation mode
-   - CSS mode
-   - Diff
-   - Dired
-   - Ediff
-   - ERC
-   - ERT Test results
-   - Eshell
-   - Flycheck
-   - Gnus
-   - Helm
-   - Highlight indent
-   - Hydra
-   - Identica
-   - Ido
-   - Jabber
-   - JS2 Mode
-   - Magit
-   - Markdown
-   - Message mode
-   - Org mode
-   - Outline mode
-   - Rainbow delimiters
-   - ReStructured Text mode
-   - Sh mode
-   - Slime repl
-   - Smerge
-   - Term mode
-   - Texinfo mode
-   - Whitespace mode
+- Circe
+- Compilation mode
+- CSS mode
+- Diff
+- Dired
+- Ediff
+- ERC
+- ERT Test results
+- Eshell
+- Flycheck
+- Gnus
+- Helm
+- Highlight indent
+- Hydra
+- Identica
+- Ido
+- Jabber
+- JS2 Mode
+- Magit
+- Markdown
+- Message mode
+- Org mode
+- Outline mode
+- Rainbow delimiters
+- ReStructured Text mode
+- Sh mode
+- Slime repl
+- Smerge
+- Term mode
+- Texinfo mode
+- Whitespace mode
 
 ** License
 
-   This project is licensed under the GNU General Public License
-   version 3 or (at your option) any later version. You can read the
-   terms of this license [[file:COPYING][here]].
+This project is licensed under the GNU General Public License version 3 or (at your option) any later version. You can read the terms of this license [[file:COPYING][here]].
 
 ** Installation
 
-   Installation comes in two flavors.
+Installation comes in two flavors.
 
 *** Installation with ELPA
 
-    To install Yoshi theme using the built-in Emacs package
-    manager you should have [[https://melpa.org/][MELPA]]
-    or [[https://marmalade-repo.org/][Marmalade]] in your
-    =package-archives= list. When that's ready you can
-    =M-x list-packages=, find =yoshi-theme=, press =i= and =x=
-    and you're done.
+To install Yoshi theme using the built-in Emacs package manager you should have [[https://melpa.org/][MELPA]] or [[https://marmalade-repo.org/][Marmalade]] in your =package-archives= list. When that's ready you can =M-x list-packages=, find =yoshi-theme=, press =i= and =x= and you're done.
 
 *** Installation from git
 
-    To use a version from the latest git checkout you should clone the
-    repository and then add the directory to your
-    =custom-theme-load-path=.
+To use a version from the latest git checkout you should clone the repository and then add the directory to your =custom-theme-load-path=.
 
-    In a shell execute:
+In a shell execute:
 
-    #+BEGIN_EXAMPLE
-    cd ~/
-    git clone git://github.com/ryuslash/yoshi-theme.git
-    #+END_EXAMPLE
+#+BEGIN_EXAMPLE
+  cd ~/
+  git clone git://github.com/ryuslash/yoshi-theme.git
+#+END_EXAMPLE
 
-    Then add to your =~/.emacs.d/init.el=:
+Then add to your =~/.emacs.d/init.el=:
 
-    #+BEGIN_SRC emacs-lisp
-      (add-to-list 'custom-theme-load-path (expand-file-name "~/yoshi-theme"))
-    #+END_SRC
+#+BEGIN_SRC emacs-lisp
+  (add-to-list 'custom-theme-load-path (expand-file-name "~/yoshi-theme"))
+#+END_SRC
 
 ** Enabling Yoshi theme
 
-   Once you've installed Yoshi theme you can either use =M-x
-   load-theme= to enable it interactively for the current session, or
-   put the following in your =~/.emacs.d/init.el=:
+Once you've installed Yoshi theme you can either use =M-x load-theme= to enable it interactively for the current session, or put the following in your =~/.emacs.d/init.el=:
 
-   #+BEGIN_SRC emacs-lisp
-     (load-theme 'yoshi :no-confirm)
-   #+END_SRC
+#+BEGIN_SRC emacs-lisp
+  (load-theme 'yoshi :no-confirm)
+#+END_SRC
 
 ** Installation in Spacemacs
 
-   Edit your .spacemacs file ~(SPC f e d)~ and add the ~yoshi-theme~
-   package:
+Edit your .spacemacs file ~(SPC f e d)~ and add the ~yoshi-theme~ package:
 
-   #+BEGIN_SRC emacs-lisp
-     dotspacemacs-additional-packages '(yoshi-theme)
-   #+END_SRC
+#+BEGIN_SRC emacs-lisp
+  dotspacemacs-additional-packages '(yoshi-theme)
+#+END_SRC
 
-   Add the theme to the top of the themes list to make it the default
-   theme, for example:
+Add the theme to the top of the themes list to make it the default theme, for example:
 
-   #+BEGIN_SRC emacs-lisp
-     dotspacemacs-themes '(yoshi
-                           monokai
-                           spacemacs-dark
-                           spacemacs-light
-                           solarized-light
-                           solarized-dark
-                           leuven
-                           zenburn)
-   #+END_SRC
+#+BEGIN_SRC emacs-lisp
+  dotspacemacs-themes '(yoshi
+                        monokai
+                        spacemacs-dark
+                        spacemacs-light
+                        solarized-light
+                        solarized-dark
+                        leuven
+                        zenburn)
+#+END_SRC

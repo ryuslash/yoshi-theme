@@ -4,7 +4,7 @@
 
 ;; Author: Tom Willemse <tom@ryuslash.org>
 ;; Keywords: faces
-;; Version: 6.2.0
+;; Version: 7.0.0
 ;; URL: http://projects.ryuslash.org/yoshi-theme/
 
 ;; This program is free software; you can redistribute it and/or modify

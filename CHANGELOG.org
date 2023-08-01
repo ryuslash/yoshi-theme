@@ -8,7 +8,12 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [[http://semver.org][Semantic Versioning]].
 
-* COMMENT [[https://github.com/ryuslash/yoshi-theme/compare/v6.2.0...HEAD][Unreleased]]
+* COMMENT [[https://github.com/ryuslash/yoshi-theme/compare/v7.0.0...HEAD][Unreleased]]
+
+* [[https://github.com/ryuslash/yoshi-theme/compare/v6.2.0...v7.0.0][7.0.0]] -- 2023-08-01
+:PROPERTIES:
+:CUSTOM_ID: release-7.0.0
+:END:
 
 ** ADDED Colors and variables for ivy-posframe
 

@@ -460,7 +460,7 @@
    `(outline-8 ((t (:inherit org-level-8))))
 
    ;; Package
-   `(package-status-avail-obso ((t (:foreground ,bggreen))))
+   `(package-status-avail-obso ((t (:foreground ,yoshi-5))))
    `(package-status-available ((t (:foreground ,fggreen))))
    `(package-status-dependency ((t (:foreground ,yoshi-4))))
    `(package-status-installed ((t (:foreground ,yoshi-6))))

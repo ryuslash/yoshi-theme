@@ -82,6 +82,10 @@ Add the =notmuch-message-summary-face=.
 
 =diff-refine-change= doesn't exist, it's =diff-refine-changed=.
 
+** CHANGED Background color of package status avail obso face
+
+Change background color of =package-status-avail-obso=. Gray seems more appropriate than green, although I'm not sure what this face is for anymore.
+
 * [[https://github.com/ryuslash/yoshi-theme/compare/v6.1.0...v6.2.0][6.2.0]] -- 2019-05-05
 :PROPERTIES:
 :CUSTOM_ID: release-6.2.0

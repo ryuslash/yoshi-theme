@@ -86,6 +86,14 @@ Add the =notmuch-message-summary-face=.
 
 Change background color of =package-status-avail-obso=. Gray seems more appropriate than green, although I'm not sure what this face is for anymore.
 
+** ADDED Bright colors
+
+Some UI elements really need to stand out more than the previous set of colors allowed for.
+
+** CHANGED All the other colors
+
+This is to make them seem more consistent when applied as background and foreground colors. The contrast specifically should be more consistent now.
+
 * [[https://github.com/ryuslash/yoshi-theme/compare/v6.1.0...v6.2.0][6.2.0]] -- 2019-05-05
 :PROPERTIES:
 :CUSTOM_ID: release-6.2.0

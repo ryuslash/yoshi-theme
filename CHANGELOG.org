@@ -78,6 +78,10 @@ Add the =tab-bar=, =tab-bar-tab=, and =tab-bar-tab-inactive= faces.
 
 Add the =notmuch-message-summary-face=.
 
+** FIXED Diff refine changed face name
+
+=diff-refine-change= doesn't exist, it's =diff-refine-changed=.
+
 * [[https://github.com/ryuslash/yoshi-theme/compare/v6.1.0...v6.2.0][6.2.0]] -- 2019-05-05
 :PROPERTIES:
 :CUSTOM_ID: release-6.2.0

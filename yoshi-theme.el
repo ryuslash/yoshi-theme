@@ -152,7 +152,7 @@
    `(diff-indicator-changed ((t (:foreground ,fgyellow :weight bold :inherit unspecified ))))
    `(diff-indicator-removed ((t (:foreground ,fgred :weight bold :inherit unspecified))))
    `(diff-refine-added ((t (:foreground ,fggreen :background unspecified :inherit unspecified))))
-   `(diff-refine-change ((t (:foreground ,fgyellow :background unspecified))))
+   `(diff-refine-changed ((t (:foreground ,fgyellow :background unspecified))))
    `(diff-refine-removed ((t (:foreground ,fgred :background unspecified :inherit unspecified))))
    `(diff-removed ((t (:background ,bgred :inherit unspecified))))
 
@@ -170,7 +170,7 @@
    `(ediff-even-diff-B ((t (:background ,bgyellow))))
    `(ediff-fine-diff-A ((t (:inherit diff-refine-removed))))
    `(ediff-fine-diff-B ((t (:inherit diff-refine-added))))
-   `(ediff-fine-diff-C ((t (:inherit diff-refine-change))))
+   `(ediff-fine-diff-C ((t (:inherit diff-refine-changed))))
    `(ediff-odd-diff-A ((t (:background ,bgyellow))))
    `(ediff-odd-diff-B ((t (:background ,bgyellow))))
 
@@ -510,7 +510,7 @@
    `(smerge-mine ((t (:background ,bgblue))))
    `(smerge-other ((t (:background ,bgred))))
    `(smerge-refined-added ((t (:inherit diff-refine-added))))
-   `(smerge-refined-change ((t (:inherit diff-refine-change))))
+   `(smerge-refined-change ((t (:inherit diff-refine-changed))))
    `(smerge-refined-removed ((t (:inherit diff-refine-removed))))
 
    ;; Tab bar

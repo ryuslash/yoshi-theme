@@ -429,6 +429,7 @@
    `(org-checkbox-statistics-todo ((t (:foreground ,fgcyan))))
    `(org-code ((t (:background ,yoshi-1 :box ,(yoshi-theme--make-inline-box yoshi-1) :inherit fixed-pitch))))
    `(org-date ((t (:foreground ,fgpink :underline unspecified))))
+   `(org-document-info ((t (:foreground ,brpurple))))
    `(org-document-info-keyword ((t (:foreground ,yoshi-4 :inherit fixed-pitch))))
    `(org-document-title ((t (:foreground ,fgorange :height 1.5))))
    `(org-headline-done ((t (:foreground ,yoshi-4))))
@@ -444,6 +445,7 @@
    `(org-scheduled ((t (:foreground ,yoshi-4))))
    `(org-scheduled-previously ((t (:weight bold))))
    `(org-scheduled-today ((t (:foreground ,yoshi-6))))
+   `(org-table ((t (:foreground ,fgcyan :inherit fixed-pitch))))
    `(org-time-grid ((t (:foreground ,fgorange))))
    `(org-verbatim ((t (:foreground ,fgcyan :inherit fixed-pitch))))
 

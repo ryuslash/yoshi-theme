@@ -5,8 +5,7 @@
 #+HTML_LINK_UP: ./
 #+TODO: ADDED CHANGED DEPRECATED REMOVED FIXED SECURITY
 
-All notable changes to this project will be documented in this file.
-This project adheres to [[http://semver.org][Semantic Versioning]].
+All notable changes to this project will be documented in this file. This project adheres to [[http://semver.org][Semantic Versioning]].
 
 * COMMENT [[https://github.com/ryuslash/yoshi-theme/compare/v7.0.0...HEAD][Unreleased]]
 
@@ -21,37 +20,27 @@ This project adheres to [[http://semver.org][Semantic Versioning]].
 
 ** ADDED Colors and variables for ivy-posframe
 
-   Add the ivy-posframe faces: ~ivy-posframe~, ~ivy-posframe-border~. And variables:
-   ~ivy-posframe-border-width~, ~ivy-posframe-style~.
+Add the ivy-posframe faces: ~ivy-posframe~, ~ivy-posframe-border~. And variables: ~ivy-posframe-border-width~, ~ivy-posframe-style~.
 
 ** ADDED Variables for hydra-posframe
 
-   Add the hydra-posframe: ~hydra-posframe-show-params~.
+Add the hydra-posframe: ~hydra-posframe-show-params~.
 
 ** ADDED Colors and variables for flycheck-posframe
 
-   Add the flycheck-posframe faces: ~flycheck-posframe-background-face~,
-   ~flycheck-posframe-border-face~. And variables: ~flycheck-posframe-border-width~.
+Add the flycheck-posframe faces: ~flycheck-posframe-background-face~, ~flycheck-posframe-border-face~. And variables: ~flycheck-posframe-border-width~.
 
 ** CHANGED the background colors of org blocks
 
-   Instead of showing an underline and an overline for the beginning and end
-   blocks, give them a background color. With the variable
-   =org-fontify-whole-block-delimiter-line= set to =t=, this causes it to create a
-   line-thick border at the top of the block. The background of the block itself
-   has been changed to match that of other highlighted backgrounds, such as the
-   posframe pop-ups for ivy and company. The bottom line has been given the same
-   color so that blocks don't look too busy all over your document.
+Instead of showing an underline and an overline for the beginning and end blocks, give them a background color. With the variable =org-fontify-whole-block-delimiter-line= set to =t=, this causes it to create a line-thick border at the top of the block. The background of the block itself has been changed to match that of other highlighted backgrounds, such as the posframe pop-ups for ivy and company. The bottom line has been given the same color so that blocks don't look too busy all over your document.
 
 ** ADDED the setting to fontify whole block delimiter lines
 
-   With =org-fontify-whole-block-delimiter-line= set to =t= the org block colors
-   have a better appearance.
+With =org-fontify-whole-block-delimiter-line= set to =t= the org block colors have a better appearance.
 
 ** ADDED Some ediff faces
 
-   Add the ediff faces: =ediff-even-diff-A=, =ediff-even-diff-B=, =ediff-odd-diff-A=,
-   and =ediff-odd-diff-B=.
+Add the ediff faces: =ediff-even-diff-A=, =ediff-even-diff-B=, =ediff-odd-diff-A=, and =ediff-odd-diff-B=.
 
 ** ADDED fill-column-indicator face
 
@@ -111,47 +100,35 @@ This is to make them seem more consistent when applied as background and foregro
 
 ** ADDED Some package faces
 
-   Add the package faces: =package-status-avail-obso=,
-   =package-status-available=, =package-status-dependency=,
-   =package-status-installed=.
+Add the package faces: =package-status-avail-obso=, =package-status-available=, =package-status-dependency=, =package-status-installed=.
 
 ** ADDED Window divider faces
 
-   Add the Window Divider faces: =window-divider=,
-   =window-divider-first-pixel= and =window-divider-last-pixel=.
+Add the Window Divider faces: =window-divider=, =window-divider-first-pixel= and =window-divider-last-pixel=.
 
 ** ADDED Window divider settings
 
-   Enable =window-divider-mode= and set the
-   =window-divider-default-right-width= to ~1~.
+Enable =window-divider-mode= and set the =window-divider-default-right-width= to ~1~.
 
 ** ADDED Some js2-mode faces
 
-   Add the JS2 Mode faces: =js2-error=, =js2-function-call=,
-   =js2-object-property=, =js2-warning=.
+Add the JS2 Mode faces: =js2-error=, =js2-function-call=, =js2-object-property=, =js2-warning=.
 
 ** ADDED Some company-mode faces
 
-   Add the Company faces: =company-preview=, =company-preview-common=,
-   =company-scrollbar-bg=, =company-scrollbar-fg=, =company-tooltip=,
-   =company-tooltip-annotation=, =company-tooltip-common=,
-   =common-tooltip-search=, =common-tooltip-search-selecion=,
-   =common-tooltip-selection=.
+Add the Company faces: =company-preview=, =company-preview-common=, =company-scrollbar-bg=, =company-scrollbar-fg=, =company-tooltip=, =company-tooltip-annotation=, =company-tooltip-common=, =common-tooltip-search=, =common-tooltip-search-selecion=, =common-tooltip-selection=.
 
 ** ADDED Some ivy faces
 
-   Add the Ivy faces: =ivy-current-match=,
-   =ivy-minibuffer-match-face-1=, =ivy-minibuffer-match-face-2=,
-   =ivy-minibuffer-match-face-3=, =ivy-minibuffer-match-face-4=.
+Add the Ivy faces: =ivy-current-match=, =ivy-minibuffer-match-face-1=, =ivy-minibuffer-match-face-2=, =ivy-minibuffer-match-face-3=, =ivy-minibuffer-match-face-4=.
 
 ** ADDED flycheck-inline faces
 
-   Add the flycheck-inline faces: =flycheck-inline-error=, =flycheck-inline-info=,
-   =flycheck-inline-warning=.
+Add the flycheck-inline faces: =flycheck-inline-error=, =flycheck-inline-info=, =flycheck-inline-warning=.
 
 ** ADDED highlight-indent-guides face
 
-  Add the highlight-indent-guides face: =highlight-indent-guides-character-face=.
+Add the highlight-indent-guides face: =highlight-indent-guides-character-face=.
 
 ** CHANGED the color of high-scoring unread mails in gnus
 
@@ -161,25 +138,19 @@ This is to make them seem more consistent when applied as background and foregro
 
 ** CHANGED the JS2 function param face color
 
-   Inherit from =font-lock-warning-face= and don't specify a special
-   underline.
+Inherit from =font-lock-warning-face= and don't specify a special underline.
 
 ** CHANGED the Diff Highlight faces
 
-   Make the foreground and background color on the =diff-hl-change=,
-   =diff-hl-add= and =diff-hl-remove= the same.
+Make the foreground and background color on the =diff-hl-change=, =diff-hl-add= and =diff-hl-remove= the same.
 
 ** CHANGED the top 3 Org heading faces
 
-   Make the =org-level-1=, =org-level-2= and =org-level-3= stand out
-   more by giving them and underline, bold weight and italic slant
-   respectively. Also give the =org-level-1= and =org-level-2= some
-   extra height.
+Make the =org-level-1=, =org-level-2= and =org-level-3= stand out more by giving them and underline, bold weight and italic slant respectively. Also give the =org-level-1= and =org-level-2= some extra height.
 
 ** CHANGED the color of comments
 
-   Change the color of =font-lock-comment-face= to stand out more, since comments
-   are generally important pieces of information that show up scarcely.
+Change the color of =font-lock-comment-face= to stand out more, since comments are generally important pieces of information that show up scarcely.
 
 ** REMOVED the 10th rainbow delimiters depth face
 
@@ -189,25 +160,19 @@ This is to make them seem more consistent when applied as background and foregro
   :END:
 ** ADDED Some helm faces
 
-   Add the helm faces: =helm-M-x-key=, =helm-buffer-directory=,
-   =helm-buffer-file=, =helm-buffer-not-saved=, =helm-buffer-process=,
-   =helm-buffer-size=, =helm-match=, =helm-selection=, =helm-source-header=,
-   =helm-ff-directory=, =helm-ff-dotted-directory=, =helm-ff-executable=,
-   =helm-ff-file=, =helm-ff-invalid-symlink=, =helm-ff-symlink=.
+Add the helm faces: =helm-M-x-key=, =helm-buffer-directory=, =helm-buffer-file=, =helm-buffer-not-saved=, =helm-buffer-process=, =helm-buffer-size=, =helm-match=, =helm-selection=, =helm-source-header=, =helm-ff-directory=, =helm-ff-dotted-directory=, =helm-ff-executable=, =helm-ff-file=, =helm-ff-invalid-symlink=, =helm-ff-symlink=.
 
 ** ADDED Some circe faces
 
-   Add the circe faces: =circe-highlight-nick-face= and
-   =circe-server-face=.
+Add the circe faces: =circe-highlight-nick-face= and =circe-server-face=.
 
 ** ADDED Some lui faces
 
-   Add the lui faces: =lui-button-face=, =lui-time-stamp-face=.
+Add the lui faces: =lui-button-face=, =lui-time-stamp-face=.
 
 ** ADDED CSS faces
 
-   Add the CSS faces: =css-property=, =css-selector= and
-   =css-proprietary-property=.
+Add the CSS faces: =css-property=, =css-selector= and =css-proprietary-property=.
 
 ** ADDED =magit-section-highlight= face
 
@@ -215,9 +180,7 @@ This is to make them seem more consistent when applied as background and foregro
 
 ** FIXED Make markdown header faces work without loading Org
 
-   Stop making the =markdown-header-face-*= faces inherit from the
-   equivalent =org-level-*= faces, this kept the markdown faces from
-   working if Org mode wasn't loaded.
+Stop making the =markdown-header-face-*= faces inherit from the equivalent =org-level-*= faces, this kept the markdown faces from working if Org mode wasn't loaded.
 
 * [[https://github.com/ryuslash/yoshi-theme/compare/v5.13.0...v6.0.0][6.0.0]] -- 2015-08-31
   :PROPERTIES:
@@ -232,21 +195,11 @@ This is to make them seem more consistent when applied as background and foregro
 
 ** ADDED Some hydra faces.
 
-   Add the =hydra-face-amaranth=, =hydra-face-blue=, =hydra-face-pink=,
-   =hydra-face-red= and =hydra-face-teal= faces.
+Add the =hydra-face-amaranth=, =hydra-face-blue=, =hydra-face-pink=, =hydra-face-red= and =hydra-face-teal= faces.
 
 ** ADDED Some magit faces.
 
-   Magit came out with a new version and changed (almost) all the face
-   names. The following faces have been added because of this:
-   =magit-bisect-bad=, =magit-bisect-good=, =magit-bisect-skip=,
-   =magit-blame-date=, =magit-blame-hash=, =magit-blame-heading=,
-   =magit-blame-name=, =magit-blame-summary=, =magit-branch-current=,
-   =magit-branch-local=, =magit-branch-remote=, =magit-diff-added=,
-   =magit-diff-added-highlight=, =magit-diff-context=,
-   =magit-diff-context-highlight=, =magit-diff-file-heading=,
-   =magit-diff-removed=, =magit-diff-removed-highlight=, =magit-process-ng=,
-   =magit-process-ok=, =magit-section-heading=.
+Magit came out with a new version and changed (almost) all the face names. The following faces have been added because of this: =magit-bisect-bad=, =magit-bisect-good=, =magit-bisect-skip=, =magit-blame-date=, =magit-blame-hash=, =magit-blame-heading=, =magit-blame-name=, =magit-blame-summary=, =magit-branch-current=, =magit-branch-local=, =magit-branch-remote=, =magit-diff-added=, =magit-diff-added-highlight=, =magit-diff-context=, =magit-diff-context-highlight=, =magit-diff-file-heading=, =magit-diff-removed=, =magit-diff-removed-highlight=, =magit-process-ng=, =magit-process-ok=, =magit-section-heading=.
 
 ** ADDED =erc-button= face.
 
@@ -290,9 +243,7 @@ This is to make them seem more consistent when applied as background and foregro
 
 ** REMOVED Stop using and remove certain colors for simplicity.
 
-   Stop using and remove the following colors: =fgdim-1=, =fgdim-2=,
-   =fgorange-1=, =fggreen-1=, =fggreen-2=, =fggreen-3=, =fggreen-4= and =bgblue-1=
-   colors.
+Stop using and remove the following colors: =fgdim-1=, =fgdim-2=, =fgorange-1=, =fggreen-1=, =fggreen-2=, =fggreen-3=, =fggreen-4= and =bgblue-1= colors.
 
 * COMMENT Local variables
 

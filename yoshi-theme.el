@@ -32,20 +32,6 @@
 (deftheme yoshi
   "Created 2012-09-24")
 
-(defun yoshi-theme-add-space-to-first-arg (args)
-  "Return ARGS with the car modified to contain 2 spaces."
-  (cons (format " %s " (car args)) (cdr args)))
-
-(defun yoshi-theme-add-spaces-around-current-info-node (func &rest args)
-  (let ((Info-current-node (format " %s " Info-current-node)))
-    (apply func args)))
-
-(advice-add 'propertized-buffer-identification
-            :filter-args #'yoshi-theme-add-space-to-first-arg)
-
-(advice-add 'Info-set-mode-line
-            :around #'yoshi-theme-add-spaces-around-current-info-node)
-
 (defun yoshi-theme--make-inline-box (border-color)
   "Return a list representing a box specification using BORDER-COLOR."
   (let ((line-width (if (> emacs-major-version 27)

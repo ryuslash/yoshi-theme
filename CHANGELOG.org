@@ -10,6 +10,10 @@ This project adheres to [[http://semver.org][Semantic Versioning]].
 
 * COMMENT [[https://github.com/ryuslash/yoshi-theme/compare/v7.0.0...HEAD][Unreleased]]
 
+** REMOVED Hacks for the mode-line
+
+** ADDED Custom mode-line module yoshi-mode-line
+
 * [[https://github.com/ryuslash/yoshi-theme/compare/v6.2.0...v7.0.0][7.0.0]] -- 2023-08-01
 :PROPERTIES:
 :CUSTOM_ID: release-7.0.0

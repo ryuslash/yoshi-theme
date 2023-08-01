@@ -82,6 +82,10 @@ Once you've installed Yoshi theme you can either use =M-x load-theme= to enable 
   (load-theme 'yoshi :no-confirm)
 #+END_SRC
 
+*** Other modules
+
+- yoshi-mode-line :: Enable this by calling ~(require 'yoshi-mode-line)~. This module enables the mode-line as is intended to be used with Yoshi theme.
+
 ** Installation in Spacemacs
 
 Edit your .spacemacs file ~(SPC f e d)~ and add the ~yoshi-theme~ package:
